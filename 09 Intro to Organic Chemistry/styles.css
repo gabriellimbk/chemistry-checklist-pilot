@@ -134,11 +134,20 @@ h1 {
   color: #fff;
 }
 
+.board-tabs-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
 .board-tabs {
   display: flex;
+  flex: 1 1 auto;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 16px;
+  min-width: 0;
 }
 
 .board-tab {
@@ -170,6 +179,10 @@ h1 {
 .board-download-button:disabled {
   opacity: 0.42;
   cursor: default;
+}
+
+.board-tabs-row .board-download-button {
+  flex: 0 0 auto;
 }
 
 .board-download-button {
@@ -896,6 +909,17 @@ h1 {
   display: flex;
   justify-content: flex-end;
   margin-top: 16px;
+}
+
+@media (max-width: 520px) {
+  .board-tabs-row {
+    align-items: flex-start;
+  }
+
+  .board-download-button {
+    min-width: 64px;
+    padding: 0 9px;
+  }
 }
 
 @media (max-width: 640px) {

@@ -300,6 +300,10 @@ function createBoardZoomControls() {
   if (document.querySelector(".board-zoom-controls")) {
     return;
   }
+  const tabRow = document.createElement("div");
+  tabRow.className = "board-tabs-row";
+  boardTabs.before(tabRow);
+  tabRow.appendChild(boardTabs);
   const controls = document.createElement("div");
   controls.className = "board-zoom-controls";
   controls.setAttribute("aria-label", "Board zoom controls");
@@ -325,8 +329,9 @@ function createBoardZoomControls() {
   zoomOutButton.addEventListener("click", () => setBoardZoomIndex(boardZoomIndex - 1));
   zoomInButton.addEventListener("click", () => setBoardZoomIndex(boardZoomIndex + 1));
   downloadButton.addEventListener("click", downloadQuestionBoardsPdf);
-  controls.append(zoomOutButton, boardZoomLabel, zoomInButton, downloadButton);
-  boardTabs.insertAdjacentElement("afterend", controls);
+  tabRow.appendChild(downloadButton);
+  controls.append(zoomOutButton, boardZoomLabel, zoomInButton);
+  tabRow.insertAdjacentElement("afterend", controls);
   updateBoardZoomStageSize();
 }
 
