@@ -136,6 +136,55 @@ h1 {
   box-shadow: var(--shadow);
 }
 
+.board-zoom-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+}
+
+.board-zoom-button {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.board-zoom-button:disabled {
+  opacity: 0.42;
+  cursor: default;
+}
+
+.board-zoom-label {
+  min-width: 54px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: var(--shadow);
+  font-weight: 800;
+  text-align: center;
+}
+
+.board-zoom-stage {
+  position: relative;
+  flex: 0 0 auto;
+  width: var(--scaled-board-width, 1440px);
+  height: var(--scaled-board-height, 900px);
+}
+
+.board-zoom-stage > .board {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(var(--board-scale, 1));
+  transform-origin: top left;
+}
+
 .board-wrap {
   width: 100%;
   overflow: auto;

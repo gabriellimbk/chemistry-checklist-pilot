@@ -12,6 +12,11 @@ const modalAnswer = document.getElementById("modalAnswer");
 const answerPanel = document.getElementById("answerPanel");
 const revealAnswerButton = document.getElementById("revealAnswerButton");
 const nextQuestionButton = document.getElementById("nextQuestionButton");
+const boardWrap = boardElement.parentElement;
+const boardZoomStage = document.createElement("div");
+boardZoomStage.className = "board-zoom-stage";
+boardElement.before(boardZoomStage);
+boardZoomStage.appendChild(boardElement);
 
 let topicData;
 let activeBoardIndex = 0;
@@ -25,12 +30,111 @@ const highlightState = new Map();
 const boardDisplayLayouts = new WeakMap();
 const assetVersion = "20260607r-static-board-scroll-zoom";
 const progressStoragePrefix = "summary-map-progress:";
+const boardZoomStoragePrefix = "summary-map-board-zoom:";
+const boardZoomLevels = [0.12, 0.18, 0.25, 0.35, 0.5, 0.75, 1];
+let boardZoomIndex = boardZoomLevels.length - 1;
+let currentStaticBoardWidth = 1440;
+let currentStaticBoardHeight = 900;
+let boardZoomLabel;
+let zoomOutButton;
+let zoomInButton;
 
 function withAssetVersion(path) {
   if (!path) {
     return path;
   }
   return path.includes("?") ? `${path}&v=${assetVersion}` : `${path}?v=${assetVersion}`;
+}
+
+function getBoardZoomStorageKey() {
+  const topicKey = topicData && (topicData.folderName || topicData.code || topicData.title);
+  return `${boardZoomStoragePrefix}${topicKey || location.pathname}`;
+}
+
+function getBoardZoom() {
+  return boardZoomLevels[boardZoomIndex] || 1;
+}
+
+function loadStoredBoardZoom() {
+  if (!topicData) {
+    return;
+  }
+  try {
+    const raw = localStorage.getItem(getBoardZoomStorageKey());
+    const saved = Number.parseFloat(raw);
+    const index = boardZoomLevels.findIndex((level) => Math.abs(level - saved) < 0.001);
+    if (index >= 0) {
+      boardZoomIndex = index;
+    }
+  } catch (error) {
+    // Board zoom persistence is optional.
+  }
+}
+
+function saveBoardZoom() {
+  if (!topicData) {
+    return;
+  }
+  try {
+    localStorage.setItem(getBoardZoomStorageKey(), String(getBoardZoom()));
+  } catch (error) {
+    // Keep zoom working for this session if storage is blocked.
+  }
+}
+
+function updateBoardZoomStageSize() {
+  const zoom = getBoardZoom();
+  boardElement.style.setProperty("--board-scale", zoom);
+  boardZoomStage.style.width = `${currentStaticBoardWidth * zoom}px`;
+  boardZoomStage.style.height = `${currentStaticBoardHeight * zoom}px`;
+  if (boardZoomLabel) {
+    boardZoomLabel.textContent = `${Math.round(zoom * 100)}%`;
+  }
+  if (zoomOutButton) {
+    zoomOutButton.disabled = boardZoomIndex === 0;
+  }
+  if (zoomInButton) {
+    zoomInButton.disabled = boardZoomIndex === boardZoomLevels.length - 1;
+  }
+}
+
+function setBoardZoomIndex(index, options = {}) {
+  const nextIndex = Math.max(0, Math.min(boardZoomLevels.length - 1, index));
+  if (nextIndex === boardZoomIndex && !options.force) {
+    return;
+  }
+  boardZoomIndex = nextIndex;
+  updateBoardZoomStageSize();
+  if (!options.skipSave) {
+    saveBoardZoom();
+  }
+}
+
+function createBoardZoomControls() {
+  if (document.querySelector(".board-zoom-controls")) {
+    return;
+  }
+  const controls = document.createElement("div");
+  controls.className = "board-zoom-controls";
+  controls.setAttribute("aria-label", "Board zoom controls");
+  zoomOutButton = document.createElement("button");
+  zoomOutButton.type = "button";
+  zoomOutButton.className = "board-zoom-button";
+  zoomOutButton.textContent = "-";
+  zoomOutButton.setAttribute("aria-label", "Zoom board out");
+  zoomInButton = document.createElement("button");
+  zoomInButton.type = "button";
+  zoomInButton.className = "board-zoom-button";
+  zoomInButton.textContent = "+";
+  zoomInButton.setAttribute("aria-label", "Zoom board in");
+  boardZoomLabel = document.createElement("span");
+  boardZoomLabel.className = "board-zoom-label";
+  boardZoomLabel.setAttribute("aria-live", "polite");
+  zoomOutButton.addEventListener("click", () => setBoardZoomIndex(boardZoomIndex - 1));
+  zoomInButton.addEventListener("click", () => setBoardZoomIndex(boardZoomIndex + 1));
+  controls.append(zoomOutButton, boardZoomLabel, zoomInButton);
+  boardTabs.insertAdjacentElement("afterend", controls);
+  updateBoardZoomStageSize();
 }
 
 function cardArea(card) {
@@ -1973,6 +2077,9 @@ function renderBoard() {
   boardElement.style.setProperty("--static-board-width", `${staticWidth}px`);
   boardElement.style.setProperty("--static-board-height", `${staticHeight}px`);
   boardElement.style.aspectRatio = "";
+  currentStaticBoardWidth = staticWidth;
+  currentStaticBoardHeight = staticHeight;
+  updateBoardZoomStageSize();
 
   getBoardDecorations(board, displayLayout).forEach((decoration) => {
     boardElement.appendChild(createBoardDecorationElement(decoration));
@@ -2067,9 +2174,11 @@ async function init() {
   document.title = `${topicData.title} Summary Map`;
   document.getElementById("topicTitle").textContent = topicData.title;
   loadStoredProgress();
+  loadStoredBoardZoom();
   syncBoardFromHash();
   await Promise.all(topicData.boards.map((board) => loadExtensionQuestions(board)));
   renderBoardTabs();
+  createBoardZoomControls();
   renderBoard();
   updateProgress();
 }
