@@ -39,6 +39,21 @@ let boardZoomLabel;
 let zoomOutButton;
 let zoomInButton;
 
+function updateModalViewport() {
+  if (!extensionModal) {
+    return;
+  }
+  const viewport = window.visualViewport;
+  const width = viewport?.width || window.innerWidth;
+  const height = viewport?.height || window.innerHeight;
+  const left = viewport?.offsetLeft || 0;
+  const top = viewport?.offsetTop || 0;
+  extensionModal.style.setProperty("--modal-viewport-width", Math.max(0, width) + "px");
+  extensionModal.style.setProperty("--modal-viewport-height", Math.max(0, height) + "px");
+  extensionModal.style.setProperty("--modal-viewport-left", Math.max(0, left) + "px");
+  extensionModal.style.setProperty("--modal-viewport-top", Math.max(0, top) + "px");
+}
+
 function withAssetVersion(path) {
   if (!path) {
     return path;
@@ -1783,7 +1798,9 @@ function openModal(sectionKey) {
   activeSectionKey = sectionKey;
   activeQuestionIndex = 0;
   renderModalQuestion();
+  updateModalViewport();
   extensionModal.classList.remove("hidden");
+  requestAnimationFrame(updateModalViewport);
 }
 
 function closeModal() {
@@ -2168,6 +2185,12 @@ document.addEventListener("keydown", (event) => {
     closeModal();
   }
 });
+
+window.addEventListener("resize", updateModalViewport);
+if (window.visualViewport) {
+  window.visualViewport.addEventListener("resize", updateModalViewport);
+  window.visualViewport.addEventListener("scroll", updateModalViewport);
+}
 
 async function init() {
   topicData = await loadTopicData();

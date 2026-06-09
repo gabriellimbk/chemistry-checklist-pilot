@@ -759,11 +759,17 @@ h1 {
 
 .modal-shell {
   position: fixed;
-  inset: 0;
+  inset: auto;
+  left: var(--modal-viewport-left, 0px);
+  top: var(--modal-viewport-top, 0px);
+  width: var(--modal-viewport-width, 100vw);
+  height: var(--modal-viewport-height, 100vh);
   z-index: 100;
   display: grid;
   place-items: center;
-  padding: 20px;
+  padding: clamp(10px, 3vw, 20px);
+  box-sizing: border-box;
+  transform: none;
 }
 
 .modal-backdrop {
@@ -775,13 +781,14 @@ h1 {
 
 .modal-panel {
   position: relative;
-  width: min(640px, calc(100vw - 32px));
-  max-height: min(760px, calc(100vh - 32px));
+  width: min(640px, calc(var(--modal-viewport-width, 100vw) - 24px));
+  max-height: min(760px, calc(var(--modal-viewport-height, 100vh) - 24px));
   overflow: auto;
   padding: 28px 24px 24px;
   border-radius: 24px;
   background: rgba(252, 250, 245, 0.98);
   box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
+  box-sizing: border-box;
 }
 
 .modal-close {
@@ -860,6 +867,54 @@ h1 {
   display: flex;
   justify-content: flex-end;
   margin-top: 16px;
+}
+
+@media (max-width: 640px) {
+  .modal-shell {
+    padding: 10px;
+  }
+
+  .modal-panel {
+    width: calc(var(--modal-viewport-width, 100vw) - 20px);
+    max-height: calc(var(--modal-viewport-height, 100vh) - 20px);
+    padding: 20px 16px 16px;
+    border-radius: 18px;
+  }
+
+  .modal-close {
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+  }
+
+  #modalTitle {
+    padding-right: 36px;
+    font-size: 1.25rem;
+  }
+
+  .modal-counter {
+    margin-bottom: 12px;
+  }
+
+  .modal-content {
+    padding: 14px;
+    border-radius: 16px;
+  }
+
+  #modalQuestion,
+  #modalAnswer {
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  .modal-actions {
+    justify-content: stretch;
+  }
+
+  .modal-nav-button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 980px) {
