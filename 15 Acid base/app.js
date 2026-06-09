@@ -39,6 +39,7 @@ let boardZoomLabel;
 let zoomOutButton;
 let zoomInButton;
 let downloadButton;
+let pdfWatermarkImagePromise;
 
 function updateModalViewport() {
   if (!extensionModal) {
@@ -142,6 +143,31 @@ function loadImageForPdf(src) {
   });
 }
 
+function loadPdfWatermarkImage() {
+  if (!pdfWatermarkImagePromise) {
+    pdfWatermarkImagePromise = loadImageForPdf("../school crest watermark.png");
+  }
+  return pdfWatermarkImagePromise;
+}
+
+function drawPdfWatermark(context, canvas, watermarkImage) {
+  if (!watermarkImage) {
+    return;
+  }
+  const sourceWidth = watermarkImage.naturalWidth || watermarkImage.width;
+  const sourceHeight = watermarkImage.naturalHeight || watermarkImage.height;
+  if (!sourceWidth || !sourceHeight) {
+    return;
+  }
+  const watermarkWidth = Math.max(76, Math.min(150, canvas.width * 0.07));
+  const watermarkHeight = watermarkWidth * (sourceHeight / sourceWidth);
+  const margin = Math.max(18, canvas.width * 0.012);
+  context.save();
+  context.globalAlpha = 0.18;
+  context.drawImage(watermarkImage, margin, margin, watermarkWidth, watermarkHeight);
+  context.restore();
+}
+
 function canvasToJpegBytes(canvas) {
   const dataUrl = canvas.toDataURL("image/jpeg", 0.92);
   const base64 = dataUrl.slice(dataUrl.indexOf(",") + 1);
@@ -166,6 +192,11 @@ async function renderBoardQuestionForPdf(board) {
   context.fillStyle = "#ffffff";
   context.fillRect(0, 0, canvas.width, canvas.height);
   context.drawImage(image, 0, 0, canvas.width, canvas.height);
+  try {
+    drawPdfWatermark(context, canvas, await loadPdfWatermarkImage());
+  } catch (error) {
+    // PDF downloads should still work if the optional watermark asset is unavailable.
+  }
   return {
     title: board.title || "Board",
     width: canvas.width,
@@ -268,7 +299,7 @@ async function downloadQuestionBoardsPdf() {
   if (!topicData || !Array.isArray(topicData.boards) || !topicData.boards.length || !downloadButton) {
     return;
   }
-  const originalText = downloadButton.textContent;
+  const originalContent = downloadButton.innerHTML;
   downloadButton.disabled = true;
   downloadButton.textContent = "...";
   try {
@@ -291,7 +322,7 @@ async function downloadQuestionBoardsPdf() {
     link.remove();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   } finally {
-    downloadButton.textContent = originalText;
+    downloadButton.innerHTML = originalContent;
     downloadButton.disabled = false;
   }
 }
