@@ -345,6 +345,7 @@
     ];
 
     const progressStoragePrefix = "summary-map-progress:";
+    const topicPageVersion = "20260610r-pdf-download";
 
     const menuButton = document.getElementById("menuButton");
     const closeButton = document.getElementById("closeButton");
@@ -356,7 +357,7 @@
     let activeFolder = "";
 
     function topicUrl(topic) {
-      return `${encodeURIComponent(topic.folder).replace(/%2F/g, "/")}/index.html`;
+      return `${encodeURIComponent(topic.folder).replace(/%2F/g, "/")}/index.html?v=${topicPageVersion}`;
     }
 
     function progressStorageKey(topic) {

@@ -38,6 +38,7 @@ let currentStaticBoardHeight = 900;
 let boardZoomLabel;
 let zoomOutButton;
 let zoomInButton;
+let downloadButton;
 
 function updateModalViewport() {
   if (!extensionModal) {
@@ -125,6 +126,176 @@ function setBoardZoomIndex(index, options = {}) {
   }
 }
 
+function sanitizePdfFilename(value) {
+  return (value || "summary-map")
+    .replace(/[\\/:*?"<>|]+/g, "-")
+    .replace(/\s+/g, " ")
+    .trim() || "summary-map";
+}
+
+function loadImageForPdf(src) {
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+    image.onload = () => resolve(image);
+    image.onerror = () => reject(new Error("Could not load " + src));
+    image.src = withAssetVersion(src);
+  });
+}
+
+function canvasToJpegBytes(canvas) {
+  const dataUrl = canvas.toDataURL("image/jpeg", 0.92);
+  const base64 = dataUrl.slice(dataUrl.indexOf(",") + 1);
+  const binary = atob(base64);
+  const bytes = new Uint8Array(binary.length);
+  for (let index = 0; index < binary.length; index += 1) {
+    bytes[index] = binary.charCodeAt(index);
+  }
+  return bytes;
+}
+
+async function renderBoardQuestionForPdf(board) {
+  const image = await loadImageForPdf(board.questionSlide);
+  const maxCanvasSide = 2200;
+  const sourceWidth = image.naturalWidth || image.width;
+  const sourceHeight = image.naturalHeight || image.height;
+  const scale = Math.min(1, maxCanvasSide / Math.max(sourceWidth, sourceHeight));
+  const canvas = document.createElement("canvas");
+  canvas.width = Math.round(sourceWidth * scale);
+  canvas.height = Math.round(sourceHeight * scale);
+  const context = canvas.getContext("2d");
+  context.fillStyle = "#ffffff";
+  context.fillRect(0, 0, canvas.width, canvas.height);
+  context.drawImage(image, 0, 0, canvas.width, canvas.height);
+  return {
+    title: board.title || "Board",
+    width: canvas.width,
+    height: canvas.height,
+    jpegBytes: canvasToJpegBytes(canvas)
+  };
+}
+
+function textToPdfBytes(text) {
+  return new TextEncoder().encode(text);
+}
+
+function buildQuestionBoardsPdf(pages) {
+  const chunks = [];
+  const offsets = [0];
+  let length = 0;
+  let objectId = 1;
+  const pageObjectIds = [];
+  const pagesObjectId = objectId++;
+  const catalogObjectId = objectId++;
+  const pageDefs = pages.map((page) => ({
+    ...page,
+    pageObjectId: objectId++,
+    contentObjectId: objectId++,
+    imageObjectId: objectId++
+  }));
+
+  function write(part) {
+    const bytes = typeof part === "string" ? textToPdfBytes(part) : part;
+    chunks.push(bytes);
+    length += bytes.length;
+  }
+
+  function addObject(id, parts) {
+    offsets[id] = length;
+    write(id + " 0 obj\n");
+    for (const part of parts) {
+      write(part);
+    }
+    write("\nendobj\n");
+  }
+
+  write("%PDF-1.4\n%\xE2\xE3\xCF\xD3\n");
+
+  for (const page of pageDefs) {
+    const isLandscape = page.width >= page.height;
+    const pageWidth = isLandscape ? 841.89 : 595.28;
+    const pageHeight = isLandscape ? 595.28 : 841.89;
+    const margin = 18;
+    const availableWidth = pageWidth - margin * 2;
+    const availableHeight = pageHeight - margin * 2;
+    const scale = Math.min(availableWidth / page.width, availableHeight / page.height);
+    const drawWidth = page.width * scale;
+    const drawHeight = page.height * scale;
+    const drawX = (pageWidth - drawWidth) / 2;
+    const drawY = (pageHeight - drawHeight) / 2;
+    const imageName = "Im" + page.imageObjectId;
+    const content = "q\n" + drawWidth.toFixed(2) + " 0 0 " + drawHeight.toFixed(2) + " " + drawX.toFixed(2) + " " + drawY.toFixed(2) + " cm\n/" + imageName + " Do\nQ";
+
+    addObject(page.imageObjectId, [
+      "<< /Type /XObject /Subtype /Image /Width " + page.width + " /Height " + page.height + " /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length " + page.jpegBytes.length + " >>\nstream\n",
+      page.jpegBytes,
+      "\nendstream"
+    ]);
+    addObject(page.contentObjectId, [
+      "<< /Length " + textToPdfBytes(content).length + " >>\nstream\n" + content + "\nendstream"
+    ]);
+    addObject(page.pageObjectId, [
+      "<< /Type /Page /Parent " + pagesObjectId + " 0 R /MediaBox [0 0 " + pageWidth.toFixed(2) + " " + pageHeight.toFixed(2) + "] /Resources << /XObject << /" + imageName + " " + page.imageObjectId + " 0 R >> >> /Contents " + page.contentObjectId + " 0 R >>"
+    ]);
+    pageObjectIds.push(page.pageObjectId);
+  }
+
+  addObject(pagesObjectId, [
+    "<< /Type /Pages /Kids [" + pageObjectIds.map((id) => id + " 0 R").join(" ") + "] /Count " + pageObjectIds.length + " >>"
+  ]);
+  addObject(catalogObjectId, [
+    "<< /Type /Catalog /Pages " + pagesObjectId + " 0 R >>"
+  ]);
+
+  const xrefOffset = length;
+  const maxObjectId = objectId - 1;
+  write("xref\n0 " + (maxObjectId + 1) + "\n");
+  write("0000000000 65535 f \n");
+  for (let id = 1; id <= maxObjectId; id += 1) {
+    write(String(offsets[id]).padStart(10, "0") + " 00000 n \n");
+  }
+  write("trailer\n<< /Size " + (maxObjectId + 1) + " /Root " + catalogObjectId + " 0 R >>\nstartxref\n" + xrefOffset + "\n%%EOF");
+
+  const pdfBytes = new Uint8Array(length);
+  let position = 0;
+  for (const chunk of chunks) {
+    pdfBytes.set(chunk, position);
+    position += chunk.length;
+  }
+  return new Blob([pdfBytes], { type: "application/pdf" });
+}
+
+async function downloadQuestionBoardsPdf() {
+  if (!topicData || !Array.isArray(topicData.boards) || !topicData.boards.length || !downloadButton) {
+    return;
+  }
+  const originalText = downloadButton.textContent;
+  downloadButton.disabled = true;
+  downloadButton.textContent = "...";
+  try {
+    const pages = [];
+    for (const board of topicData.boards) {
+      if (board.questionSlide) {
+        pages.push(await renderBoardQuestionForPdf(board));
+      }
+    }
+    if (!pages.length) {
+      return;
+    }
+    const blob = buildQuestionBoardsPdf(pages);
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = sanitizePdfFilename(topicData.title) + " question boards.pdf";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  } finally {
+    downloadButton.textContent = originalText;
+    downloadButton.disabled = false;
+  }
+}
+
 function createBoardZoomControls() {
   if (document.querySelector(".board-zoom-controls")) {
     return;
@@ -142,12 +313,19 @@ function createBoardZoomControls() {
   zoomInButton.className = "board-zoom-button";
   zoomInButton.textContent = "+";
   zoomInButton.setAttribute("aria-label", "Zoom board in");
+  downloadButton = document.createElement("button");
+  downloadButton.type = "button";
+  downloadButton.className = "board-download-button";
+  downloadButton.textContent = "\u2193";
+  downloadButton.title = "Download question boards as PDF";
+  downloadButton.setAttribute("aria-label", "Download question boards as PDF");
   boardZoomLabel = document.createElement("span");
   boardZoomLabel.className = "board-zoom-label";
   boardZoomLabel.setAttribute("aria-live", "polite");
   zoomOutButton.addEventListener("click", () => setBoardZoomIndex(boardZoomIndex - 1));
   zoomInButton.addEventListener("click", () => setBoardZoomIndex(boardZoomIndex + 1));
-  controls.append(zoomOutButton, boardZoomLabel, zoomInButton);
+  downloadButton.addEventListener("click", downloadQuestionBoardsPdf);
+  controls.append(zoomOutButton, boardZoomLabel, zoomInButton, downloadButton);
   boardTabs.insertAdjacentElement("afterend", controls);
   updateBoardZoomStageSize();
 }

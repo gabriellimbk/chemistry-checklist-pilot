@@ -153,7 +153,8 @@ h1 {
   margin: 0 0 14px;
 }
 
-.board-zoom-button {
+.board-zoom-button,
+.board-download-button {
   width: 40px;
   height: 40px;
   border: 0;
@@ -165,7 +166,8 @@ h1 {
   cursor: pointer;
 }
 
-.board-zoom-button:disabled {
+.board-zoom-button:disabled,
+.board-download-button:disabled {
   opacity: 0.42;
   cursor: default;
 }
