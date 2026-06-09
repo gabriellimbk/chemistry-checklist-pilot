@@ -172,6 +172,33 @@ h1 {
   cursor: default;
 }
 
+.board-download-button {
+  width: auto;
+  min-width: 72px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 11px;
+  line-height: 1;
+}
+
+.download-icon {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.download-label {
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+}
+
 .board-zoom-label {
   min-width: 54px;
   padding: 8px 10px;

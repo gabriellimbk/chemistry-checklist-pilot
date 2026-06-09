@@ -316,7 +316,7 @@ function createBoardZoomControls() {
   downloadButton = document.createElement("button");
   downloadButton.type = "button";
   downloadButton.className = "board-download-button";
-  downloadButton.textContent = "\u2193";
+  downloadButton.innerHTML = '<svg class="download-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"></path><path d="M14 2v6h6"></path><path d="M12 12v6"></path><path d="m9 15 3 3 3-3"></path></svg><span class="download-label">PDF</span>';
   downloadButton.title = "Download question boards as PDF";
   downloadButton.setAttribute("aria-label", "Download question boards as PDF");
   boardZoomLabel = document.createElement("span");
