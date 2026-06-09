@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chemistry Summary Maps</title>
+  <style>
+    :root {
+      --paper: #f5f1ea;
+      --ink: #101010;
+      --muted: #5d5d5d;
+      --panel: rgba(255, 255, 255, 0.96);
+      --line: rgba(16, 16, 16, 0.14);
+      --shadow: 0 22px 54px rgba(0, 0, 0, 0.16);
+      --accent: #101010;
+      --progress: #2f9e44;
+      --progress-low: #d9a521;
+      --sidebar-width: min(360px, calc(100vw - 48px));
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      overflow: hidden;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.8), transparent 36%),
+        linear-gradient(180deg, #ede7dc 0%, var(--paper) 100%);
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .topic-frame {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      border: 0;
+      background: var(--paper);
+    }
+
+    .menu-button {
+      position: fixed;
+      z-index: 20;
+      top: 16px;
+      left: 16px;
+      width: 46px;
+      height: 46px;
+      border: 1px solid rgba(16, 16, 16, 0.16);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--ink);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.13);
+      cursor: pointer;
+      display: inline-grid;
+      place-items: center;
+    }
+
+    .menu-button:hover {
+      background: #fff;
+    }
+
+    .menu-icon,
+    .menu-icon::before,
+    .menu-icon::after {
+      display: block;
+      width: 19px;
+      height: 2px;
+      border-radius: 999px;
+      background: currentColor;
+      content: "";
+    }
+
+    .menu-icon {
+      position: relative;
+    }
+
+    .menu-icon::before {
+      position: absolute;
+      transform: translateY(-6px);
+    }
+
+    .menu-icon::after {
+      position: absolute;
+      transform: translateY(6px);
+    }
+
+    .scrim {
+      position: fixed;
+      z-index: 30;
+      inset: 0;
+      background: rgba(16, 16, 16, 0.28);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 160ms ease;
+    }
+
+    .sidebar {
+      position: fixed;
+      z-index: 40;
+      top: 0;
+      left: 0;
+      width: var(--sidebar-width);
+      height: 100vh;
+      padding: 22px 18px 18px;
+      background: var(--panel);
+      border-right: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      transform: translateX(calc(-1 * var(--sidebar-width) - 12px));
+      transition: transform 180ms ease;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    body.sidebar-open .scrim {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    body.sidebar-open .sidebar {
+      transform: translateX(0);
+    }
+
+    .sidebar-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 4px 2px 0;
+    }
+
+    .eyebrow {
+      margin: 0 0 4px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.35rem;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    .close-button {
+      flex: 0 0 auto;
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      color: var(--ink);
+      font-size: 1.45rem;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .topic-list {
+      min-height: 0;
+      overflow: auto;
+      display: grid;
+      gap: 8px;
+      padding: 2px 2px 12px;
+    }
+
+    .topic-button {
+      width: 100%;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 11px;
+      align-items: start;
+      padding: 10px 11px;
+      text-align: left;
+    }
+
+    .topic-button:hover {
+      background: rgba(16, 16, 16, 0.06);
+    }
+
+    .topic-button.is-active {
+      background: #101010;
+      color: #fff;
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+    }
+
+    .topic-code {
+      min-width: 2.5rem;
+      color: inherit;
+      font-size: 0.74rem;
+      font-weight: 800;
+      opacity: 0.68;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .topic-name {
+      min-width: 0;
+      font-size: 0.98rem;
+      font-weight: 750;
+      line-height: 1.2;
+    }
+
+    .topic-copy {
+      min-width: 0;
+      display: grid;
+      gap: 6px;
+    }
+
+    .topic-progress {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .topic-progress-track {
+      height: 5px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: rgba(16, 16, 16, 0.12);
+    }
+
+    .topic-button.is-active .topic-progress-track {
+      background: rgba(255, 255, 255, 0.22);
+    }
+
+    .topic-progress-fill {
+      display: block;
+      width: 0%;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--progress-low);
+      transition: width 160ms ease;
+    }
+
+    .topic-button.is-active .topic-progress-fill {
+      background: var(--progress-low);
+    }
+
+    .topic-progress-fill.is-strong {
+      background: var(--progress);
+    }
+
+    .topic-button.is-active .topic-progress-fill.is-strong {
+      background: var(--progress);
+    }
+
+    .topic-progress-text {
+      color: inherit;
+      font-size: 0.75rem;
+      font-weight: 800;
+      opacity: 0.72;
+      white-space: nowrap;
+    }
+
+    .fallback {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 10;
+      max-width: min(420px, calc(100vw - 36px));
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.94);
+      color: var(--muted);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.1);
+      font-size: 0.86rem;
+      display: none;
+    }
+
+    .fallback.is-visible {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <button class="menu-button" type="button" id="menuButton" aria-label="Open topic menu" aria-controls="sidebar" aria-expanded="false">
+    <span class="menu-icon" aria-hidden="true"></span>
+  </button>
+
+  <div class="scrim" id="scrim" aria-hidden="true"></div>
+
+  <aside class="sidebar" id="sidebar" aria-label="Topic menu">
+    <div class="sidebar-header">
+      <div>
+        <p class="eyebrow">Summary Maps</p>
+        <h1>Select Topic</h1>
+      </div>
+      <button class="close-button" type="button" id="closeButton" aria-label="Close topic menu">&times;</button>
+    </div>
+    <nav class="topic-list" id="topicList" aria-label="Topics"></nav>
+  </aside>
+
+  <iframe class="topic-frame" id="topicFrame" title="Selected summary map"></iframe>
+  <div class="fallback" id="fallback"></div>
+
+  <script>
+    const topics = [
+      { code: "01.", name: "Redox Reactions", folder: "01b Redox", total: 6 },
+      { code: "02.", name: "Atomic Structure", folder: "02 Atomic Structure", total: 6 },
+      { code: "03.", name: "Chemical Bonding 1", folder: "03 Chemical Bonding I", total: 18 },
+      { code: "04.", name: "The Gaseous State", folder: "04 Gaseous State", total: 6 },
+      { code: "05a.", name: "Chemical Energetics 1", folder: "05a Energetics I", total: 5 },
+      { code: "05b.", name: "Chemical Energetics 2", folder: "05b Energetics II", total: 2 },
+      { code: "06.", name: "Reaction Kinetics", folder: "06 Kinetics", total: 13 },
+      { code: "07.", name: "Chemical Equilibria", folder: "07 Chemical Equilibrum", total: 4 },
+      { code: "08.", name: "Chemical Bonding (II)", folder: "08 Chemical Bonding II", total: 5 },
+      { code: "09.", name: "Introduction to Organic Chemistry", folder: "09 Intro to Organic Chemistry", total: 9 },
+      { code: "10.", name: "Alkanes", folder: "10 Alkanes", total: 5 },
+      { code: "11.", name: "Alkenes", folder: "11 Alkenes", total: 12 },
+      { code: "12a.", name: "Periodic Table (I)", folder: "12 Periodic Table I", total: 7 },
+      { code: "12b.", name: "Periodic Table (II)", folder: "13 Periodic Table II", total: 10 },
+      { code: "13.", name: "Arenes", folder: "14 Arene", total: 6 },
+      { code: "14.", name: "Halogen Derivatives", folder: "16 RX", total: 7 },
+      { code: "15.", name: "Acid-Base Equilibria", folder: "15 Acid base", total: 11 },
+      { code: "16.", name: "Solubility Equilibria", folder: "21 Solubility Eqm", total: 7 },
+      { code: "17.", name: "Hydroxy Compounds", folder: "17 ROH", total: 4 },
+      { code: "18.", name: "Carbonyl Compounds", folder: "18 Carbonyl", total: 5 },
+      { code: "19.", name: "Carboxylic Acids and Derivatives", folder: "19 Carboxylic acids", total: 4 },
+      { code: "20.", name: "Nitrogen Compounds", folder: "20 Nitrogen Compounds", total: 4 },
+      { code: "21.", name: "Polymers", folder: "24 Polymers", total: 4 },
+      { code: "22a.", name: "Electrochemistry I", folder: "22a Electrochem 1", total: 8 },
+      { code: "22b.", name: "Electrochemistry II", folder: "22b Electrochem 2", total: 8 },
+      { code: "23.", name: "Transition Elements", folder: "23 Transition Elements", total: 6 }
+    ];
+
+    const progressStoragePrefix = "summary-map-progress:";
+
+    const menuButton = document.getElementById("menuButton");
+    const closeButton = document.getElementById("closeButton");
+    const scrim = document.getElementById("scrim");
+    const topicList = document.getElementById("topicList");
+    const topicFrame = document.getElementById("topicFrame");
+    const fallback = document.getElementById("fallback");
+
+    let activeFolder = "";
+
+    function topicUrl(topic) {
+      return `${encodeURIComponent(topic.folder).replace(/%2F/g, "/")}/index.html`;
+    }
+
+    function progressStorageKey(topic) {
+      return `${progressStoragePrefix}${topic.folder}`;
+    }
+
+    function getTopicProgress(topic) {
+      let saved = null;
+      try {
+        saved = JSON.parse(localStorage.getItem(progressStorageKey(topic)) || "null");
+      } catch (error) {
+        saved = null;
+      }
+
+      const total = Number.isFinite(saved && saved.total) ? saved.total : topic.total;
+      const masteredCount = Number.isFinite(saved && saved.masteredCount)
+        ? Math.min(saved.masteredCount, total)
+        : 0;
+      const percent = total ? Math.round((masteredCount / total) * 100) : 0;
+      return { masteredCount, total, percent };
+    }
+
+    function updateTopicProgressRow(topic) {
+      const button = topicList.querySelector(`[data-folder="${CSS.escape(topic.folder)}"]`);
+      if (!button) {
+        return;
+      }
+      const progress = getTopicProgress(topic);
+      const text = button.querySelector(".topic-progress-text");
+      const fill = button.querySelector(".topic-progress-fill");
+      text.textContent = `${progress.masteredCount} / ${progress.total}`;
+      fill.style.width = `${progress.percent}%`;
+      fill.classList.toggle("is-strong", progress.percent > 50);
+      button.setAttribute("aria-label", `${topic.name}, ${progress.masteredCount} of ${progress.total} mastered`);
+    }
+
+    function updateAllTopicProgress() {
+      topics.forEach(updateTopicProgressRow);
+    }
+
+    function openSidebar() {
+      document.body.classList.add("sidebar-open");
+      menuButton.setAttribute("aria-expanded", "true");
+    }
+
+    function closeSidebar() {
+      document.body.classList.remove("sidebar-open");
+      menuButton.setAttribute("aria-expanded", "false");
+    }
+
+    function setActiveTopic(topic, updateHash = true) {
+      if (!topic || topic.folder === activeFolder) {
+        closeSidebar();
+        return;
+      }
+
+      activeFolder = topic.folder;
+      topicFrame.src = topicUrl(topic);
+      document.title = `${topic.name} | Chemistry Summary Maps`;
+      fallback.textContent = `Loaded ${topic.name}`;
+
+      [...topicList.querySelectorAll(".topic-button")].forEach((button) => {
+        button.classList.toggle("is-active", button.dataset.folder === topic.folder);
+      });
+
+      if (updateHash) {
+        history.replaceState(null, "", `#${encodeURIComponent(topic.folder)}`);
+      }
+
+      closeSidebar();
+    }
+
+    function topicFromHash() {
+      const raw = window.location.hash.replace(/^#/, "");
+      if (!raw) {
+        return null;
+      }
+      const folder = decodeURIComponent(raw);
+      return topics.find((topic) => topic.folder === folder || topic.code === folder);
+    }
+
+    function renderTopicList() {
+      topicList.innerHTML = "";
+      topics.forEach((topic) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "topic-button";
+        button.dataset.folder = topic.folder;
+        button.innerHTML = `
+          <span class="topic-code">${topic.code}</span>
+          <span class="topic-copy">
+            <span class="topic-name">${topic.name}</span>
+            <span class="topic-progress" aria-hidden="true">
+              <span class="topic-progress-track">
+                <span class="topic-progress-fill"></span>
+              </span>
+              <span class="topic-progress-text">0 / ${topic.total}</span>
+            </span>
+          </span>
+        `;
+        button.addEventListener("click", () => setActiveTopic(topic));
+        topicList.appendChild(button);
+      });
+      updateAllTopicProgress();
+    }
+
+    menuButton.addEventListener("click", openSidebar);
+    closeButton.addEventListener("click", closeSidebar);
+    scrim.addEventListener("click", closeSidebar);
+
+    window.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeSidebar();
+      }
+    });
+
+    window.addEventListener("hashchange", () => {
+      const topic = topicFromHash();
+      if (topic) {
+        setActiveTopic(topic, false);
+      }
+    });
+
+    window.addEventListener("message", (event) => {
+      if (!event.data || event.data.type !== "summary-map-progress") {
+        return;
+      }
+      const topic = topics.find((item) => item.folder === event.data.folderName || item.code === event.data.topicCode);
+      if (topic) {
+        updateTopicProgressRow(topic);
+      }
+    });
+
+    window.addEventListener("storage", (event) => {
+      if (event.key && event.key.startsWith(progressStoragePrefix)) {
+        updateAllTopicProgress();
+      }
+    });
+
+    window.addEventListener("focus", updateAllTopicProgress);
+
+    renderTopicList();
+    setActiveTopic(topicFromHash() || topics[0], false);
+    if (new URLSearchParams(window.location.search).get("menu") === "1") {
+      openSidebar();
+    }
+  </script>
+</body>
+</html>

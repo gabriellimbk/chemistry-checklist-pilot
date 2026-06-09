@@ -1,0 +1,240 @@
+{
+  "code": "23",
+  "title": "Transition Elements",
+  "folderName": "23 Transition Elements",
+  "boards": [
+    {
+      "id": "board-01",
+      "title": "Board 1",
+      "sourceLabel": "23 Transition Elements.pptx: slides 1 / 2",
+      "width": 2560,
+      "height": 1810,
+      "questionSlide": "Reference/board-01 [Q].png",
+      "answerSlide": "Reference/board-01 [ans].png",
+      "cards": [
+        {
+          "id": "comparison-with-s-block",
+          "title": "Comparison with s-block",
+          "questionImage": "Reference/board-01 comparison-with-s-block Comparison with s-block [Q].png",
+          "answerImage": "Reference/board-01 comparison-with-s-block Comparison with s-block [ans].png",
+          "transcriptFile": "Reference/board-01 comparison-with-s-block Comparison with s-block [text].txt",
+          "extensionFile": "extension question/board-01 comparison-with-s-block Comparison with s-block.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.3980158463302716,
+            0.008172970398859739,
+            0.58671875,
+            0.41823204419889504
+          ],
+          "answerBbox": [
+            0.3980158463302716,
+            0.008172970398859739,
+            0.58671875,
+            0.41823204419889504
+          ],
+          "questionImageSize": [
+            1502,
+            757
+          ],
+          "answerImageSize": [
+            1502,
+            757
+          ],
+          "extensionQuestions": [
+            {
+              "question": "How do density of transition elements compare with s-block elements?",
+              "answer": "Transition elements generally have higher densities than s-block elements."
+            },
+            {
+              "question": "Why do transition elements show variable oxidation states?",
+              "answer": "The 3d and 4s electrons are similar in energy, so both can be used for bond formation."
+            }
+          ]
+        },
+        {
+          "id": "definition",
+          "title": "Definition",
+          "questionImage": "Reference/board-01 definition Definition [Q].png",
+          "answerImage": "Reference/board-01 definition Definition [ans].png",
+          "transcriptFile": "Reference/board-01 definition Definition [text].txt",
+          "extensionFile": "extension question/board-01 definition Definition.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.014383061132849966,
+            0.058538627652643796,
+            0.3859375,
+            0.10662983425414364
+          ],
+          "answerBbox": [
+            0.014383061132849966,
+            0.058538627652643796,
+            0.3859375,
+            0.10662983425414364
+          ],
+          "questionImageSize": [
+            988,
+            193
+          ],
+          "answerImageSize": [
+            988,
+            193
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is the definition of a transition element?",
+              "answer": "A transition element is a d-block element whose atom or cation contains an incomplete d-subshell."
+            }
+          ]
+        },
+        {
+          "id": "atomic-trends",
+          "title": "Atomic trends",
+          "questionImage": "Reference/board-01 atomic-trends Atomic trends [Q].png",
+          "answerImage": "Reference/board-01 atomic-trends Atomic trends [ans].png",
+          "transcriptFile": "Reference/board-01 atomic-trends Atomic trends [text].txt",
+          "extensionFile": "extension question/board-01 atomic-trends Atomic trends.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.01708391270965925,
+            0.1622264184637567,
+            0.379296875,
+            0.2662983425414365
+          ],
+          "answerBbox": [
+            0.01708391270965925,
+            0.1622264184637567,
+            0.379296875,
+            0.2662983425414365
+          ],
+          "questionImageSize": [
+            971,
+            482
+          ],
+          "answerImageSize": [
+            971,
+            482
+          ],
+          "extensionQuestions": [
+            {
+              "question": "How do atomic radii of transition elements change across the period?",
+              "answer": "They remain approximately constant."
+            },
+            {
+              "question": "How does first ionisation energy of transition elements change across the period?",
+              "answer": "It remains approximately constant."
+            }
+          ]
+        },
+        {
+          "id": "d-orbital-splitting-d-d-transition",
+          "title": "d orbital splitting & d-d transition",
+          "questionImage": "Reference/board-01 d-orbital-splitting-d-d-transition d orbital splitting & d-d transition [Q].png",
+          "answerImage": "Reference/board-01 d-orbital-splitting-d-d-transition d orbital splitting & d-d transition [ans].png",
+          "transcriptFile": "Reference/board-01 d-orbital-splitting-d-d-transition d orbital splitting & d-d transition [text].txt",
+          "extensionFile": "extension question/board-01 d-orbital-splitting-d-d-transition d orbital splitting & d-d transition.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.47651946400484185,
+            0.44577630652111366,
+            0.509375,
+            0.5497237569060773
+          ],
+          "answerBbox": [
+            0.47651946400484185,
+            0.44577630652111366,
+            0.509375,
+            0.5497237569060773
+          ],
+          "questionImageSize": [
+            1304,
+            995
+          ],
+          "answerImageSize": [
+            1304,
+            995
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is the mnemonic for the explaination on why transition complexes are colored?",
+              "answer": "LSPEC; L = ligand, S = splitting, p = partially-filled d orbital, E = electron promoted, C = complementary colour"
+            }
+          ]
+        },
+        {
+          "id": "complex-ligands",
+          "title": "Complex & Ligands",
+          "questionImage": "Reference/board-01 complex-ligands Complex & Ligands [Q].png",
+          "answerImage": "Reference/board-01 complex-ligands Complex & Ligands [ans].png",
+          "transcriptFile": "Reference/board-01 complex-ligands Complex & Ligands [text].txt",
+          "extensionFile": "extension question/board-01 complex-ligands Complex & Ligands.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.01634147548222177,
+            0.44626746520187704,
+            0.455859375,
+            0.3082872928176796
+          ],
+          "answerBbox": [
+            0.01634147548222177,
+            0.44626746520187704,
+            0.455859375,
+            0.3082872928176796
+          ],
+          "questionImageSize": [
+            1167,
+            558
+          ],
+          "answerImageSize": [
+            1167,
+            558
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is a complex?",
+              "answer": "A central metal atom or ion linked to surrounding ions or molecules called ligands by coordinate/dative covalent bonds."
+            },
+            {
+              "question": "What is a ligand?",
+              "answer": "An ion or molecule with at least one atom bearing a lone pair that can be donated into a low-lying vacant orbital of a central metal atom or ion."
+            }
+          ]
+        },
+        {
+          "id": "ligand-exchange",
+          "title": "Ligand Exchange",
+          "questionImage": "Reference/board-01 ligand-exchange Ligand Exchange [Q].png",
+          "answerImage": "Reference/board-01 ligand-exchange Ligand Exchange [ans].png",
+          "transcriptFile": "Reference/board-01 ligand-exchange Ligand Exchange [text].txt",
+          "extensionFile": "extension question/board-01 ligand-exchange Ligand Exchange.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.01708409976867347,
+            0.7565849060971537,
+            0.456640625,
+            0.23922651933701658
+          ],
+          "answerBbox": [
+            0.01708409976867347,
+            0.7565849060971537,
+            0.456640625,
+            0.23922651933701658
+          ],
+          "questionImageSize": [
+            1169,
+            433
+          ],
+          "answerImageSize": [
+            1169,
+            433
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What does a large Kstab value suggest about the ligands in a complex?",
+              "answer": "The position of equilibrium lies to the right and the product complex is relatively more stable."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

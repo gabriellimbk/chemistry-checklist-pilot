@@ -1,0 +1,162 @@
+{
+  "code": "24",
+  "title": "Polymers",
+  "folderName": "24 Polymers",
+  "boards": [
+    {
+      "id": "board-01",
+      "title": "Board 1",
+      "sourceLabel": "24 Polymers.pptx: slides 1 / 2",
+      "width": 2560,
+      "height": 1810,
+      "questionSlide": "Reference/board-01 [Q].png",
+      "answerSlide": "Reference/board-01 [ans].png",
+      "cards": [
+        {
+          "id": "addition-polymers-2",
+          "title": "Addition Polymers",
+          "questionImage": "Reference/board-01 addition-polymers-2 Addition Polymers [Q].png",
+          "answerImage": "Reference/board-01 addition-polymers-2 Addition Polymers [ans].png",
+          "transcriptFile": "Reference/board-01 addition-polymers-2 Addition Polymers [text].txt",
+          "extensionFile": "extension question/board-01 addition-polymers-2 Addition Polymers.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.011248887349601045,
+            0.06233654224553304,
+            0.483984375,
+            0.40331491712707185
+          ],
+          "answerBbox": [
+            0.011248887349601045,
+            0.06233654224553304,
+            0.483984375,
+            0.40331491712707185
+          ],
+          "questionImageSize": [
+            1239,
+            730
+          ],
+          "answerImageSize": [
+            1239,
+            730
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Why are addition polymers generally non-biodegradable?",
+              "answer": "They are chemically inert and cannot be broken down by hydrolysis with aqueous acid or alkali because the polymer chain is formed by C-C bonds."
+            }
+          ]
+        },
+        {
+          "id": "condensation-polymers",
+          "title": "Condensation Polymers",
+          "questionImage": "Reference/board-01 condensation-polymers Condensation Polymers [Q].png",
+          "answerImage": "Reference/board-01 condensation-polymers Condensation Polymers [ans].png",
+          "transcriptFile": "Reference/board-01 condensation-polymers Condensation Polymers [text].txt",
+          "extensionFile": "extension question/board-01 condensation-polymers Condensation Polymers.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.503358691365066,
+            0.06233654224553304,
+            0.483984375,
+            0.40331491712707185
+          ],
+          "answerBbox": [
+            0.503358691365066,
+            0.06233654224553304,
+            0.483984375,
+            0.40331491712707185
+          ],
+          "questionImageSize": [
+            1239,
+            730
+          ],
+          "answerImageSize": [
+            1239,
+            730
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Why are condensation polymers biodegradable?",
+              "answer": "They contain ester or amide bonds that can be hydrolysed by aqueous acid or alkali."
+            }
+          ]
+        },
+        {
+          "id": "polymer-structure",
+          "title": "Polymer structure",
+          "questionImage": "Reference/board-01 polymer-structure Polymer structure [Q].png",
+          "answerImage": "Reference/board-01 polymer-structure Polymer structure [ans].png",
+          "transcriptFile": "Reference/board-01 polymer-structure Polymer structure [text].txt",
+          "extensionFile": "extension question/board-01 polymer-structure Polymer structure.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.011248887349601045,
+            0.4879524582736692,
+            0.643359375,
+            0.5038674033149171
+          ],
+          "answerBbox": [
+            0.011248887349601045,
+            0.4879524582736692,
+            0.643359375,
+            0.5038674033149171
+          ],
+          "questionImageSize": [
+            1647,
+            912
+          ],
+          "answerImageSize": [
+            1647,
+            912
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Why are linear polymers usually stronger and more rigid than branched polymers?",
+              "answer": "Linear chains can pack closely, giving stronger intermolecular forces between chains."
+            },
+            {
+              "question": "Why are branched polymers softer and more flexible?",
+              "answer": "Branching hinders close packing, so intermolecular forces between chains are weaker."
+            }
+          ]
+        },
+        {
+          "id": "proteins",
+          "title": "Proteins",
+          "questionImage": "Reference/board-01 proteins Proteins [Q].png",
+          "answerImage": "Reference/board-01 proteins Proteins [ans].png",
+          "transcriptFile": "Reference/board-01 proteins Proteins [text].txt",
+          "extensionFile": "extension question/board-01 proteins Proteins.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.6577648711214833,
+            0.4885855542731665,
+            0.329296875,
+            0.5033149171270718
+          ],
+          "answerBbox": [
+            0.6577648711214833,
+            0.4885855542731665,
+            0.329296875,
+            0.5033149171270718
+          ],
+          "questionImageSize": [
+            843,
+            911
+          ],
+          "answerImageSize": [
+            843,
+            911
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What monomers form proteins?",
+              "answer": "α-amino acids."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

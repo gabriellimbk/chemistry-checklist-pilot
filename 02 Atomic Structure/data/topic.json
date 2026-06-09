@@ -1,0 +1,240 @@
+{
+  "code": "02",
+  "title": "Atomic Structure",
+  "folderName": "02 Atomic Structure",
+  "boards": [
+    {
+      "id": "board-01",
+      "title": "Board 1",
+      "sourceLabel": "02 Atomic Structure.pptx: slides 1 / 2",
+      "width": 2560,
+      "height": 1773,
+      "questionSlide": "Reference/board-01 [Q].png",
+      "answerSlide": "Reference/board-01 [ans].png",
+      "cards": [
+        {
+          "id": "deflection-of-particles",
+          "title": "Deflection of particles",
+          "questionImage": "Reference/board-01 deflection-of-particles Deflection of particles [Q].png",
+          "answerImage": "Reference/board-01 deflection-of-particles Deflection of particles [ans].png",
+          "transcriptFile": "Reference/board-01 deflection-of-particles Deflection of particles [text].txt",
+          "extensionFile": "extension question/board-01 deflection-of-particles Deflection of particles.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.014528366646476883,
+            0.05831408573928259,
+            0.203125,
+            0.5369430344049634
+          ],
+          "answerBbox": [
+            0.014528366646476883,
+            0.05831408573928259,
+            0.203125,
+            0.5369430344049634
+          ],
+          "questionImageSize": [
+            520,
+            952
+          ],
+          "answerImageSize": [
+            520,
+            952
+          ],
+          "extensionQuestions": [
+            {
+              "question": "State the mathematical relationship between the angle of deflection of a particle in an electric field, its charge (q), and its mass (m)?",
+              "answer": "angle of deflection ∝ |q/m|"
+            }
+          ]
+        },
+        {
+          "id": "proton-no-nucleon-no",
+          "title": "Proton no. & Nucleon no.",
+          "questionImage": "Reference/board-01 proton-no-nucleon-no Proton no. & Nucleon no. [Q].png",
+          "answerImage": "Reference/board-01 proton-no-nucleon-no Proton no. & Nucleon no. [ans].png",
+          "transcriptFile": "Reference/board-01 proton-no-nucleon-no Proton no. & Nucleon no. [text].txt",
+          "extensionFile": "extension question/board-01 proton-no-nucleon-no Proton no. & Nucleon no..md",
+          "audioFile": "",
+          "questionBbox": [
+            0.22264284272158288,
+            0.05831408573928259,
+            0.201953125,
+            0.5369430344049634
+          ],
+          "answerBbox": [
+            0.22264284272158288,
+            0.05831408573928259,
+            0.201953125,
+            0.5369430344049634
+          ],
+          "questionImageSize": [
+            517,
+            952
+          ],
+          "answerImageSize": [
+            517,
+            952
+          ],
+          "extensionQuestions": [
+            {
+              "question": "State the relative mass and relative charge of an electron?",
+              "answer": "The relative mass of an electron is 1/1840, or approximately 0, and its relative charge is -1."
+            }
+          ]
+        },
+        {
+          "id": "explaining-trends",
+          "title": "Explaining Trends",
+          "questionImage": "Reference/board-01 explaining-trends Explaining Trends [Q].png",
+          "answerImage": "Reference/board-01 explaining-trends Explaining Trends [ans].png",
+          "transcriptFile": "Reference/board-01 explaining-trends Explaining Trends [text].txt",
+          "extensionFile": "extension question/board-01 explaining-trends Explaining Trends.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.6623836058954169,
+            0.05860819480898221,
+            0.32421875,
+            0.700507614213198
+          ],
+          "answerBbox": [
+            0.6623836058954169,
+            0.05860819480898221,
+            0.32421875,
+            0.700507614213198
+          ],
+          "questionImageSize": [
+            830,
+            1242
+          ],
+          "answerImageSize": [
+            830,
+            1242
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Explain why the first ionisation energy of an element with an ns² np¹ configuration is lower than that of an element with an ns² configuration?",
+              "answer": "The p orbital is higher in energy level compared to the s orbital, hence less energy is required to remove the electron in the p orbital."
+            },
+            {
+              "question": "Why does an element with an ns² np⁴ configuration have a lower first ionisation energy than an element with an ns² np³ configuration?",
+              "answer": "The paired electron in the p orbital of the ns² np⁴ configuration experiences additional electron-electron repulsion, meaning less energy is required to remove it."
+            },
+            {
+              "question": "What is the trend for ionic radii across a period?",
+              "answer": "Across a period, ionic radii decrease across cations, show a sharp increase from cation to anion, and then decrease across anions."
+            }
+          ]
+        },
+        {
+          "id": "orbital-shapes",
+          "title": "Orbital shapes",
+          "questionImage": "Reference/board-01 orbital-shapes Orbital shapes [Q].png",
+          "answerImage": "Reference/board-01 orbital-shapes Orbital shapes [ans].png",
+          "transcriptFile": "Reference/board-01 orbital-shapes Orbital shapes [text].txt",
+          "extensionFile": "extension question/board-01 orbital-shapes Orbital shapes.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.42567534827377346,
+            0.05883974919801691,
+            0.23515625,
+            0.5363790186125211
+          ],
+          "answerBbox": [
+            0.42567534827377346,
+            0.05883974919801691,
+            0.23515625,
+            0.5363790186125211
+          ],
+          "questionImageSize": [
+            602,
+            951
+          ],
+          "answerImageSize": [
+            602,
+            951
+          ],
+          "extensionQuestions": [
+            {
+              "question": "State the shapes and directional properties of s and p orbitals?",
+              "answer": "s orbitals are spherical and non-directional, while p orbitals are dumb-bell shaped and directional."
+            }
+          ]
+        },
+        {
+          "id": "electronic-configuration-electron-in-box-energy-level",
+          "title": "Electronic configuration, Electron-in-box & Energy level",
+          "questionImage": "Reference/board-01 electronic-configuration-electron-in-box-energy-level Electronic configuration, Electron-in-box & Energy level [Q].png",
+          "answerImage": "Reference/board-01 electronic-configuration-electron-in-box-energy-level Electronic configuration, Electron-in-box & Energy level [ans].png",
+          "transcriptFile": "Reference/board-01 electronic-configuration-electron-in-box-energy-level Electronic configuration, Electron-in-box & Energy level [text].txt",
+          "extensionFile": "extension question/board-01 electronic-configuration-electron-in-box-energy-level Electronic configuration, Electron-in-box & Energy level.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.014252271350696547,
+            0.5998100029163022,
+            0.6453125,
+            0.3840947546531303
+          ],
+          "answerBbox": [
+            0.014252271350696547,
+            0.5998100029163022,
+            0.6453125,
+            0.3840947546531303
+          ],
+          "questionImageSize": [
+            1652,
+            681
+          ],
+          "answerImageSize": [
+            1652,
+            681
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What order should be followed when filling orbitals with electrons?",
+              "answer": "Electrons fill lower-energy orbitals first, following the order shown in the electronic-configuration section."
+            },
+            {
+              "question": "What rule applies when placing electrons into orbitals of the same energy?",
+              "answer": "Electrons occupy degenerate orbitals singly before pairing, with opposite spins when paired."
+            }
+          ]
+        },
+        {
+          "id": "extra-practice-electronic-configuration",
+          "title": "Extra Practice: Electronic Configuration",
+          "questionImage": "Reference/board-01 extra-practice-electronic-configuration Extra Practice Electronic Configuration [Q].png",
+          "answerImage": "Reference/board-01 extra-practice-electronic-configuration Extra Practice Electronic Configuration [ans].png",
+          "transcriptFile": "Reference/board-01 extra-practice-electronic-configuration Extra Practice Electronic Configuration [text].txt",
+          "extensionFile": "extension question/board-01 extra-practice-electronic-configuration Extra Practice Electronic Configuration.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.6622232990107005,
+            0.7642039953339166,
+            0.32421875,
+            0.21996615905245348
+          ],
+          "answerBbox": [
+            0.6622232990107005,
+            0.7642039953339166,
+            0.32421875,
+            0.21996615905245348
+          ],
+          "questionImageSize": [
+            830,
+            390
+          ],
+          "answerImageSize": [
+            830,
+            390
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is the key rule or starting point to follow when writing the electronic configuration of transition metal ions?",
+              "answer": "Always start by writing the electronic configuration of the neutral atom first."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

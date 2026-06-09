@@ -1,0 +1,211 @@
+{
+  "code": "05a",
+  "title": "Chemical Energetics 1",
+  "folderName": "05a Energetics I",
+  "boards": [
+    {
+      "id": "board-01",
+      "title": "Board 1",
+      "sourceLabel": "05a Energetics I.pptx: slides 1 / 3",
+      "width": 2560,
+      "height": 1773,
+      "questionSlide": "Reference/board-01 [Q].png",
+      "answerSlide": "Reference/board-01 [ans].png",
+      "cards": [
+        {
+          "id": "complete-the-example-for-each-of-the-following-enthalpy-changes",
+          "title": "Complete the example for each of the following enthalpy changes",
+          "questionImage": "Reference/board-01 complete-the-example-for-each-of-the-following-enthalpy-changes Complete the example for each of the following enthalpy changes [Q].png",
+          "answerImage": "Reference/board-01 complete-the-example-for-each-of-the-following-enthalpy-changes Complete the example for each of the following enthalpy changes [ans].png",
+          "transcriptFile": "Reference/board-01 complete-the-example-for-each-of-the-following-enthalpy-changes Complete the example for each of the following enthalpy changes [text].txt",
+          "extensionFile": "extension question/board-01 complete-the-example-for-each-of-the-following-enthalpy-changes Complete the example for each of the following enthalpy changes.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.01130910559257016,
+            0.07837926509186352,
+            0.494140625,
+            0.8911449520586576
+          ],
+          "answerBbox": [
+            0.01130910559257016,
+            0.07837926509186352,
+            0.4921875,
+            0.8917089678510999
+          ],
+          "questionImageSize": [
+            1265,
+            1580
+          ],
+          "answerImageSize": [
+            1260,
+            1581
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Why must state symbols be included in an enthalpy-change equation?",
+              "answer": "The enthalpy change depends on the physical states of the reactants and products."
+            }
+          ]
+        },
+        {
+          "id": "additional-enthalpy-changes",
+          "title": "Additional enthalpy changes",
+          "questionImage": "Reference/board-01 additional-enthalpy-changes Additional enthalpy changes [Q].png",
+          "answerImage": "Reference/board-01 additional-enthalpy-changes Additional enthalpy changes [ans].png",
+          "transcriptFile": "Reference/board-01 additional-enthalpy-changes Additional enthalpy changes [text].txt",
+          "extensionFile": "extension question/board-01 additional-enthalpy-changes Additional enthalpy changes.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.509375,
+            0.12013536379018612,
+            0.476171875,
+            0.8584320360970107
+          ],
+          "answerBbox": [
+            0.50625,
+            0.11787930062041738,
+            0.476953125,
+            0.8635081782289904
+          ],
+          "questionImageSize": [
+            1219,
+            1522
+          ],
+          "answerImageSize": [
+            1221,
+            1531
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is standard conditions?",
+              "answer": "298 K, 1 bar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "board-02",
+      "title": "Board 2",
+      "sourceLabel": "05a Energetics I.pptx: slides 2 / 4",
+      "width": 2560,
+      "height": 1773,
+      "questionSlide": "Reference/board-02 [Q].png",
+      "answerSlide": "Reference/board-02 [ans].png",
+      "cards": [
+        {
+          "id": "calculating-h-from-experiment",
+          "title": "Calculating ∆H from experiment",
+          "questionImage": "Reference/board-02 calculating-h-from-experiment Calculating ∆H from experiment [Q].png",
+          "answerImage": "Reference/board-02 calculating-h-from-experiment Calculating ∆H from experiment [ans].png",
+          "transcriptFile": "Reference/board-02 calculating-h-from-experiment Calculating ∆H from experiment [text].txt",
+          "extensionFile": "extension question/board-02 calculating-h-from-experiment Calculating ∆H from experiment.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.011204623460528973,
+            0.07220793234179061,
+            0.34891399152029073,
+            0.9097177019539224
+          ],
+          "answerBbox": [
+            0.011204623460528973,
+            0.07220793234179061,
+            0.34891399152029073,
+            0.9097177019539224
+          ],
+          "questionImageSize": [
+            899,
+            1620
+          ],
+          "answerImageSize": [
+            899,
+            1620
+          ],
+          "staticDisplay": false,
+          "extensionQuestions": [
+            {
+              "question": "What equation is used to calculate heat energy in simple calorimetry?",
+              "answer": "q = mcΔT."
+            }
+          ]
+        },
+        {
+          "id": "born-haber-cycle",
+          "title": "Born-Haber cycle",
+          "questionImage": "Reference/board-02 born-haber-cycle Born-Haber cycle [Q].png",
+          "answerImage": "Reference/board-02 born-haber-cycle Born-Haber cycle [ans].png",
+          "transcriptFile": "Reference/board-02 born-haber-cycle Born-Haber cycle [text].txt",
+          "extensionFile": "extension question/board-02 born-haber-cycle Born-Haber cycle.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.6911281041792853,
+            0.07220807815689706,
+            0.2980196850393701,
+            0.9097178477690289
+          ],
+          "answerBbox": [
+            0.6911281041792853,
+            0.07220807815689706,
+            0.29840430042398547,
+            0.9097178477690289
+          ],
+          "questionImageSize": [
+            769,
+            1620
+          ],
+          "answerImageSize": [
+            770,
+            1620
+          ],
+          "staticDisplay": false,
+          "extensionQuestions": [
+            {
+              "question": "What is the mnemonic used to sketch Born-Haber cycle quickly?",
+              "answer": "F.A.I.L. model: formation, atomisation, ionisation, lattice energy"
+            }
+          ]
+        },
+        {
+          "id": "energy-cycle",
+          "title": "Energy cycle",
+          "questionImage": "Reference/board-02 energy-cycle Energy cycle [Q].png",
+          "answerImage": "Reference/board-02 energy-cycle Energy cycle [ans].png",
+          "transcriptFile": "Reference/board-02 energy-cycle Energy cycle [text].txt",
+          "extensionFile": "extension question/board-02 energy-cycle Energy cycle.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.36281304260044417,
+            0.07247914843977836,
+            0.3253968302039168,
+            0.9094464858559347
+          ],
+          "answerBbox": [
+            0.3624284272158288,
+            0.07247914843977836,
+            0.3261660609731476,
+            0.9094464858559347
+          ],
+          "questionImageSize": [
+            839,
+            1619
+          ],
+          "answerImageSize": [
+            841,
+            1619
+          ],
+          "staticDisplay": false,
+          "extensionQuestions": [
+            {
+              "question": "What principle is used when constructing an energy cycle?",
+              "answer": "Hess' law states that the overall enthalpy change of a reaction is independent of the route taken, provided the initial and final states are the same."
+            },
+            {
+              "question": "How are arrows used in an energy cycle?",
+              "answer": "Arrows show the enthalpy changes between substances or routes, and reversing an arrow reverses the sign of ΔH."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

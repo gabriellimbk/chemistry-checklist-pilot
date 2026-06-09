@@ -1,0 +1,435 @@
+{
+  "code": "13",
+  "title": "Periodic Table (II)",
+  "folderName": "13 Periodic Table II",
+  "boards": [
+    {
+      "id": "board-01",
+      "title": "Board 1",
+      "sourceLabel": "13 Periodic Table II.pptx: slides 1 / 2",
+      "width": 1772,
+      "height": 2560,
+      "questionSlide": "Reference/board-01 [Q].png",
+      "answerSlide": "Reference/board-01 [ans].png",
+      "cards": [
+        {
+          "id": "trends-chemical-group-2-chemical-properties",
+          "title": "trends - chemical - Group 2 Chemical properties",
+          "questionImage": "Reference/board-01 trends-chemical-group-2-chemical-properties trends - chemical - Group 2 Chemical properties [Q].png",
+          "answerImage": "Reference/board-01 trends-chemical-group-2-chemical-properties trends - chemical - Group 2 Chemical properties [ans].png",
+          "transcriptFile": "Reference/board-01 trends-chemical-group-2-chemical-properties trends - chemical - Group 2 Chemical properties [text].txt",
+          "extensionFile": "extension question/board-01 trends-chemical-group-2-chemical-properties trends - chemical - Group 2 Chemical properties.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.3837471783295711,
+            0.0546875,
+            0.29006772009029347,
+            0.3078125
+          ],
+          "answerBbox": [
+            0.3837471783295711,
+            0.0546875,
+            0.29006772009029347,
+            0.3078125
+          ],
+          "questionImageSize": [
+            514,
+            788
+          ],
+          "answerImageSize": [
+            514,
+            788
+          ],
+          "extensionQuestions": [
+            {
+              "question": "How does the reactivity of Group 2 metals change down the group?",
+              "answer": "Reactivity of Group 2 metals increases down the group."
+            }
+          ]
+        },
+        {
+          "id": "carbonates-thermal-stability",
+          "title": "Carbonates: Thermal stability",
+          "questionImage": "Reference/board-01 carbonates-thermal-stability Carbonates Thermal stability [Q].png",
+          "answerImage": "Reference/board-01 carbonates-thermal-stability Carbonates Thermal stability [ans].png",
+          "transcriptFile": "Reference/board-01 carbonates-thermal-stability Carbonates Thermal stability [text].txt",
+          "extensionFile": "extension question/board-01 carbonates-thermal-stability Carbonates Thermal stability.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.6856014873140858,
+            0.056091661619220676,
+            0.29909706546275394,
+            0.30625
+          ],
+          "answerBbox": [
+            0.6856014873140858,
+            0.056091661619220676,
+            0.29909706546275394,
+            0.30625
+          ],
+          "questionImageSize": [
+            530,
+            784
+          ],
+          "answerImageSize": [
+            530,
+            784
+          ],
+          "extensionQuestions": [
+            {
+              "question": "How does the decomposition temperature of Group 2 carbonates change down the group?",
+              "answer": "The decomposition temperature increases down the group."
+            },
+            {
+              "question": "Why does thermal stability of Group 2 carbonates increase down the group?",
+              "answer": "Down the group, cationic radius increases, charge density and polarising power of the cation decrease, so the electron cloud of CO₃²⁻ is polarised to a smaller extent, there is less weakening of the covalent bond in CO₃²⁻ and hence more energy is required to break the covalent bonds for the decomposition."
+            }
+          ]
+        },
+        {
+          "id": "trends-physical-properties",
+          "title": "Trends: Physical properties",
+          "questionImage": "Reference/board-01 trends-physical-properties Trends Physical properties [Q].png",
+          "answerImage": "Reference/board-01 trends-physical-properties Trends Physical properties [ans].png",
+          "transcriptFile": "Reference/board-01 trends-physical-properties Trends Physical properties [text].txt",
+          "extensionFile": "extension question/board-01 trends-physical-properties Trends Physical properties.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.015441236512102654,
+            0.05630557238037553,
+            0.36173814898419865,
+            0.30703125
+          ],
+          "answerBbox": [
+            0.015441236512102654,
+            0.05630557238037553,
+            0.36173814898419865,
+            0.30703125
+          ],
+          "questionImageSize": [
+            641,
+            786
+          ],
+          "answerImageSize": [
+            641,
+            786
+          ],
+          "extensionQuestions": [
+            {
+              "question": "How do atomic radii and ionic radii change down Group 2?",
+              "answer": "Atomic radii and ionic radii increase down the group."
+            },
+            {
+              "question": "How does first ionisation energy change down Group 2?",
+              "answer": "First ionisation energy decreases down the group."
+            }
+          ]
+        },
+        {
+          "id": "group-17",
+          "title": "Group 17",
+          "questionImage": "Reference/board-01 group-17 Group 17 [Q].png",
+          "answerImage": "Reference/board-01 group-17 Group 17 [ans].png",
+          "transcriptFile": "Reference/board-01 group-17 Group 17 [text].txt",
+          "extensionFile": "extension question/board-01 group-17 Group 17.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.35122820064158644,
+            0.35218069856652534,
+            0.6337471783295711,
+            0.348828125
+          ],
+          "answerBbox": [
+            0.35122820064158644,
+            0.35218069856652534,
+            0.6337471783295711,
+            0.348828125
+          ],
+          "questionImageSize": [
+            1123,
+            893
+          ],
+          "answerImageSize": [
+            1123,
+            893
+          ],
+          "extensionQuestions": [
+            {
+              "question": "How does the reactivity of halogens change down Group 17?",
+              "answer": "Reactivity of halogens decreases down the group."
+            },
+            {
+              "question": "How does the E⊖ value explain the decreasing reactivity of halogens down the group?",
+              "answer": "Down the group, E⊖ becomes less positive, so the tendency for reduction and the oxidising power of the halogen decrease."
+            }
+          ]
+        },
+        {
+          "id": "trends-physical-properties-2",
+          "title": "Trends: Physical properties",
+          "questionImage": "Reference/board-01 trends-physical-properties-2 Trends Physical properties [Q].png",
+          "answerImage": "Reference/board-01 trends-physical-properties-2 Trends Physical properties [ans].png",
+          "transcriptFile": "Reference/board-01 trends-physical-properties-2 Trends Physical properties [text].txt",
+          "extensionFile": "extension question/board-01 trends-physical-properties-2 Trends Physical properties.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.015441236512102654,
+            0.3950055521905916,
+            0.36173814898419865,
+            0.307421875
+          ],
+          "answerBbox": [
+            0.015441236512102654,
+            0.3950055521905916,
+            0.36173814898419865,
+            0.307421875
+          ],
+          "questionImageSize": [
+            641,
+            787
+          ],
+          "answerImageSize": [
+            641,
+            787
+          ],
+          "extensionQuestions": [
+            {
+              "question": "How does bond dissociation energy of X₂ change down Group 17?",
+              "answer": "Bond dissociation energy of X₂ decreases down the group."
+            },
+            {
+              "question": "How does volatility of X₂ change down Group 17?",
+              "answer": "Volatility of X₂ decreases down the group because size and polarisability of the electron cloud increase, strengthening instantaneous dipole-induced dipole interactions."
+            }
+          ]
+        },
+        {
+          "id": "hx-thermal-stability",
+          "title": "HX: Thermal stability",
+          "questionImage": "Reference/board-01 hx-thermal-stability HX Thermal stability [Q].png",
+          "answerImage": "Reference/board-01 hx-thermal-stability HX Thermal stability [ans].png",
+          "transcriptFile": "Reference/board-01 hx-thermal-stability HX Thermal stability [text].txt",
+          "extensionFile": "extension question/board-01 hx-thermal-stability HX Thermal stability.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.6856014873140858,
+            0.39521905915606703,
+            0.29909706546275394,
+            0.305859375
+          ],
+          "answerBbox": [
+            0.6856014873140858,
+            0.39521905915606703,
+            0.29909706546275394,
+            0.305859375
+          ],
+          "questionImageSize": [
+            530,
+            783
+          ],
+          "answerImageSize": [
+            530,
+            783
+          ],
+          "extensionQuestions": [
+            {
+              "question": "How does the thermal stability of hydrogen halides change down Group 17?",
+              "answer": "Thermal stability of hydrogen halides decreases down the group."
+            },
+            {
+              "question": "Which hydrogen halides are thermally stable?",
+              "answer": "HF and HCl"
+            }
+          ]
+        },
+        {
+          "id": "group-17-chemical-properties",
+          "title": "group - 17 chemical properties",
+          "questionImage": "Reference/board-01 group-17-chemical-properties group - 17 chemical properties [Q].png",
+          "answerImage": "Reference/board-01 group-17-chemical-properties group - 17 chemical properties [ans].png",
+          "transcriptFile": "Reference/board-01 group-17-chemical-properties group - 17 chemical properties [text].txt",
+          "extensionFile": "extension question/board-01 group-17-chemical-properties group - 17 chemical properties.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.38318284424379234,
+            0.395703125,
+            0.2878103837471783,
+            0.298828125
+          ],
+          "answerBbox": [
+            0.3860045146726862,
+            0.395703125,
+            0.28555304740406323,
+            0.29921875
+          ],
+          "questionImageSize": [
+            510,
+            765
+          ],
+          "answerImageSize": [
+            506,
+            766
+          ],
+          "extensionQuestions": [
+            {
+              "question": "How does the reactivity of halogens change down the group?",
+              "answer": "Reactivity of halogens decreases down the group."
+            },
+            {
+              "question": "What happens to the oxidising power of halogens down the group?",
+              "answer": "Oxidising power decreases down the group."
+            }
+          ]
+        },
+        {
+          "id": "fe-rxn",
+          "title": "Fe rxn",
+          "questionImage": "Reference/board-01 fe-rxn Fe rxn [Q].png",
+          "answerImage": "Reference/board-01 fe-rxn Fe rxn [ans].png",
+          "transcriptFile": "Reference/board-01 fe-rxn Fe rxn [text].txt",
+          "extensionFile": "extension question/board-01 fe-rxn Fe rxn.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.6879232505643341,
+            0.7171875,
+            0.291196388261851,
+            0.1390625
+          ],
+          "answerBbox": [
+            0.6884875846501128,
+            0.7171875,
+            0.291196388261851,
+            0.139453125
+          ],
+          "questionImageSize": [
+            516,
+            356
+          ],
+          "answerImageSize": [
+            516,
+            357
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is the species of iron formed when Fe reacts with Cl₂ or Br₂?",
+              "answer": "Fe³⁺"
+            },
+            {
+              "question": "What is the species of iron formed when Fe reacts with I₂?",
+              "answer": "Fe²⁺"
+            }
+          ]
+        },
+        {
+          "id": "displacement-rxn",
+          "title": "displacement rxn",
+          "questionImage": "Reference/board-01 displacement-rxn displacement rxn [Q].png",
+          "answerImage": "Reference/board-01 displacement-rxn displacement rxn [ans].png",
+          "transcriptFile": "Reference/board-01 displacement-rxn displacement rxn [text].txt",
+          "extensionFile": "extension question/board-01 displacement-rxn displacement rxn.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.012415349887133182,
+            0.717578125,
+            0.3560948081264108,
+            0.2703125
+          ],
+          "answerBbox": [
+            0.01072234762979684,
+            0.71796875,
+            0.35891647855530473,
+            0.267578125
+          ],
+          "questionImageSize": [
+            631,
+            692
+          ],
+          "answerImageSize": [
+            636,
+            685
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What happens when Cl₂ is added to Br⁻(aq)?",
+              "answer": "Cl₂ oxidises Br⁻ to Br₂:\nCl₂ + 2Br⁻ → 2Cl⁻ + Br₂"
+            }
+          ]
+        },
+        {
+          "id": "thiosulfate-rxn",
+          "title": "thiosulfate rxn",
+          "questionImage": "Reference/board-01 thiosulfate-rxn thiosulfate rxn [Q].png",
+          "answerImage": "Reference/board-01 thiosulfate-rxn thiosulfate rxn [ans].png",
+          "transcriptFile": "Reference/board-01 thiosulfate-rxn thiosulfate rxn [text].txt",
+          "extensionFile": "extension question/board-01 thiosulfate-rxn thiosulfate rxn.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.38826185101580135,
+            0.71796875,
+            0.2816027088036117,
+            0.137109375
+          ],
+          "answerBbox": [
+            0.3888261851015801,
+            0.718359375,
+            0.28216704288939054,
+            0.138671875
+          ],
+          "questionImageSize": [
+            499,
+            351
+          ],
+          "answerImageSize": [
+            500,
+            355
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What does Cl₂ or Br₂ oxidise S₂O₃²⁻ to?",
+              "answer": "SO₄²⁻"
+            },
+            {
+              "question": "What does I₂ oxidise S₂O₃²⁻ to?",
+              "answer": "S₄O₆²⁻"
+            }
+          ]
+        },
+        {
+          "id": "test-for-x",
+          "title": "Test for X -",
+          "questionImage": "Reference/board-01 test-for-x Test for X - [Q].png",
+          "answerImage": "Reference/board-01 test-for-x Test for X - [ans].png",
+          "transcriptFile": "Reference/board-01 test-for-x Test for X - [text].txt",
+          "extensionFile": "extension question/board-01 test-for-x Test for X -.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.38552726742490523,
+            0.8597026044821321,
+            0.5993227990970654,
+            0.132421875
+          ],
+          "answerBbox": [
+            0.38552726742490523,
+            0.8597026044821321,
+            0.5993227990970654,
+            0.132421875
+          ],
+          "questionImageSize": [
+            1062,
+            339
+          ],
+          "answerImageSize": [
+            1062,
+            339
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What are the observations for Cl⁻, Br⁻ and I⁻ with AgNO₃(aq)?",
+              "answer": "Cl⁻ gives a white precipitate of AgCl, Br⁻ gives a cream precipitate of AgBr, and I⁻ gives a yellow precipitate of AgI."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

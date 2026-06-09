@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redox Reactions Summary Map</title>
+    <link rel="stylesheet" href="styles.css?v=20260606r">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Interactive Summary Map</p>
+        <h1 id="topicTitle">Redox Reactions</h1>
+      </div>
+      <div class="toolbar">
+        <div class="progress-card" aria-live="polite">
+          <span class="progress-label">Mastery progress</span>
+          <strong id="progressText">0 / 0 mastered</strong>
+          <div class="progress-track" aria-hidden="true">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+        </div>
+        <button id="resetButton" class="reset-button" type="button">Reset</button>
+      </div>
+    </header>
+
+    <nav class="board-tabs" id="boardTabs" aria-label="Summary boards"></nav>
+
+    <section class="board-wrap" aria-label="Summary map">
+      <div class="board" id="board"></div>
+    </section>
+  </main>
+
+  <div class="modal-shell hidden" id="extensionModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close-modal="true"></div>
+    <section class="modal-panel">
+      <button class="modal-close" id="closeModalButton" type="button" aria-label="Close extension question">&times;</button>
+      <p class="modal-kicker">Extension Question</p>
+      <h2 id="modalTitle">Section</h2>
+      <p class="modal-counter" id="modalCounter">Question 1 of 3</p>
+      <div class="modal-content">
+        <h3 class="modal-heading">Question</h3>
+        <p id="modalQuestion"></p>
+        <button class="reveal-answer-button" id="revealAnswerButton" type="button">Reveal answer</button>
+        <div class="answer-panel hidden" id="answerPanel">
+          <h3 class="modal-heading">Answer</h3>
+          <p id="modalAnswer"></p>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button class="modal-nav-button" id="nextQuestionButton" type="button">Next</button>
+      </div>
+    </section>
+  </div>
+
+    <script src="data/topic-data.js?v=20260606r"></script>
+    <script src="data/extension-data.js?v=20260606r"></script>
+    <script src="app.js?v=20260606r"></script>
+</body>
+</html>

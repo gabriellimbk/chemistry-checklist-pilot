@@ -1,0 +1,420 @@
+{
+  "code": "22b",
+  "title": "Electrochemistry II",
+  "folderName": "22b Electrochem 2",
+  "boards": [
+    {
+      "id": "board-01",
+      "title": "Board 1",
+      "sourceLabel": "22b Electrochem 2.pptx: slides 1 / 2",
+      "width": 2560,
+      "height": 1773,
+      "questionSlide": "Reference/board-01 [Q].png",
+      "answerSlide": "Reference/board-01 [ans].png",
+      "cards": [
+        {
+          "id": "selective-discharge-2",
+          "title": "Selective discharge",
+          "questionImage": "Reference/board-01 selective-discharge-2 Selective discharge [Q].png",
+          "answerImage": "Reference/board-01 selective-discharge-2 Selective discharge [ans].png",
+          "transcriptFile": "Reference/board-01 selective-discharge-2 Selective discharge [text].txt",
+          "extensionFile": "extension question/board-01 selective-discharge-2 Selective discharge.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.013671875,
+            0.03835307388606881,
+            0.404296875,
+            0.9531866892272983
+          ],
+          "answerBbox": [
+            0.013671875,
+            0.03835307388606881,
+            0.404296875,
+            0.9531866892272983
+          ],
+          "questionImageSize": [
+            1035,
+            1690
+          ],
+          "answerImageSize": [
+            1035,
+            1690
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What factors affect which species is preferentially oxidised or reduced during electrolysis?",
+              "answer": "E° value, state of electrolyte, ion concentration, and electrode material."
+            },
+            {
+              "question": "What species should be considered for oxidation at the anode?",
+              "answer": "Anions, electrode material, and neutral species."
+            },
+            {
+              "question": "What species should be considered for reduction at the cathode?",
+              "answer": "Cations and neutral species."
+            }
+          ]
+        },
+        {
+          "id": "faraday-s-law",
+          "title": "Faraday's Law",
+          "questionImage": "Reference/board-01 faraday-s-law Faraday's Law [Q].png",
+          "answerImage": "Reference/board-01 faraday-s-law Faraday's Law [ans].png",
+          "transcriptFile": "Reference/board-01 faraday-s-law Faraday's Law [text].txt",
+          "extensionFile": "extension question/board-01 faraday-s-law Faraday's Law.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.674609375,
+            0.03835307388606881,
+            0.3515625,
+            0.9531866892272983
+          ],
+          "answerBbox": [
+            0.674609375,
+            0.03835307388606881,
+            0.3515625,
+            0.9531866892272983
+          ],
+          "questionImageSize": [
+            900,
+            1690
+          ],
+          "answerImageSize": [
+            900,
+            1690
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What equation links charge, current, and time?",
+              "answer": "Q = I x t."
+            },
+            {
+              "question": "What does ne refer to in Faraday calculations?",
+              "answer": "The actual amount of electrons in mol, not the mol ratio."
+            },
+            {
+              "question": "What is Faraday constant?",
+              "answer": "96500 C mol⁻¹."
+            }
+          ]
+        },
+        {
+          "id": "electrolytic-cell-setup-2",
+          "title": "Electrolytic cell setup",
+          "questionImage": "Reference/board-01 electrolytic-cell-setup-2 Electrolytic cell setup [Q].png",
+          "answerImage": "Reference/board-01 electrolytic-cell-setup-2 Electrolytic cell setup [ans].png",
+          "transcriptFile": "Reference/board-01 electrolytic-cell-setup-2 Electrolytic cell setup [text].txt",
+          "extensionFile": "extension question/board-01 electrolytic-cell-setup-2 Electrolytic cell setup.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.38046875,
+            0.0772701635645798,
+            0.2796875,
+            0.3818386914833615
+          ],
+          "answerBbox": [
+            0.38046875,
+            0.0772701635645798,
+            0.2796875,
+            0.3818386914833615
+          ],
+          "questionImageSize": [
+            716,
+            677
+          ],
+          "answerImageSize": [
+            716,
+            677
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What should you first label in an electrolytic cell setup?",
+              "answer": "Label the positive and negative terminals of the battery and direction of electron flow"
+            },
+            {
+              "question": "How should the cathode be identified from electron flow?",
+              "answer": "The cathode gains electrons and is the site of reduction."
+            }
+          ]
+        },
+        {
+          "id": "faraday-s-law-formula",
+          "title": "Faraday formula",
+          "questionImage": "Reference/board-01 faraday-s-law-formula Faraday formula [Q].png",
+          "answerImage": "Reference/board-01 faraday-s-law-formula Faraday formula [ans].png",
+          "transcriptFile": "Reference/board-01 faraday-s-law-formula Faraday formula [text].txt",
+          "extensionFile": "extension question/board-01 faraday-s-law-formula Faraday formula.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.681640625,
+            0.08573040045121263,
+            0.294140625,
+            0.24985899605188946
+          ],
+          "answerBbox": [
+            0.681640625,
+            0.08573040045121263,
+            0.294140625,
+            0.24985899605188946
+          ],
+          "questionImageSize": [
+            753,
+            443
+          ],
+          "answerImageSize": [
+            753,
+            443
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What are the three equations involving charge (Q) relevant in the topic of Electrolytic cell?",
+              "answer": "Q = I x t\nQ = nₑ x F\nQ = nₑ x L x e"
+            }
+          ]
+        },
+        {
+          "id": "selective-discharge-factors",
+          "title": "Selective discharge - factors",
+          "questionImage": "Reference/board-01 selective-discharge-factors Selective discharge - factors [Q].png",
+          "answerImage": "Reference/board-01 selective-discharge-factors Selective discharge - factors [ans].png",
+          "transcriptFile": "Reference/board-01 selective-discharge-factors Selective discharge - factors [text].txt",
+          "extensionFile": "extension question/board-01 selective-discharge-factors Selective discharge - factors.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.026171875,
+            0.08798646362098139,
+            0.325390625,
+            0.2098138747884941
+          ],
+          "answerBbox": [
+            0.02578125,
+            0.08460236886632826,
+            0.3265625,
+            0.21658206429780033
+          ],
+          "questionImageSize": [
+            833,
+            372
+          ],
+          "answerImageSize": [
+            836,
+            384
+          ],
+          "extensionQuestions": []
+        },
+        {
+          "id": "how-to-deduce-which-species-is-preferentially-o-or-r",
+          "title": "Selective discharge - How to deduce which species is preferentially [O] or [R]?",
+          "questionImage": "Reference/board-01 how-to-deduce-which-species-is-preferentially-o-or-r Selective discharge - How to deduce which species is preferentially [O] or [R] [Q].png",
+          "answerImage": "Reference/board-01 how-to-deduce-which-species-is-preferentially-o-or-r Selective discharge - How to deduce which species is preferentially [O] or [R] [ans].png",
+          "transcriptFile": "Reference/board-01 how-to-deduce-which-species-is-preferentially-o-or-r Selective discharge - How to deduce which species is preferentially [O] or [R] [text].txt",
+          "extensionFile": "extension question/board-01 how-to-deduce-which-species-is-preferentially-o-or-r Selective discharge - How to deduce which species is preferentially [O] or [R].md",
+          "audioFile": "",
+          "questionBbox": [
+            0.024609375,
+            0.30344049633389736,
+            0.3296875,
+            0.24591088550479415
+          ],
+          "answerBbox": [
+            0.023046875,
+            0.30344049633389736,
+            0.3328125,
+            0.24591088550479415
+          ],
+          "questionImageSize": [
+            844,
+            436
+          ],
+          "answerImageSize": [
+            852,
+            436
+          ],
+          "extensionQuestions": [
+            {
+              "question": "For oxidation at the anode, should the equation with the most positive E° value or most negative E° value be selected?",
+              "answer": "The equation with the most negative E° value."
+            },
+            {
+              "question": "For reduction at the cathode, should the equation with the most positive E° value or most negative E° value be selected?",
+              "answer": "The equation with the most positive E° value."
+            }
+          ]
+        },
+        {
+          "id": "faraday-s-law-eg",
+          "title": "Faraday's Law - eg",
+          "questionImage": "Reference/board-01 faraday-s-law-eg Faraday's Law - eg [Q].png",
+          "answerImage": "Reference/board-01 faraday-s-law-eg Faraday's Law - eg [ans].png",
+          "transcriptFile": "Reference/board-01 faraday-s-law-eg Faraday's Law - eg [text].txt",
+          "extensionFile": "extension question/board-01 faraday-s-law-eg Faraday's Law - eg.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.683984375,
+            0.3361534122955443,
+            0.29140625,
+            0.6311336717428088
+          ],
+          "answerBbox": [
+            0.680859375,
+            0.3355893965031021,
+            0.295703125,
+            0.6339537507050197
+          ],
+          "questionImageSize": [
+            746,
+            1119
+          ],
+          "answerImageSize": [
+            757,
+            1124
+          ],
+          "extensionQuestions": []
+        },
+        {
+          "id": "industrial-applications",
+          "title": "Industrial Applications",
+          "questionImage": "Reference/board-01 industrial-applications Industrial Applications [Q].png",
+          "answerImage": "Reference/board-01 industrial-applications Industrial Applications [ans].png",
+          "transcriptFile": "Reference/board-01 industrial-applications Industrial Applications [text].txt",
+          "extensionFile": "extension question/board-01 industrial-applications Industrial Applications.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.381640625,
+            0.4433164128595601,
+            0.32421875,
+            0.5549915397631133
+          ],
+          "answerBbox": [
+            0.381640625,
+            0.4433164128595601,
+            0.32421875,
+            0.5549915397631133
+          ],
+          "questionImageSize": [
+            830,
+            984
+          ],
+          "answerImageSize": [
+            830,
+            984
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is the purpose of anodising aluminium?",
+              "answer": "To coat aluminium with a protective Al₂O₃ layer."
+            },
+            {
+              "question": "In anodising, what does O₂ produced at the anode react with?",
+              "answer": "It reacts with Al to form Al₂O₃."
+            },
+            {
+              "question": "What are the electrode reactions in purification of copper?",
+              "answer": "Anode: Cu → Cu²⁺ + 2e⁻\nCathode: Cu²⁺ + 2e⁻ → Cu"
+            }
+          ]
+        },
+        {
+          "id": "industrial-applications-eg-1",
+          "title": "Industrial Applications - eg 1",
+          "questionImage": "Reference/board-01 industrial-applications-eg-1 Industrial Applications - eg 1 [Q].png",
+          "answerImage": "Reference/board-01 industrial-applications-eg-1 Industrial Applications - eg 1 [ans].png",
+          "transcriptFile": "Reference/board-01 industrial-applications-eg-1 Industrial Applications - eg 1 [text].txt",
+          "extensionFile": "extension question/board-01 industrial-applications-eg-1 Industrial Applications - eg 1.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.391015625,
+            0.5053581500282008,
+            0.258984375,
+            0.23463056965595036
+          ],
+          "answerBbox": [
+            0.39140625,
+            0.5053581500282008,
+            0.258203125,
+            0.23575860124083475
+          ],
+          "questionImageSize": [
+            663,
+            416
+          ],
+          "answerImageSize": [
+            661,
+            418
+          ],
+          "extensionQuestions": [
+            {
+              "question": "During anodising of aluminium, which electrode should the aluminium object be placed?",
+              "answer": "At the anode."
+            }
+          ]
+        },
+        {
+          "id": "selective-discharge-2-selective-discharge-eg",
+          "title": "Selective discharge - eg",
+          "questionImage": "Reference/board-01 selective-discharge-2-selective-discharge-eg Selective discharge - eg [Q].png",
+          "answerImage": "Reference/board-01 selective-discharge-2-selective-discharge-eg Selective discharge - eg [ans].png",
+          "transcriptFile": "Reference/board-01 selective-discharge-2-selective-discharge-eg Selective discharge - eg [text].txt",
+          "extensionFile": "extension question/board-01 selective-discharge-2-selective-discharge-eg Selective discharge - eg.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.023046875,
+            0.5487873660462493,
+            0.3296875,
+            0.4207557811618725
+          ],
+          "answerBbox": [
+            0.0234375,
+            0.5493513818386915,
+            0.329296875,
+            0.4184997179921038
+          ],
+          "questionImageSize": [
+            844,
+            746
+          ],
+          "answerImageSize": [
+            843,
+            742
+          ],
+          "extensionQuestions": []
+        },
+        {
+          "id": "industrial-applications-eg-2",
+          "title": "Industrial Applications - eg 2",
+          "questionImage": "Reference/board-01 industrial-applications-eg-2 Industrial Applications - eg 2 [Q].png",
+          "answerImage": "Reference/board-01 industrial-applications-eg-2 Industrial Applications - eg 2 [ans].png",
+          "transcriptFile": "Reference/board-01 industrial-applications-eg-2 Industrial Applications - eg 2 [text].txt",
+          "extensionFile": "extension question/board-01 industrial-applications-eg-2 Industrial Applications - eg 2.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.393359375,
+            0.7428087986463621,
+            0.255078125,
+            0.22617033276931753
+          ],
+          "answerBbox": [
+            0.390625,
+            0.7428087986463621,
+            0.257421875,
+            0.22560631697687536
+          ],
+          "questionImageSize": [
+            653,
+            401
+          ],
+          "answerImageSize": [
+            659,
+            400
+          ],
+          "extensionQuestions": [
+            {
+              "question": "In copper purification, which electrode is impure copper?",
+              "answer": "The anode is impure copper."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

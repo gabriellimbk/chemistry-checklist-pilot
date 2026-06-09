@@ -1,0 +1,445 @@
+{
+  "code": "11",
+  "title": "Alkenes",
+  "folderName": "11 Alkenes",
+  "boards": [
+    {
+      "id": "board-01",
+      "title": "Board 1",
+      "sourceLabel": "11 Alkenes.pptx: slides 1 / 4",
+      "width": 2560,
+      "height": 1773,
+      "questionSlide": "Reference/board-01 [Q].png",
+      "answerSlide": "Reference/board-01 [ans].png",
+      "cards": [
+        {
+          "id": "mechanism",
+          "title": "Mechanism",
+          "questionImage": "Reference/board-01 mechanism Mechanism [Q].png",
+          "answerImage": "Reference/board-01 mechanism Mechanism [ans].png",
+          "transcriptFile": "Reference/board-01 mechanism Mechanism [text].txt",
+          "extensionFile": "extension question/board-01 mechanism Mechanism.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.6554871794871795,
+            0.02096194225721785,
+            0.334765625,
+            0.2712915961646926
+          ],
+          "answerBbox": [
+            0.6554871794871795,
+            0.02096194225721785,
+            0.334765625,
+            0.2712915961646926
+          ],
+          "questionImageSize": [
+            857,
+            481
+          ],
+          "answerImageSize": [
+            857,
+            481
+          ],
+          "extensionQuestions": []
+        },
+        {
+          "id": "reactions",
+          "title": "Reactions",
+          "questionImage": "Reference/board-01 reactions Reactions [Q].png",
+          "answerImage": "Reference/board-01 reactions Reactions [ans].png",
+          "transcriptFile": "Reference/board-01 reactions Reactions [text].txt",
+          "extensionFile": "extension question/board-01 reactions Reactions.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.00972198667474258,
+            0.09753178769320502,
+            0.5578125,
+            0.8482797518330514
+          ],
+          "answerBbox": [
+            0.00972198667474258,
+            0.09753178769320502,
+            0.558203125,
+            0.8482797518330514
+          ],
+          "questionImageSize": [
+            1428,
+            1504
+          ],
+          "answerImageSize": [
+            1429,
+            1504
+          ],
+          "extensionQuestions": []
+        },
+        {
+          "id": "mechanism-2",
+          "title": "Mechanism",
+          "questionImage": "Reference/board-01 mechanism-2 Mechanism [Q].png",
+          "answerImage": "Reference/board-01 mechanism-2 Mechanism [ans].png",
+          "transcriptFile": "Reference/board-01 mechanism-2 Mechanism [text].txt",
+          "extensionFile": "extension question/board-01 mechanism-2 Mechanism.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.6556362810417928,
+            0.30044313210848644,
+            0.335546875,
+            0.32769317540891146
+          ],
+          "answerBbox": [
+            0.6556362810417928,
+            0.30044313210848644,
+            0.335546875,
+            0.32769317540891146
+          ],
+          "questionImageSize": [
+            859,
+            581
+          ],
+          "answerImageSize": [
+            859,
+            581
+          ],
+          "extensionQuestions": []
+        },
+        {
+          "id": "mechanism-3",
+          "title": "Mechanism",
+          "questionImage": "Reference/board-01 mechanism-3 Mechanism [Q].png",
+          "answerImage": "Reference/board-01 mechanism-3 Mechanism [ans].png",
+          "transcriptFile": "Reference/board-01 mechanism-3 Mechanism [text].txt",
+          "extensionFile": "extension question/board-01 mechanism-3 Mechanism.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.6549741570765193,
+            0.6330877806940799,
+            0.336328125,
+            0.3575860124083474
+          ],
+          "answerBbox": [
+            0.6549741570765193,
+            0.6330877806940799,
+            0.336328125,
+            0.3575860124083474
+          ],
+          "questionImageSize": [
+            861,
+            634
+          ],
+          "answerImageSize": [
+            861,
+            634
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Why is the major product formed when reacting the alkene with Br₂/H₂O different from with just Br₂?",
+              "answer": "Because in Step 3 of the electrophilic addition using Br₂/H₂O, H₂O is in large excess and acts as the nucleophile rather than Br⁻."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "board-02",
+      "title": "Board 2",
+      "sourceLabel": "11 Alkenes.pptx: slides 2 / 5",
+      "width": 2560,
+      "height": 1773,
+      "questionSlide": "Reference/board-02 [Q].png",
+      "answerSlide": "Reference/board-02 [ans].png",
+      "cards": [
+        {
+          "id": "why-electrophilic-addition",
+          "title": "Why electrophilic addition?",
+          "questionImage": "Reference/board-02 why-electrophilic-addition Why electrophilic addition [Q].png",
+          "answerImage": "Reference/board-02 why-electrophilic-addition Why electrophilic addition [ans].png",
+          "transcriptFile": "Reference/board-02 why-electrophilic-addition Why electrophilic addition [text].txt",
+          "extensionFile": "extension question/board-02 why-electrophilic-addition Why electrophilic addition.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.011351706036745407,
+            0.011616506270049577,
+            0.41171875,
+            0.18048505358150027
+          ],
+          "answerBbox": [
+            0.011351706036745407,
+            0.011616506270049577,
+            0.41171875,
+            0.18048505358150027
+          ],
+          "questionImageSize": [
+            1054,
+            320
+          ],
+          "answerImageSize": [
+            1054,
+            320
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Why are π bonds in the C=C bond relatively weak?",
+              "answer": "Because the side-on orbital overlap of p orbitals to form the π bond in C=C is less effective compared to a head-on orbital overlap."
+            }
+          ]
+        },
+        {
+          "id": "deducing-products-from-strong-oxidation",
+          "title": "Deducing products from strong oxidation",
+          "questionImage": "Reference/board-02 deducing-products-from-strong-oxidation Deducing products from strong oxidation [Q].png",
+          "answerImage": "Reference/board-02 deducing-products-from-strong-oxidation Deducing products from strong oxidation [ans].png",
+          "transcriptFile": "Reference/board-02 deducing-products-from-strong-oxidation Deducing products from strong oxidation [text].txt",
+          "extensionFile": "extension question/board-02 deducing-products-from-strong-oxidation Deducing products from strong oxidation.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.42958984453866345,
+            0.012299941673957423,
+            0.5546875,
+            0.49294980259447263
+          ],
+          "answerBbox": [
+            0.42958984453866345,
+            0.012299941673957423,
+            0.5546875,
+            0.49294980259447263
+          ],
+          "questionImageSize": [
+            1420,
+            874
+          ],
+          "answerImageSize": [
+            1420,
+            874
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What type of carbon-containing products can form from strong oxidation of alkenes?",
+              "answer": "Ketones, carboxylic acids, and CO₂ can form depending on the alkene structure."
+            }
+          ]
+        },
+        {
+          "id": "comparing-relative-stability-of-carbocation",
+          "title": "Comparing relative stability of carbocation",
+          "questionImage": "Reference/board-02 comparing-relative-stability-of-carbocation Comparing relative stability of carbocation [Q].png",
+          "answerImage": "Reference/board-02 comparing-relative-stability-of-carbocation Comparing relative stability of carbocation [ans].png",
+          "transcriptFile": "Reference/board-02 comparing-relative-stability-of-carbocation Comparing relative stability of carbocation [text].txt",
+          "extensionFile": "extension question/board-02 comparing-relative-stability-of-carbocation Comparing relative stability of carbocation.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.011939026852412679,
+            0.19678550597841937,
+            0.4109375,
+            0.3564579808234631
+          ],
+          "answerBbox": [
+            0.011939026852412679,
+            0.19678550597841937,
+            0.4109375,
+            0.3564579808234631
+          ],
+          "questionImageSize": [
+            1052,
+            632
+          ],
+          "answerImageSize": [
+            1052,
+            632
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Why do alkyl groups stabilise carbocations?",
+              "answer": "Alkyl groups are electron donating, and therefore help to disperse the positive charge on the positively charged carbon."
+            }
+          ]
+        },
+        {
+          "id": "working-backwards-from-strong-oxidation",
+          "title": "Working backwards from strong oxidation",
+          "questionImage": "Reference/board-02 working-backwards-from-strong-oxidation Working backwards from strong oxidation [Q].png",
+          "answerImage": "Reference/board-02 working-backwards-from-strong-oxidation Working backwards from strong oxidation [ans].png",
+          "transcriptFile": "Reference/board-02 working-backwards-from-strong-oxidation Working backwards from strong oxidation [text].txt",
+          "extensionFile": "extension question/board-02 working-backwards-from-strong-oxidation Working backwards from strong oxidation.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.42958984453866345,
+            0.5098684747739866,
+            0.556640625,
+            0.47433728144388043
+          ],
+          "answerBbox": [
+            0.42958984453866345,
+            0.5098684747739866,
+            0.556640625,
+            0.47433728144388043
+          ],
+          "questionImageSize": [
+            1425,
+            841
+          ],
+          "answerImageSize": [
+            1425,
+            841
+          ],
+          "extensionQuestions": [
+            {
+              "question": "How do you double-check your answer after working backwards from strong oxidation?",
+              "answer": "Work forward, and check whether the products can indeed be formed from the strong oxidation."
+            }
+          ]
+        },
+        {
+          "id": "effect-of-carbocation-stability",
+          "title": "Effect of carbocation stability",
+          "questionImage": "Reference/board-02 effect-of-carbocation-stability Effect of carbocation stability [Q].png",
+          "answerImage": "Reference/board-02 effect-of-carbocation-stability Effect of carbocation stability [ans].png",
+          "transcriptFile": "Reference/board-02 effect-of-carbocation-stability Effect of carbocation stability [text].txt",
+          "extensionFile": "extension question/board-02 effect-of-carbocation-stability Effect of carbocation stability.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.011965778316172017,
+            0.5585403907844853,
+            0.410546875,
+            0.4258319232938522
+          ],
+          "answerBbox": [
+            0.011965778316172017,
+            0.5585403907844853,
+            0.410546875,
+            0.4258319232938522
+          ],
+          "questionImageSize": [
+            1051,
+            755
+          ],
+          "answerImageSize": [
+            1051,
+            755
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What determines the major product when electrophilic addition can form two different carbocation intermediates?",
+              "answer": "The major product is formed via the more stable carbocation intermediate."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "board-03",
+      "title": "Board 3",
+      "sourceLabel": "11 Alkenes.pptx: slides 3 / 6",
+      "width": 2560,
+      "height": 1773,
+      "questionSlide": "Reference/board-03 [Q].png",
+      "answerSlide": "Reference/board-03 [ans].png",
+      "cards": [
+        {
+          "id": "deducing-products-from-elimination-reaction",
+          "title": "Deducing products from elimination reaction",
+          "questionImage": "Reference/board-03 deducing-products-from-elimination-reaction Deducing products from elimination reaction [Q].png",
+          "answerImage": "Reference/board-03 deducing-products-from-elimination-reaction Deducing products from elimination reaction [ans].png",
+          "transcriptFile": "Reference/board-03 deducing-products-from-elimination-reaction Deducing products from elimination reaction [text].txt",
+          "extensionFile": "extension question/board-03 deducing-products-from-elimination-reaction Deducing products from elimination reaction.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.009963254593175853,
+            0.013035870516185476,
+            0.409375,
+            0.7038917089678511
+          ],
+          "answerBbox": [
+            0.009963254593175853,
+            0.013035870516185476,
+            0.409375,
+            0.7038917089678511
+          ],
+          "questionImageSize": [
+            1048,
+            1248
+          ],
+          "answerImageSize": [
+            1048,
+            1248
+          ],
+          "extensionQuestions": [
+            {
+              "question": "How does the stability of a di-substituted alkene compare with a tri-substituted alkene?",
+              "answer": "A tri-substituted alkene is more stable than a di-substituted alkene."
+            }
+          ]
+        },
+        {
+          "id": "balancing-redox-eq-n-with-h-or-o",
+          "title": "Balancing redox eq n with [H] or [O]",
+          "questionImage": "Reference/board-03 balancing-redox-eq-n-with-h-or-o Balancing redox eq n with [H] or [O] [Q].png",
+          "answerImage": "Reference/board-03 balancing-redox-eq-n-with-h-or-o Balancing redox eq n with [H] or [O] [ans].png",
+          "transcriptFile": "Reference/board-03 balancing-redox-eq-n-with-h-or-o Balancing redox eq n with [H] or [O] [text].txt",
+          "extensionFile": "extension question/board-03 balancing-redox-eq-n-with-h-or-o Balancing redox eq n with [H] or [O].md",
+          "audioFile": "",
+          "questionBbox": [
+            0.4288313143549364,
+            0.013035870516185476,
+            0.55625,
+            0.24929498025944727
+          ],
+          "answerBbox": [
+            0.4288313143549364,
+            0.013035870516185476,
+            0.55625,
+            0.24929498025944727
+          ],
+          "questionImageSize": [
+            1424,
+            442
+          ],
+          "answerImageSize": [
+            1424,
+            442
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is the method to balance equations with [H] or [O]?",
+              "answer": "1. Balance all other atoms, other than H and O.\n2. Balance H or O with H₂O.\n3. Balance the H with [H] or O with [O]."
+            }
+          ]
+        },
+        {
+          "id": "physical-properties-of-cis-vs-trans",
+          "title": "Physical properties of cis vs trans",
+          "questionImage": "Reference/board-03 physical-properties-of-cis-vs-trans Physical properties of cis vs trans [Q].png",
+          "answerImage": "Reference/board-03 physical-properties-of-cis-vs-trans Physical properties of cis vs trans [ans].png",
+          "transcriptFile": "Reference/board-03 physical-properties-of-cis-vs-trans Physical properties of cis vs trans [text].txt",
+          "extensionFile": "extension question/board-03 physical-properties-of-cis-vs-trans Physical properties of cis vs trans.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.42883121340601654,
+            0.2711700204141149,
+            0.55703125,
+            0.4455724760293288
+          ],
+          "answerBbox": [
+            0.42883121340601654,
+            0.2711700204141149,
+            0.55703125,
+            0.4455724760293288
+          ],
+          "questionImageSize": [
+            1426,
+            790
+          ],
+          "answerImageSize": [
+            1426,
+            790
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Why do cis and trans isomers have different melting points?",
+              "answer": "Because trans isomers pack more efficiently than cis isomers, resulting in trans isomers being packed more closely together and having stronger intermolecular forces of attraction."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

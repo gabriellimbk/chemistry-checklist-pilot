@@ -1,0 +1,828 @@
+:root {
+  --paper: #f5f1ea;
+  --ink: #101010;
+  --muted: #5d5d5d;
+  --panel: rgba(255, 255, 255, 0.9);
+  --line: rgba(16, 16, 16, 0.14);
+  --accent: #1f6b3f;
+  --accent-soft: #d8eadc;
+  --progress-good: #1f8f4d;
+  --progress-low: #d9a521;
+  --shadow: 0 22px 54px rgba(0, 0, 0, 0.12);
+  --control-rail: 2.45rem;
+  --control-button-size: 1.9rem;
+  --nested-control-rail: 2.15rem;
+  --nested-control-button-size: 1.58rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.8), transparent 35%),
+    linear-gradient(180deg, #ede7dc 0%, var(--paper) 100%);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app-shell {
+  width: min(1440px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 24px 0 32px;
+}
+
+.topbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3.1rem);
+  line-height: 0.95;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.progress-card {
+  min-width: 220px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.progress-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.progress-track {
+  margin-top: 10px;
+  width: 100%;
+  height: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(16, 16, 16, 0.08);
+}
+
+.progress-fill {
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--progress-low);
+  transition: width 180ms ease;
+}
+
+.progress-fill.is-strong {
+  background: linear-gradient(90deg, #4f9e68 0%, var(--progress-good) 100%);
+}
+
+.reset-button,
+.board-tab,
+.reveal-answer-button,
+.modal-nav-button {
+  border: 0;
+  border-radius: 14px;
+  padding: 12px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reset-button,
+.modal-nav-button,
+.board-tab.is-active {
+  background: var(--ink);
+  color: #fff;
+}
+
+.board-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.board-tab {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: var(--shadow);
+}
+
+.board-wrap {
+  width: 100%;
+  overflow: auto;
+  padding: 0 0 12px;
+  overscroll-behavior: contain;
+}
+
+.board {
+  position: relative;
+  width: var(--static-board-width, 1440px);
+  height: var(--static-board-height, 900px);
+  max-width: none;
+  flex: 0 0 auto;
+  border-radius: 24px;
+  overflow: visible;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.92)),
+    repeating-linear-gradient(0deg, transparent 0 24px, rgba(16, 16, 16, 0.018) 24px 25px);
+  box-shadow: var(--shadow);
+}
+
+.board.is-portrait {
+  margin-inline: auto;
+}
+
+.board[data-topic="08"] {
+  margin-inline: auto;
+}
+
+.board[data-topic="16"][data-board="board-02"] {
+  margin-inline: auto;
+}
+
+.board-section-banner {
+  position: absolute;
+  left: calc(var(--x) * 100%);
+  top: calc(var(--y) * 100%);
+  width: calc(var(--w) * 100%);
+  height: calc(var(--h) * 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  background: #000;
+  color: #fff;
+  border-radius: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(0.8rem, 1.7vw, 1.2rem);
+  font-weight: 700;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.board-section-banner.arene-compact-header {
+  font-size: clamp(0.72rem, 1.35vw, 1rem);
+}
+
+.section-card {
+  position: absolute;
+  left: calc(var(--x) * 100%);
+  top: calc(var(--y) * 100%);
+  width: calc(var(--w) * 100%);
+  height: calc(var(--h) * 100%);
+  margin: 0;
+  perspective: 1200px;
+  z-index: 2;
+}
+
+.section-card.controls-right {
+  --card-width-trim: 0px;
+}
+
+.section-card.is-group-child.controls-right {
+  --card-shift: 0.35rem;
+  --card-width-trim: 0;
+  z-index: 6;
+}
+
+.section-card.static-section {
+  left: calc(var(--x) * 100%);
+  top: calc(var(--y) * 100%);
+  width: calc(var(--w) * 100%);
+  height: calc(var(--h) * 100%);
+  z-index: 1;
+  perspective: none;
+}
+
+.section-card.static-display-card {
+  left: calc(var(--x) * 100%);
+  top: calc(var(--y) * 100%);
+  width: calc(var(--w) * 100%);
+  height: calc(var(--h) * 100%);
+  z-index: 2;
+  perspective: none;
+}
+
+.static-surface {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.static-section[data-parent-id="predicting-precipitation-quantitative"] .static-surface,
+.static-section[data-parent-id="e-cell-and-spontaneity-parent"] .static-surface,
+.static-section[data-parent-id="selective-discharge-2"] .static-surface,
+.static-section[data-parent-id="industrial-applications"] .static-surface,
+.static-section[data-parent-id="faraday-s-law"] .static-surface {
+  overflow: visible;
+}
+
+.static-display-surface {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.1);
+}
+
+.static-display-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: top left;
+  background: #fff;
+}
+
+.static-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: fill;
+}
+
+.static-content {
+  position: absolute;
+  left: calc(var(--x) * 100%);
+  top: calc(var(--y) * 100%);
+  width: calc(var(--w) * 100%);
+  height: calc(var(--h) * 100%);
+  z-index: 1;
+}
+
+.static-parent-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.static-section[data-parent-id="stereoisomerism"] .static-parent-header {
+  display: none;
+}
+
+.static-section[data-parent-id="delocalisation-of-electrons-2"] .static-parent-header {
+  height: 30px;
+  font-size: 16px;
+}
+
+.static-mask {
+  position: absolute;
+  left: calc((var(--x) * 100%) - 0.4%);
+  top: calc((var(--y) * 100%) - 0.5%);
+  width: calc((var(--w) * 100%) + 0.8%);
+  height: calc((var(--h) * 100%) + 1%);
+  background: #fff;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.nested-section-card {
+  position: absolute;
+  left: calc((var(--x) * 100%) + 0.42rem);
+  top: calc((var(--y) * 100%) + 0.56rem);
+  width: calc((var(--w) * 100%) - 0.92rem);
+  height: calc((var(--h) * 100%) - 0.92rem);
+  z-index: 4;
+  perspective: 1200px;
+}
+
+.static-section[data-parent-id="application-of-vsepr-2"] .nested-section-card,
+.static-section[data-parent-id="structure-and-bonding-2"] .nested-section-card,
+.static-section[data-parent-id="further-classification-of-bonds"] .nested-section-card,
+.static-section[data-parent-id="intermolecular-forces-of-attraction-imf"] .nested-section-card,
+.static-section[data-parent-id="delocalisation-of-electrons-2"] .nested-section-card,
+.static-section[data-parent-id="stereoisomerism"] .nested-section-card,
+.static-section[data-parent-id="predicting-precipitation-quantitative"] .nested-section-card,
+.static-section[data-parent-id="e-cell-and-spontaneity-parent"] .nested-section-card,
+.static-section[data-parent-id="selective-discharge-2"] .nested-section-card,
+.static-section[data-parent-id="industrial-applications"] .nested-section-card,
+.static-section[data-parent-id="faraday-s-law"] .nested-section-card {
+  left: calc(var(--x) * 100%);
+  top: calc(var(--y) * 100%);
+  width: calc(var(--w) * 100%);
+  height: calc(var(--h) * 100%);
+}
+
+.nested-section-card .mastery-toggle,
+.nested-section-card .extension-button,
+.nested-section-card .audio-button,
+.nested-section-card .highlight-button {
+  right: 0.18rem;
+  width: var(--nested-control-button-size);
+  height: var(--nested-control-button-size);
+  box-shadow: 0 7px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nested-section-card .mastery-toggle {
+  top: 0.18rem;
+}
+
+.nested-section-card .audio-button {
+  top: 3.72rem;
+  font-size: 0.84rem;
+}
+
+.nested-section-card .extension-button {
+  top: 5.49rem;
+  font-size: 1rem;
+}
+
+.nested-section-card.no-audio .extension-button {
+  top: 3.72rem;
+}
+
+.nested-section-card .highlight-button {
+  top: 1.95rem;
+}
+
+.static-section[data-parent-id="boltzmann-distribution"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="boltzmann-distribution"] .nested-section-card .extension-button,
+.static-section[data-parent-id="boltzmann-distribution"] .nested-section-card .audio-button,
+.static-section[data-parent-id="boltzmann-distribution"] .nested-section-card .highlight-button {
+  right: -1.95rem;
+}
+
+.static-section[data-parent-id="common-methods-to-deduce-order-of-reaction"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="common-methods-to-deduce-order-of-reaction"] .nested-section-card .extension-button,
+.static-section[data-parent-id="common-methods-to-deduce-order-of-reaction"] .nested-section-card .audio-button,
+.static-section[data-parent-id="common-methods-to-deduce-order-of-reaction"] .nested-section-card .highlight-button,
+.static-section[data-parent-id="catalysis"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="catalysis"] .nested-section-card .extension-button,
+.static-section[data-parent-id="catalysis"] .nested-section-card .audio-button,
+.static-section[data-parent-id="catalysis"] .nested-section-card .highlight-button,
+.static-section[data-parent-id="application-of-vsepr-2"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="application-of-vsepr-2"] .nested-section-card .extension-button,
+.static-section[data-parent-id="application-of-vsepr-2"] .nested-section-card .audio-button,
+.static-section[data-parent-id="application-of-vsepr-2"] .nested-section-card .highlight-button,
+.static-section[data-parent-id="structure-and-bonding-2"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="structure-and-bonding-2"] .nested-section-card .extension-button,
+.static-section[data-parent-id="structure-and-bonding-2"] .nested-section-card .audio-button,
+.static-section[data-parent-id="structure-and-bonding-2"] .nested-section-card .highlight-button,
+.static-section[data-parent-id="further-classification-of-bonds"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="further-classification-of-bonds"] .nested-section-card .extension-button,
+.static-section[data-parent-id="further-classification-of-bonds"] .nested-section-card .audio-button,
+.static-section[data-parent-id="further-classification-of-bonds"] .nested-section-card .highlight-button,
+.static-section[data-parent-id="intermolecular-forces-of-attraction-imf"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="intermolecular-forces-of-attraction-imf"] .nested-section-card .extension-button,
+.static-section[data-parent-id="intermolecular-forces-of-attraction-imf"] .nested-section-card .audio-button,
+.static-section[data-parent-id="intermolecular-forces-of-attraction-imf"] .nested-section-card .highlight-button,
+.static-section[data-parent-id="delocalisation-of-electrons-2"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="delocalisation-of-electrons-2"] .nested-section-card .extension-button,
+.static-section[data-parent-id="delocalisation-of-electrons-2"] .nested-section-card .audio-button,
+.static-section[data-parent-id="delocalisation-of-electrons-2"] .nested-section-card .highlight-button {
+  right: -1.95rem;
+}
+
+.static-section[data-parent-id="catalysis"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="catalysis"] .nested-section-card .extension-button,
+.static-section[data-parent-id="catalysis"] .nested-section-card .audio-button,
+.static-section[data-parent-id="catalysis"] .nested-section-card .highlight-button {
+  right: -1.3rem;
+}
+
+.static-section[data-parent-id="delocalisation-of-electrons-2"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="delocalisation-of-electrons-2"] .nested-section-card .extension-button,
+.static-section[data-parent-id="delocalisation-of-electrons-2"] .nested-section-card .audio-button,
+.static-section[data-parent-id="delocalisation-of-electrons-2"] .nested-section-card .highlight-button,
+.static-section[data-parent-id="stereoisomerism"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="stereoisomerism"] .nested-section-card .extension-button,
+.static-section[data-parent-id="stereoisomerism"] .nested-section-card .audio-button,
+.static-section[data-parent-id="stereoisomerism"] .nested-section-card .highlight-button {
+  right: -1.1rem;
+}
+
+.static-section[data-parent-id="stereoisomerism"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="stereoisomerism"] .nested-section-card .extension-button,
+.static-section[data-parent-id="stereoisomerism"] .nested-section-card .audio-button,
+.static-section[data-parent-id="stereoisomerism"] .nested-section-card .highlight-button {
+  right: -3.3rem;
+}
+
+.static-section[data-parent-id="application-of-vsepr-2"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="application-of-vsepr-2"] .nested-section-card .extension-button,
+.static-section[data-parent-id="application-of-vsepr-2"] .nested-section-card .audio-button,
+.static-section[data-parent-id="application-of-vsepr-2"] .nested-section-card .highlight-button,
+.static-section[data-parent-id="structure-and-bonding-2"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="structure-and-bonding-2"] .nested-section-card .extension-button,
+.static-section[data-parent-id="structure-and-bonding-2"] .nested-section-card .audio-button,
+.static-section[data-parent-id="structure-and-bonding-2"] .nested-section-card .highlight-button,
+.static-section[data-parent-id="further-classification-of-bonds"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="further-classification-of-bonds"] .nested-section-card .extension-button,
+.static-section[data-parent-id="further-classification-of-bonds"] .nested-section-card .audio-button,
+.static-section[data-parent-id="further-classification-of-bonds"] .nested-section-card .highlight-button,
+.static-section[data-parent-id="intermolecular-forces-of-attraction-imf"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="intermolecular-forces-of-attraction-imf"] .nested-section-card .extension-button,
+.static-section[data-parent-id="intermolecular-forces-of-attraction-imf"] .nested-section-card .audio-button,
+.static-section[data-parent-id="intermolecular-forces-of-attraction-imf"] .nested-section-card .highlight-button,
+.static-section[data-parent-id="e-cell-and-spontaneity-parent"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="e-cell-and-spontaneity-parent"] .nested-section-card .extension-button,
+.static-section[data-parent-id="e-cell-and-spontaneity-parent"] .nested-section-card .audio-button,
+.static-section[data-parent-id="e-cell-and-spontaneity-parent"] .nested-section-card .highlight-button,
+.static-section[data-parent-id="selective-discharge-2"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="selective-discharge-2"] .nested-section-card .extension-button,
+.static-section[data-parent-id="selective-discharge-2"] .nested-section-card .audio-button,
+.static-section[data-parent-id="selective-discharge-2"] .nested-section-card .highlight-button,
+.static-section[data-parent-id="industrial-applications"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="industrial-applications"] .nested-section-card .extension-button,
+.static-section[data-parent-id="industrial-applications"] .nested-section-card .audio-button,
+.static-section[data-parent-id="industrial-applications"] .nested-section-card .highlight-button,
+.static-section[data-parent-id="faraday-s-law"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="faraday-s-law"] .nested-section-card .extension-button,
+.static-section[data-parent-id="faraday-s-law"] .nested-section-card .audio-button,
+.static-section[data-parent-id="faraday-s-law"] .nested-section-card .highlight-button {
+  right: -1.65rem;
+}
+
+.static-section[data-parent-id="predicting-precipitation-quantitative"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="predicting-precipitation-quantitative"] .nested-section-card .extension-button,
+.static-section[data-parent-id="predicting-precipitation-quantitative"] .nested-section-card .audio-button,
+.static-section[data-parent-id="predicting-precipitation-quantitative"] .nested-section-card .highlight-button {
+  right: -3.3rem;
+}
+
+.static-section[data-parent-id="selective-discharge-2"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="selective-discharge-2"] .nested-section-card .extension-button,
+.static-section[data-parent-id="selective-discharge-2"] .nested-section-card .audio-button,
+.static-section[data-parent-id="selective-discharge-2"] .nested-section-card .highlight-button,
+.static-section[data-parent-id="industrial-applications"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="industrial-applications"] .nested-section-card .extension-button,
+.static-section[data-parent-id="industrial-applications"] .nested-section-card .audio-button,
+.static-section[data-parent-id="industrial-applications"] .nested-section-card .highlight-button,
+.static-section[data-parent-id="faraday-s-law"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="faraday-s-law"] .nested-section-card .extension-button,
+.static-section[data-parent-id="faraday-s-law"] .nested-section-card .audio-button,
+.static-section[data-parent-id="faraday-s-law"] .nested-section-card .highlight-button {
+  right: -3.3rem;
+}
+
+.static-section[data-parent-id="delocalisation-of-electrons-2"] .nested-section-card .mastery-toggle,
+.static-section[data-parent-id="delocalisation-of-electrons-2"] .nested-section-card .extension-button,
+.static-section[data-parent-id="delocalisation-of-electrons-2"] .nested-section-card .audio-button,
+.static-section[data-parent-id="delocalisation-of-electrons-2"] .nested-section-card .highlight-button {
+  right: -1.95rem;
+}
+
+.flip-trigger {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background: #fff;
+  transform-style: preserve-3d;
+  transition: transform 480ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.section-card.is-flipped .flip-trigger {
+  transform: rotateY(180deg);
+}
+
+.nested-section-card.is-flipped .flip-trigger {
+  transform: rotateY(180deg);
+}
+
+.nested-section-card .flip-trigger {
+  background: #fff;
+  border-radius: 4px;
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  display: block;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.1);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-face img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: top left;
+  background: #fff;
+}
+
+.nested-section-card .card-face {
+  background: #fff;
+  border-radius: 4px;
+}
+
+.mastery-toggle,
+.extension-button,
+.audio-button,
+.highlight-button {
+  position: absolute;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--control-button-size);
+  height: var(--control-button-size);
+  border: 1px solid rgba(16, 16, 16, 0.15);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.section-card.controls-right .mastery-toggle,
+.section-card.controls-right .extension-button,
+.section-card.controls-right .audio-button,
+.section-card.controls-right .highlight-button {
+  right: -2.15rem;
+}
+
+.mastery-toggle {
+  top: 0;
+}
+
+.audio-button {
+  top: 4.7rem;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.extension-button {
+  top: 7.05rem;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.section-card.no-audio .extension-button {
+  top: 4.7rem;
+}
+
+.highlight-button {
+  top: 2.35rem;
+  padding: 0;
+}
+
+.highlight-swatch {
+  width: 0.82rem;
+  height: 0.82rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(16, 16, 16, 0.2);
+  background: linear-gradient(135deg, rgba(255, 238, 88, 0.72) 0 50%, rgba(127, 190, 122, 0.72) 50% 100%);
+}
+
+.section-card::after,
+.nested-section-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 160ms ease;
+}
+
+.section-card.is-highlight-yellow::after,
+.nested-section-card.is-highlight-yellow::after {
+  opacity: 1;
+  background: rgba(255, 238, 88, 0.32);
+}
+
+.section-card.is-highlight-green::after,
+.nested-section-card.is-highlight-green::after {
+  opacity: 1;
+  background: rgba(127, 190, 122, 0.32);
+}
+
+.section-card.is-highlight-yellow .highlight-button,
+.nested-section-card.is-highlight-yellow .highlight-button {
+  background: rgba(255, 248, 170, 0.98);
+  border-color: rgba(170, 137, 0, 0.42);
+}
+
+.section-card.is-highlight-green .highlight-button,
+.nested-section-card.is-highlight-green .highlight-button {
+  background: rgba(211, 239, 203, 0.98);
+  border-color: rgba(31, 107, 63, 0.38);
+}
+
+.mastery-input {
+  width: 1.125rem;
+  height: 1.125rem;
+  accent-color: var(--accent);
+}
+
+.section-card.mastered .mastery-toggle {
+  background: var(--accent-soft);
+  border-color: rgba(31, 107, 63, 0.32);
+}
+
+.audio-button.is-playing {
+  background: #ece7dc;
+}
+
+.board-label {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.modal-shell {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 16, 16, 0.52);
+  backdrop-filter: blur(4px);
+}
+
+.modal-panel {
+  position: relative;
+  width: min(640px, calc(100vw - 32px));
+  max-height: min(760px, calc(100vh - 32px));
+  overflow: auto;
+  padding: 28px 24px 24px;
+  border-radius: 24px;
+  background: rgba(252, 250, 245, 0.98);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(16, 16, 16, 0.08);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-kicker,
+.modal-counter {
+  margin: 0;
+  color: var(--muted);
+}
+
+.modal-kicker {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+#modalTitle {
+  margin: 8px 0 8px;
+  font-size: 1.8rem;
+}
+
+.modal-counter {
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.modal-content {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+}
+
+.modal-heading {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+#modalQuestion,
+#modalAnswer {
+  margin: 0;
+  font-size: 1.03rem;
+  line-height: 1.55;
+}
+
+#modalAnswer {
+  white-space: pre-line;
+}
+
+.reveal-answer-button {
+  margin-top: 18px;
+  background: #ece7dc;
+  color: var(--ink);
+}
+
+.answer-panel {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+@media (max-width: 980px) {
+  .app-shell {
+    width: min(100vw - 20px, 1440px);
+    padding-top: 18px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .toolbar {
+    justify-content: space-between;
+  }
+
+  .progress-card {
+    flex: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flip-trigger,
+  .progress-fill {
+    transition: none;
+  }
+}

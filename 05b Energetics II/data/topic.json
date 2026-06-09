@@ -1,0 +1,96 @@
+{
+  "code": "05b",
+  "title": "Chemical Energetics 2",
+  "folderName": "05b Energetics II",
+  "boards": [
+    {
+      "id": "board-01",
+      "title": "Board 1",
+      "sourceLabel": "05b Energetics II.pptx: slides 1 / 2",
+      "width": 2560,
+      "height": 1773,
+      "questionSlide": "Reference/board-01 [Q].png",
+      "answerSlide": "Reference/board-01 [ans].png",
+      "cards": [
+        {
+          "id": "spontaneity-g",
+          "title": "Spontaneity, ∆G",
+          "questionImage": "Reference/board-01 spontaneity-g Spontaneity, ∆G [Q].png",
+          "answerImage": "Reference/board-01 spontaneity-g Spontaneity, ∆G [ans].png",
+          "transcriptFile": "Reference/board-01 spontaneity-g Spontaneity, ∆G [text].txt",
+          "extensionFile": "extension question/board-01 spontaneity-g Spontaneity, ∆G.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.02280385624873814,
+            0.07292927967337416,
+            0.47421875,
+            0.913141567963903
+          ],
+          "answerBbox": [
+            0.02280385624873814,
+            0.07292927967337416,
+            0.47421875,
+            0.913141567963903
+          ],
+          "questionImageSize": [
+            1214,
+            1619
+          ],
+          "answerImageSize": [
+            1214,
+            1619
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What equation links Gibbs free energy, enthalpy, entropy, and temperature?",
+              "answer": "∆G = ∆H - T∆S."
+            },
+            {
+              "question": "What sign of ∆G indicates a spontaneous process?",
+              "answer": "A negative ∆G indicates that the process is spontaneous under the stated conditions."
+            }
+          ]
+        },
+        {
+          "id": "entropy-s-2",
+          "title": "Entropy, ∆S",
+          "questionImage": "Reference/board-01 entropy-s-2 Entropy, ∆S [Q].png",
+          "answerImage": "Reference/board-01 entropy-s-2 Entropy, ∆S [ans].png",
+          "transcriptFile": "Reference/board-01 entropy-s-2 Entropy, ∆S [text].txt",
+          "extensionFile": "extension question/board-01 entropy-s-2 Entropy, ∆S.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.5012213809812235,
+            0.07292927967337416,
+            0.47578125,
+            0.913141567963903
+          ],
+          "answerBbox": [
+            0.5012213809812235,
+            0.07292927967337416,
+            0.47578125,
+            0.913141567963903
+          ],
+          "questionImageSize": [
+            1218,
+            1619
+          ],
+          "answerImageSize": [
+            1218,
+            1619
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What does entropy measure?",
+              "answer": "Entropy measures the degree of disorder in a system."
+            },
+            {
+              "question": "What usually happens to entropy when the number of gas particles increases?",
+              "answer": "Entropy usually increases."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

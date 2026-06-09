@@ -1,0 +1,198 @@
+{
+  "code": "10",
+  "title": "Alkanes",
+  "folderName": "10 Alkanes",
+  "boards": [
+    {
+      "id": "board-01",
+      "title": "Board 1",
+      "sourceLabel": "10 Alkanes.pptx: slides 1 / 2",
+      "width": 2560,
+      "height": 1773,
+      "questionSlide": "Reference/board-01 [Q].png",
+      "answerSlide": "Reference/board-01 [ans].png",
+      "cards": [
+        {
+          "id": "reactions",
+          "title": "reactions",
+          "questionImage": "Reference/board-01 reactions reactions [Q].png",
+          "answerImage": "Reference/board-01 reactions reactions [ans].png",
+          "transcriptFile": "Reference/board-01 reactions reactions [text].txt",
+          "extensionFile": "extension question/board-01 reactions reactions.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.017578125,
+            0.019176536943034405,
+            0.497265625,
+            0.34799774393683025
+          ],
+          "answerBbox": [
+            0.017578125,
+            0.019176536943034405,
+            0.50546875,
+            0.3491257755217146
+          ],
+          "questionImageSize": [
+            1273,
+            617
+          ],
+          "answerImageSize": [
+            1294,
+            619
+          ],
+          "staticDisplay": false,
+          "extensionQuestions": [
+            {
+              "question": "What condition is needed for free-radical substitution of alkanes with halogens?",
+              "answer": "UV light is needed to generate halogen radicals."
+            }
+          ]
+        },
+        {
+          "id": "explaining-general-reactivity",
+          "title": "Explaining general reactivity",
+          "questionImage": "Reference/board-01 explaining-general-reactivity Explaining general reactivity [Q].png",
+          "answerImage": "Reference/board-01 explaining-general-reactivity Explaining general reactivity [ans].png",
+          "transcriptFile": "Reference/board-01 explaining-general-reactivity Explaining general reactivity [text].txt",
+          "extensionFile": "extension question/board-01 explaining-general-reactivity Explaining general reactivity.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.5203050676357763,
+            0.02203514144065325,
+            0.469140625,
+            0.19289340101522842
+          ],
+          "answerBbox": [
+            0.5203050676357763,
+            0.02203514144065325,
+            0.469140625,
+            0.19289340101522842
+          ],
+          "questionImageSize": [
+            1201,
+            342
+          ],
+          "answerImageSize": [
+            1201,
+            342
+          ],
+          "staticDisplay": false,
+          "extensionQuestions": [
+            {
+              "question": "Why are alkanes unable to attract electrophiles and nucleophiles?",
+              "answer": "Alkanes are non-polar and do not have regions of high electron density to attract electrophiles nor electron-deficient sites to attract nucleophiles."
+            }
+          ]
+        },
+        {
+          "id": "deducing-no-of-isomers-from-frs",
+          "title": "Deducing no. of isomers from FRS",
+          "questionImage": "Reference/board-01 deducing-no-of-isomers-from-frs Deducing no. of isomers from FRS [Q].png",
+          "answerImage": "Reference/board-01 deducing-no-of-isomers-from-frs Deducing no. of isomers from FRS [ans].png",
+          "transcriptFile": "Reference/board-01 deducing-no-of-isomers-from-frs Deducing no. of isomers from FRS [text].txt",
+          "extensionFile": "extension question/board-01 deducing-no-of-isomers-from-frs Deducing no. of isomers from FRS.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.5189601251766606,
+            0.21890551181102363,
+            0.470703125,
+            0.30062041737168643
+          ],
+          "answerBbox": [
+            0.5189601251766606,
+            0.21890551181102363,
+            0.470703125,
+            0.30062041737168643
+          ],
+          "questionImageSize": [
+            1205,
+            533
+          ],
+          "answerImageSize": [
+            1205,
+            533
+          ],
+          "staticDisplay": false,
+          "extensionQuestions": [
+            {
+              "question": "How are the number of types of hydrogen in an alkane related to the number of possible monobrominated products, ignoring stereoisomerism?",
+              "answer": "they are equal"
+            }
+          ]
+        },
+        {
+          "id": "mechanism",
+          "title": "mechanism",
+          "questionImage": "Reference/board-01 mechanism mechanism [Q].png",
+          "answerImage": "Reference/board-01 mechanism mechanism [ans].png",
+          "transcriptFile": "Reference/board-01 mechanism mechanism [text].txt",
+          "extensionFile": "extension question/board-01 mechanism mechanism.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.01328125,
+            0.3637901861252115,
+            0.503125,
+            0.6215454032712916
+          ],
+          "answerBbox": [
+            0.0140625,
+            0.3632261703327693,
+            0.50390625,
+            0.6204173716864072
+          ],
+          "questionImageSize": [
+            1288,
+            1102
+          ],
+          "answerImageSize": [
+            1290,
+            1100
+          ],
+          "staticDisplay": false,
+          "extensionQuestions": [
+            {
+              "question": "What does the fish-hook arrow represent?",
+              "answer": "a fish-hook arrow shows the movement of a single electron, whereas a curly arrow shows the movement of an electron pair"
+            }
+          ]
+        },
+        {
+          "id": "factors-affecting-ratio-of-isomers-from-frs",
+          "title": "Factors affecting ratio of isomers from FRS",
+          "questionImage": "Reference/board-01 factors-affecting-ratio-of-isomers-from-frs Factors affecting ratio of isomers from FRS [Q].png",
+          "answerImage": "Reference/board-01 factors-affecting-ratio-of-isomers-from-frs Factors affecting ratio of isomers from FRS [ans].png",
+          "transcriptFile": "Reference/board-01 factors-affecting-ratio-of-isomers-from-frs Factors affecting ratio of isomers from FRS [text].txt",
+          "extensionFile": "extension question/board-01 factors-affecting-ratio-of-isomers-from-frs Factors affecting ratio of isomers from FRS.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.5185950938824955,
+            0.5245472440944882,
+            0.470703125,
+            0.4613649182177101
+          ],
+          "answerBbox": [
+            0.5185950938824955,
+            0.5245472440944882,
+            0.470703125,
+            0.4613649182177101
+          ],
+          "questionImageSize": [
+            1205,
+            818
+          ],
+          "answerImageSize": [
+            1205,
+            818
+          ],
+          "staticDisplay": false,
+          "extensionQuestions": [
+            {
+              "question": "What are the two factors which will affect the ratio of products formed from monobromination of an alkane?",
+              "answer": "Probability factor and reactivity factor"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

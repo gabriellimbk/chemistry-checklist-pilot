@@ -1,0 +1,383 @@
+{
+  "code": "12",
+  "title": "Periodic Table (I)",
+  "folderName": "12 Periodic Table I",
+  "boards": [
+    {
+      "id": "board-01",
+      "title": "Board 1",
+      "sourceLabel": "12 Periodic Table I.pptx: slides 1 / 4",
+      "width": 1772,
+      "height": 2560,
+      "questionSlide": "Reference/board-01 [Q].png",
+      "answerSlide": "Reference/board-01 [ans].png",
+      "cards": [
+        {
+          "id": "period-3-elements-physical-properties",
+          "title": "Period 3 elements: Physical Properties",
+          "questionImage": "Reference/board-01 period-3-elements-physical-properties Period 3 elements Physical Properties [Q].png",
+          "answerImage": "Reference/board-01 period-3-elements-physical-properties Period 3 elements Physical Properties [ans].png",
+          "transcriptFile": "Reference/board-01 period-3-elements-physical-properties Period 3 elements Physical Properties [text].txt",
+          "extensionFile": "extension question/board-01 period-3-elements-physical-properties Period 3 elements Physical Properties.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.01600816564596092,
+            0.017576721179083384,
+            0.9875846501128668,
+            0.3171875
+          ],
+          "answerBbox": [
+            0.01600816564596092,
+            0.017576721179083384,
+            0.9875846501128668,
+            0.3171875
+          ],
+          "questionImageSize": [
+            1750,
+            812
+          ],
+          "answerImageSize": [
+            1750,
+            812
+          ],
+          "extensionQuestions": [
+            {
+              "question": "How do the melting points of Na, Mg and Al compare?",
+              "answer": "Melting point of Al > Mg > Na."
+            },
+            {
+              "question": "How do the melting points of phosphorus, sulfur and chlorine compare?",
+              "answer": "Melting point of S₈ > P₄ > Cl₂."
+            }
+          ]
+        },
+        {
+          "id": "period",
+          "title": "period",
+          "questionImage": "Reference/board-01 period period [Q].png",
+          "answerImage": "Reference/board-01 period period [ans].png",
+          "transcriptFile": "Reference/board-01 period period [text].txt",
+          "extensionFile": "extension question/board-01 period period.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.008108352144469526,
+            0.29325,
+            0.9887133182844243,
+            0.709375
+          ],
+          "answerBbox": [
+            0.008108352144469526,
+            0.29325,
+            0.9887133182844243,
+            0.709375
+          ],
+          "questionImageSize": [
+            1752,
+            1816
+          ],
+          "answerImageSize": [
+            1752,
+            1816
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Across Period 3, how does atomic radius change?",
+              "answer": "Atomic radius decreases across Period 3 because nuclear charge increases while shielding remains similar."
+            },
+            {
+              "question": "What are the two common exceptions in the first ionisation energy trend across Period 3?",
+              "answer": "First ionisation energy decreases from Mg to Al, and from P to S."
+            }
+          ]
+        },
+        {
+          "id": "period-3-oxides-physical-properties",
+          "title": "period - 3 - oxides - physical - properties",
+          "questionImage": "Reference/board-01 period-3-oxides-physical-properties period - 3 - oxides - physical - properties [Q].png",
+          "answerImage": "Reference/board-01 period-3-oxides-physical-properties period - 3 - oxides - physical - properties [ans].png",
+          "transcriptFile": "Reference/board-01 period-3-oxides-physical-properties period - 3 - oxides - physical - properties [text].txt",
+          "extensionFile": "extension question/board-01 period-3-oxides-physical-properties period - 3 - oxides - physical - properties.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.014108352144469526,
+            0.33125,
+            0.9734762979683973,
+            0.253125
+          ],
+          "answerBbox": [
+            0.014108352144469526,
+            0.33125,
+            0.9734762979683973,
+            0.25078125
+          ],
+          "questionImageSize": [
+            1725,
+            648
+          ],
+          "answerImageSize": [
+            1725,
+            642
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Which Period 3 oxides have giant ionic lattice structures?",
+              "answer": "Na₂O, MgO and Al₂O₃ have giant ionic lattice structures."
+            },
+            {
+              "question": "Which Period 3 oxides are completely insoluble in water?",
+              "answer": "Al₂O₃ and SiO₂ are completely insoluble in water."
+            }
+          ]
+        },
+        {
+          "id": "period-3-oxides-physical-chemical-properties",
+          "title": "Period 3 Oxides: Physical & Chemical Properties",
+          "questionImage": "Reference/board-01 period-3-oxides-physical-chemical-properties Period 3 Oxides Physical & Chemical Properties [Q].png",
+          "answerImage": "Reference/board-01 period-3-oxides-physical-chemical-properties Period 3 Oxides Physical & Chemical Properties [ans].png",
+          "transcriptFile": "Reference/board-01 period-3-oxides-physical-chemical-properties Period 3 Oxides Physical & Chemical Properties [text].txt",
+          "extensionFile": "extension question/board-01 period-3-oxides-physical-chemical-properties Period 3 Oxides Physical & Chemical Properties.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.016007874015748033,
+            0.3328192004845548,
+            0.9734762979683973,
+            0.669921875
+          ],
+          "answerBbox": [
+            0.016007874015748033,
+            0.3328192004845548,
+            0.9734762979683973,
+            0.669921875
+          ],
+          "questionImageSize": [
+            1725,
+            1715
+          ],
+          "answerImageSize": [
+            1725,
+            1715
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What pH is produced when Na₂O reacts with water?",
+              "answer": "Na₂O reacts with water to form NaOH(aq), giving pH 13-14."
+            },
+            {
+              "question": "Why do Al₂O₃ and SiO₂ give pH 7 with water?",
+              "answer": "They do not dissolve in water, so the solution remains neutral."
+            }
+          ]
+        },
+        {
+          "id": "period-3-oxides-chemical-properties",
+          "title": "period - 3 - oxides - chemical - properties",
+          "questionImage": "Reference/board-01 period-3-oxides-chemical-properties period - 3 - oxides - chemical - properties [Q].png",
+          "answerImage": "Reference/board-01 period-3-oxides-chemical-properties period - 3 - oxides - chemical - properties [ans].png",
+          "transcriptFile": "Reference/board-01 period-3-oxides-chemical-properties period - 3 - oxides - chemical - properties [text].txt",
+          "extensionFile": "extension question/board-01 period-3-oxides-chemical-properties period - 3 - oxides - chemical - properties.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.014108352144469526,
+            0.5890625,
+            0.9734762979683973,
+            0.412109375
+          ],
+          "answerBbox": [
+            0.014108352144469526,
+            0.59140625,
+            0.9734762979683973,
+            0.409765625
+          ],
+          "questionImageSize": [
+            1725,
+            1055
+          ],
+          "answerImageSize": [
+            1725,
+            1049
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is the trend in bonding of Period 3 oxides and their acid-base nature?",
+              "answer": "Across the period, bonding of oxides changes from ionic to covalent and the nature of the oxides changes from basic to amphoteric to acidic."
+            },
+            {
+              "question": "What product forms when Al₂O₃ reacts with NaOH(aq)?",
+              "answer": "Na⁺[Al(OH)₄]⁻"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "board-02",
+      "title": "Board 2",
+      "sourceLabel": "12 Periodic Table I.pptx: slides 2 / 5",
+      "width": 1772,
+      "height": 2560,
+      "questionSlide": "Reference/board-02 [Q].png",
+      "answerSlide": "Reference/board-02 [ans].png",
+      "cards": [
+        {
+          "id": "physical-properties",
+          "title": "physical properties",
+          "questionImage": "Reference/board-02 physical-properties physical properties [Q].png",
+          "answerImage": "Reference/board-02 physical-properties physical properties [ans].png",
+          "transcriptFile": "Reference/board-02 physical-properties physical properties [text].txt",
+          "extensionFile": "extension question/board-02 physical-properties physical properties.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.012979683972911963,
+            0.008203125,
+            0.9734762979683973,
+            0.2125
+          ],
+          "answerBbox": [
+            0.017494356659142212,
+            0.009375,
+            0.9661399548532731,
+            0.21796875
+          ],
+          "questionImageSize": [
+            1725,
+            544
+          ],
+          "answerImageSize": [
+            1712,
+            558
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Which Period 3 chlorides have giant ionic lattice structures?",
+              "answer": "NaCl and MgCl₂ have giant ionic lattice structures."
+            },
+            {
+              "question": "Why do AlCl₃, SiCl₄ and PCl₅ generally have low melting points?",
+              "answer": "They have simple molecular structures with weak instantaneous dipole-induced dipole interactions between molecules."
+            }
+          ]
+        },
+        {
+          "id": "chemical-properties",
+          "title": "chemical properties",
+          "questionImage": "Reference/board-02 chemical-properties chemical properties [Q].png",
+          "answerImage": "Reference/board-02 chemical-properties chemical properties [ans].png",
+          "transcriptFile": "Reference/board-02 chemical-properties chemical properties [text].txt",
+          "extensionFile": "extension question/board-02 chemical-properties chemical properties.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.012415349887133182,
+            0.2359375,
+            0.9768623024830699,
+            0.5640625
+          ],
+          "answerBbox": [
+            0.011286681715575621,
+            0.2296875,
+            0.9751693002257337,
+            0.571875
+          ],
+          "questionImageSize": [
+            1731,
+            1444
+          ],
+          "answerImageSize": [
+            1728,
+            1464
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is the pH of the resultant solution when AlCl₃ is added to water?",
+              "answer": "pH 3"
+            }
+          ]
+        },
+        {
+          "id": "hydrolysis",
+          "title": "Hydrolysis",
+          "questionImage": "Reference/board-02 hydrolysis Hydrolysis [Q].png",
+          "answerImage": "Reference/board-02 hydrolysis Hydrolysis [ans].png",
+          "transcriptFile": "Reference/board-02 hydrolysis Hydrolysis [text].txt",
+          "extensionFile": "extension question/board-02 hydrolysis Hydrolysis.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.017435403907844853,
+            0.7997703412073491,
+            0.9700902934537246,
+            0.19609375
+          ],
+          "answerBbox": [
+            0.017435403907844853,
+            0.7997703412073491,
+            0.9700902934537246,
+            0.19609375
+          ],
+          "questionImageSize": [
+            1719,
+            502
+          ],
+          "answerImageSize": [
+            1719,
+            502
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Why is CCl₄ unable to hydrolyse unlike SiCl₄?",
+              "answer": "The C atom is sterically hindered by four large Cl atoms, and it does not have low-lying vacant orbitals to accept a lone pair from H₂O."
+            },
+            {
+              "question": "Why does [Al(H₂O)₆]³⁺ hydrolyse to a larger extent than [Mg(H₂O)₆]²⁺?",
+              "answer": "Al³⁺ has a higher charge density and greater polarising power, so it distorts the electron cloud of H₂O to a larger extent, and weakens the covalent O-H bond in H₂O to a larger extent."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "board-03",
+      "title": "Board 3",
+      "sourceLabel": "12 Periodic Table I.pptx: slides 3 / 6",
+      "width": 1772,
+      "height": 2560,
+      "questionSlide": "Reference/board-03 [Q].png",
+      "answerSlide": "Reference/board-03 [ans].png",
+      "cards": [
+        {
+          "id": "graph-sketches",
+          "title": "Graph sketches",
+          "questionImage": "Reference/board-03 graph-sketches Graph sketches [Q].png",
+          "answerImage": "Reference/board-03 graph-sketches Graph sketches [ans].png",
+          "transcriptFile": "Reference/board-03 graph-sketches Graph sketches [text].txt",
+          "extensionFile": "extension question/board-03 graph-sketches Graph sketches.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.022839457567804023,
+            0.0070659196446598025,
+            0.9548532731376975,
+            0.51875
+          ],
+          "answerBbox": [
+            0.022839457567804023,
+            0.0070659196446598025,
+            0.9548532731376975,
+            0.51875
+          ],
+          "questionImageSize": [
+            1692,
+            1328
+          ],
+          "answerImageSize": [
+            1692,
+            1328
+          ],
+          "extensionQuestions": [
+            {
+              "question": "How does electronegativity change from Na to Cl?",
+              "answer": "Electronegativity increases from Na to Cl."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "code": "18",
+  "title": "Carbonyl Compounds",
+  "folderName": "18 Carbonyl",
+  "boards": [
+    {
+      "id": "board-01",
+      "title": "Board 1",
+      "sourceLabel": "18 Carbonyl.pptx: slides 1 / 2",
+      "width": 2560,
+      "height": 1773,
+      "questionSlide": "Reference/board-01 [Q].png",
+      "answerSlide": "Reference/board-01 [ans].png",
+      "cards": [
+        {
+          "id": "reactions",
+          "title": "reactions",
+          "questionImage": "Reference/board-01 reactions reactions [Q].png",
+          "answerImage": "Reference/board-01 reactions reactions [ans].png",
+          "transcriptFile": "Reference/board-01 reactions reactions [text].txt",
+          "extensionFile": "extension question/board-01 reactions reactions.md",
+          "audioFile": "",
+          "questionBbox": [
+            0,
+            0,
+            0.378125,
+            1
+          ],
+          "answerBbox": [
+            0,
+            0,
+            0.379296875,
+            1
+          ],
+          "questionImageSize": [
+            968,
+            1773
+          ],
+          "answerImageSize": [
+            971,
+            1773
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is the reagent and condition to convert aldehyde to cyanohydrin?",
+              "answer": "HCN with KCN catalyst"
+            },
+            {
+              "question": "What products are formed when aldehydes and ketones are reduced?",
+              "answer": "Aldehydes form primary alcohols; ketones form secondary alcohols."
+            }
+          ]
+        },
+        {
+          "id": "mechanism",
+          "title": "Mechanism",
+          "questionImage": "Reference/board-01 mechanism Mechanism [Q].png",
+          "answerImage": "Reference/board-01 mechanism Mechanism [ans].png",
+          "transcriptFile": "Reference/board-01 mechanism Mechanism [text].txt",
+          "extensionFile": "extension question/board-01 mechanism Mechanism.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.37663385826771656,
+            0.03345071449402158,
+            0.237109375,
+            0.589960518894529
+          ],
+          "answerBbox": [
+            0.37663385826771656,
+            0.03345071449402158,
+            0.237109375,
+            0.589960518894529
+          ],
+          "questionImageSize": [
+            607,
+            1046
+          ],
+          "answerImageSize": [
+            607,
+            1046
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is the name the mechanism to convert carbonyl compounds to cyanohydrins?",
+              "answer": "Nucleophilic addition."
+            },
+            {
+              "question": "Why can a racemic mixture form in nucleophilic addition of a carbonyl compound with HCN?",
+              "answer": "The carbonyl carbon is sp² planar, so CN⁻ can attack from either side of the plane with equal probability to form the enantiomers with equal proportions."
+            },
+            {
+              "question": "Why do carbonyl compounds attract nucleophiles?",
+              "answer": "The carbonyl carbon is electron-deficient because it is bonded to an electronegative O atom, and therefore attracts electron-rich nucleophiles."
+            }
+          ]
+        },
+        {
+          "id": "distinguishing-tests",
+          "title": "Distinguishing tests",
+          "questionImage": "Reference/board-01 distinguishing-tests Distinguishing tests [Q].png",
+          "answerImage": "Reference/board-01 distinguishing-tests Distinguishing tests [ans].png",
+          "transcriptFile": "Reference/board-01 distinguishing-tests Distinguishing tests [text].txt",
+          "extensionFile": "extension question/board-01 distinguishing-tests Distinguishing tests.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.609686856450636,
+            0.03414537766112569,
+            0.380078125,
+            0.41229554427523973
+          ],
+          "answerBbox": [
+            0.609686856450636,
+            0.03414537766112569,
+            0.380078125,
+            0.41229554427523973
+          ],
+          "questionImageSize": [
+            973,
+            731
+          ],
+          "answerImageSize": [
+            973,
+            731
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is the positive observation when carbonyls react with 2,4-DNPH?",
+              "answer": "An orange precipitate forms."
+            },
+            {
+              "question": "Which carbonyl compound gives a positive Tollens' test?",
+              "answer": "Aldehydes give a silver mirror with Tollens' reagent."
+            },
+            {
+              "question": "What type of aldehyde gives a positive Fehling's test?",
+              "answer": "Aliphatic aldehydes give a brick-red precipitate of Cu₂O."
+            }
+          ]
+        },
+        {
+          "id": "oxidising-reducing-agents",
+          "title": "Oxidising & reducing agents",
+          "questionImage": "Reference/board-01 oxidising-reducing-agents Oxidising & reducing agents [Q].png",
+          "answerImage": "Reference/board-01 oxidising-reducing-agents Oxidising & reducing agents [ans].png",
+          "transcriptFile": "Reference/board-01 oxidising-reducing-agents Oxidising & reducing agents [text].txt",
+          "extensionFile": "extension question/board-01 oxidising-reducing-agents Oxidising & reducing agents.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.609686856450636,
+            0.4472018081073199,
+            0.380078125,
+            0.5408911449520587
+          ],
+          "answerBbox": [
+            0.609686856450636,
+            0.4472018081073199,
+            0.380078125,
+            0.5408911449520587
+          ],
+          "questionImageSize": [
+            973,
+            959
+          ],
+          "answerImageSize": [
+            973,
+            959
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Which reagent can reduce carbonyls to alcohols?",
+              "answer": "LiAlH₄ or H₂ with Ni catalyst."
+            },
+            {
+              "question": "Which oxidising agents oxidise aldehydes to carboxylic acids?",
+              "answer": "KMnO₄/H₂SO₄, heat or K₂Cr₂O₇/H₂SO₄, heat."
+            }
+          ]
+        },
+        {
+          "id": "reactivity",
+          "title": "Reactivity",
+          "questionImage": "Reference/board-01 reactivity Reactivity [Q].png",
+          "answerImage": "Reference/board-01 reactivity Reactivity [ans].png",
+          "transcriptFile": "Reference/board-01 reactivity Reactivity [text].txt",
+          "extensionFile": "extension question/board-01 reactivity Reactivity.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.3762038158691702,
+            0.6240634295713036,
+            0.2359375,
+            0.3643542019176537
+          ],
+          "answerBbox": [
+            0.3762038158691702,
+            0.6240634295713036,
+            0.2359375,
+            0.3643542019176537
+          ],
+          "questionImageSize": [
+            604,
+            646
+          ],
+          "answerImageSize": [
+            604,
+            646
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What are the two factors which affects the reactivity of carbonyl compounds towards nucleophilic addition?",
+              "answer": "electronic factor and steric factor"
+            },
+            {
+              "question": "How does steric hindrance affect carbonyl reactivity towards nucleophilic addition?",
+              "answer": "Greater steric hindrance around the carbonyl carbon makes it less susceptible to nucleophilic attack."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

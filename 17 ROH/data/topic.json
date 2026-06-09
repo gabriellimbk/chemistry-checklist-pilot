@@ -1,0 +1,178 @@
+{
+  "code": "17",
+  "title": "Hydroxy Compounds",
+  "folderName": "17 ROH",
+  "boards": [
+    {
+      "id": "board-01",
+      "title": "Board 1",
+      "sourceLabel": "17 ROH.pptx: slides 1 / 2",
+      "width": 2560,
+      "height": 1773,
+      "questionSlide": "Reference/board-01 [Q].png",
+      "answerSlide": "Reference/board-01 [ans].png",
+      "cards": [
+        {
+          "id": "reactions",
+          "title": "reactions",
+          "questionImage": "Reference/board-01 reactions reactions [Q].png",
+          "answerImage": "Reference/board-01 reactions reactions [ans].png",
+          "transcriptFile": "Reference/board-01 reactions reactions [text].txt",
+          "extensionFile": "extension question/board-01 reactions reactions.md",
+          "audioFile": "",
+          "questionBbox": [
+            0,
+            0,
+            0.4453125,
+            0.9813874788494078
+          ],
+          "answerBbox": [
+            0,
+            0,
+            0.4453125,
+            0.9780033840947546
+          ],
+          "questionImageSize": [
+            1140,
+            1740
+          ],
+          "answerImageSize": [
+            1140,
+            1734
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is the reagent and condition to convert an alcohol to an alkene?",
+              "answer": "concentrated H₃PO₄, heat"
+            },
+            {
+              "question": "What is the reagent and conditon to convert phenol to 2,4,6-tribromophenol?",
+              "answer": "Br₂(aq)."
+            },
+            {
+              "question": "What is the reagent and condition to convert phenol to phenyl ethanoate?",
+              "answer": "CH₃COCl under anhydrous conditions."
+            }
+          ]
+        },
+        {
+          "id": "oxidation",
+          "title": "oxidation",
+          "questionImage": "Reference/board-01 oxidation oxidation [Q].png",
+          "answerImage": "Reference/board-01 oxidation oxidation [ans].png",
+          "transcriptFile": "Reference/board-01 oxidation oxidation [text].txt",
+          "extensionFile": "extension question/board-01 oxidation oxidation.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.447265625,
+            0.015792442188381276,
+            0.54609375,
+            0.17653694303440495
+          ],
+          "answerBbox": [
+            0.447265625,
+            0.01353637901861252,
+            0.545703125,
+            0.1793570219966159
+          ],
+          "questionImageSize": [
+            1398,
+            313
+          ],
+          "answerImageSize": [
+            1397,
+            318
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is formed when a secondary alcohol is heated with acidified KMnO₄(aq)?",
+              "answer": "A ketone is formed."
+            },
+            {
+              "question": "What happens when a tertiary alcohol is heated with acidified KMnO₄(aq)?",
+              "answer": "No reaction occurs."
+            }
+          ]
+        },
+        {
+          "id": "relative-acidity",
+          "title": "Relative acidity",
+          "questionImage": "Reference/board-01 relative-acidity Relative acidity [Q].png",
+          "answerImage": "Reference/board-01 relative-acidity Relative acidity [ans].png",
+          "transcriptFile": "Reference/board-01 relative-acidity Relative acidity [text].txt",
+          "extensionFile": "extension question/board-01 relative-acidity Relative acidity.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.4457317787199677,
+            0.19536964129483814,
+            0.55,
+            0.41342357586012407
+          ],
+          "answerBbox": [
+            0.4457317787199677,
+            0.19536964129483814,
+            0.55,
+            0.41342357586012407
+          ],
+          "questionImageSize": [
+            1408,
+            733
+          ],
+          "answerImageSize": [
+            1408,
+            733
+          ],
+          "extensionQuestions": [
+            {
+              "question": "How does conjugate-base stability affect acid strength?",
+              "answer": "The greater the stability of the conjugate base, the stronger the acid."
+            },
+            {
+              "question": "How do electron-donating alkyl groups affect the acidity of alcohols?",
+              "answer": "They intensify the negative charge on O⁻ in the conjugate base, destabilising it, and therefore the acid would be weaker."
+            }
+          ]
+        },
+        {
+          "id": "distinguishing-tests",
+          "title": "Distinguishing tests",
+          "questionImage": "Reference/board-01 distinguishing-tests Distinguishing tests [Q].png",
+          "answerImage": "Reference/board-01 distinguishing-tests Distinguishing tests [ans].png",
+          "transcriptFile": "Reference/board-01 distinguishing-tests Distinguishing tests [text].txt",
+          "extensionFile": "extension question/board-01 distinguishing-tests Distinguishing tests.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.4452426812033111,
+            0.6097424905220181,
+            0.551171875,
+            0.38071065989847713
+          ],
+          "answerBbox": [
+            0.4452426812033111,
+            0.6097424905220181,
+            0.551171875,
+            0.38071065989847713
+          ],
+          "questionImageSize": [
+            1411,
+            675
+          ],
+          "answerImageSize": [
+            1411,
+            675
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is the positive observation for the iodoform test?",
+              "answer": "CHI₃ yellow precipitate."
+            },
+            {
+              "question": "What structural feature would give a positive iodoform test?",
+              "answer": "CH₃CH(OH)-R or CH₃CO-R, where R = H or C."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

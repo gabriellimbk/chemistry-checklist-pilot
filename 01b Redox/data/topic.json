@@ -1,0 +1,236 @@
+{
+  "code": "01b",
+  "title": "Redox Reactions",
+  "folderName": "01b Redox",
+  "boards": [
+    {
+      "id": "board-01",
+      "title": "Board 1",
+      "sourceLabel": "01b Redox.pptx: slides 1 / 2",
+      "width": 2560,
+      "height": 1773,
+      "questionSlide": "Reference/board-01 [Q].png",
+      "answerSlide": "Reference/board-01 [ans].png",
+      "cards": [
+        {
+          "id": "deducing-oxidation-number-from-formula",
+          "title": "Deducing oxidation number from formula",
+          "questionImage": "Reference/board-01 deducing-oxidation-number-from-formula Deducing oxidation number from formula [Q].png",
+          "answerImage": "Reference/board-01 deducing-oxidation-number-from-formula Deducing oxidation number from formula [ans].png",
+          "transcriptFile": "Reference/board-01 deducing-oxidation-number-from-formula Deducing oxidation number from formula [text].txt",
+          "extensionFile": "extension question/board-01 deducing-oxidation-number-from-formula Deducing oxidation number from formula.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.2881480920654149,
+            0.049597987751531056,
+            0.27109375,
+            0.3598420755781162
+          ],
+          "answerBbox": [
+            0.2881480920654149,
+            0.049597987751531056,
+            0.27109375,
+            0.3598420755781162
+          ],
+          "questionImageSize": [
+            694,
+            638
+          ],
+          "answerImageSize": [
+            694,
+            638
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Deduce the oxidation number of nitrogen in the nitrite ion, NO₂⁻",
+              "answer": "Let the oxidation number of N be x.\nx + 2(-2) = -1\nx = +3"
+            },
+            {
+              "question": "Deduce the oxidation number of oxygen in sodium peroxide, Na₂O₂",
+              "answer": "Let the oxidation number of O be x.\n2(+1) + 2(x) = 0\nx = -1"
+            },
+            {
+              "question": "Deduce the oxidation number of sulfur in the thiosulfate ion, S₂O₃²⁻",
+              "answer": "Let the average oxidation number of S be x.\n2(x) + 3(-2) = -2\nx = +2"
+            }
+          ]
+        },
+        {
+          "id": "deducing-oxidation-number-from-structure",
+          "title": "Deducing oxidation number from structure",
+          "questionImage": "Reference/board-01 deducing-oxidation-number-from-structure Deducing oxidation number from structure [Q].png",
+          "answerImage": "Reference/board-01 deducing-oxidation-number-from-structure Deducing oxidation number from structure [ans].png",
+          "transcriptFile": "Reference/board-01 deducing-oxidation-number-from-structure Deducing oxidation number from structure [text].txt",
+          "extensionFile": "extension question/board-01 deducing-oxidation-number-from-structure Deducing oxidation number from structure.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.5610689481122552,
+            0.049597987751531056,
+            0.425,
+            0.359278059785674
+          ],
+          "answerBbox": [
+            0.5610689481122552,
+            0.049597987751531056,
+            0.425,
+            0.359278059785674
+          ],
+          "questionImageSize": [
+            1088,
+            637
+          ],
+          "answerImageSize": [
+            1088,
+            637
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What is the advantage of using structural formulas to determine oxidation numbers compared to using molecular formulas?",
+              "answer": "Deducing oxidation numbers from the structure allows us to determine the specific oxidation number of each individual atom in different chemical environments, rather than just the average oxidation number of that element."
+            }
+          ]
+        },
+        {
+          "id": "deducing-o-or-r",
+          "title": "Deducing [O] or [R]",
+          "questionImage": "Reference/board-01 deducing-o-or-r Deducing [O] or [R] [Q].png",
+          "answerImage": "Reference/board-01 deducing-o-or-r Deducing [O] or [R] [ans].png",
+          "transcriptFile": "Reference/board-01 deducing-o-or-r Deducing [O] or [R] [text].txt",
+          "extensionFile": "extension question/board-01 deducing-o-or-r Deducing [O] or [R].md",
+          "audioFile": "",
+          "questionBbox": [
+            0.011876640419947506,
+            0.06083756197142024,
+            0.274609375,
+            0.34856175972927245
+          ],
+          "answerBbox": [
+            0.011876640419947506,
+            0.06083756197142024,
+            0.274609375,
+            0.34856175972927245
+          ],
+          "questionImageSize": [
+            703,
+            618
+          ],
+          "answerImageSize": [
+            703,
+            618
+          ],
+          "extensionQuestions": [
+            {
+              "question": "How are oxidation and reduction defined in terms of changes in oxidation number?",
+              "answer": "Oxidation is an increase in oxidation number, whereas reduction is a decrease in oxidation number."
+            }
+          ]
+        },
+        {
+          "id": "summing-up-half-equations",
+          "title": "Summing up half equations",
+          "questionImage": "Reference/board-01 summing-up-half-equations Summing up half equations [Q].png",
+          "answerImage": "Reference/board-01 summing-up-half-equations Summing up half equations [ans].png",
+          "transcriptFile": "Reference/board-01 summing-up-half-equations Summing up half equations [text].txt",
+          "extensionFile": "extension question/board-01 summing-up-half-equations Summing up half equations.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.5347300625883303,
+            0.41394386118401866,
+            0.451171875,
+            0.15961646926113932
+          ],
+          "answerBbox": [
+            0.5347300625883303,
+            0.41394386118401866,
+            0.451171875,
+            0.15961646926113932
+          ],
+          "questionImageSize": [
+            1155,
+            283
+          ],
+          "answerImageSize": [
+            1155,
+            283
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Why should the oxidation/reduction half-equations be multiplied before summing them together?",
+              "answer": "They are multiplied so that the number of electrons lost equals the number of electrons gained, allowing the electrons to cancel when the half-equations are added."
+            }
+          ]
+        },
+        {
+          "id": "balancing-half-equations",
+          "title": "Balancing half equations",
+          "questionImage": "Reference/board-01 balancing-half-equations Balancing half equations [Q].png",
+          "answerImage": "Reference/board-01 balancing-half-equations Balancing half equations [ans].png",
+          "transcriptFile": "Reference/board-01 balancing-half-equations Balancing half equations [text].txt",
+          "extensionFile": "extension question/board-01 balancing-half-equations Balancing half equations.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.009612558045628912,
+            0.4144352580927384,
+            0.524609375,
+            0.5690919345741681
+          ],
+          "answerBbox": [
+            0.009612558045628912,
+            0.4144352580927384,
+            0.524609375,
+            0.5690919345741681
+          ],
+          "questionImageSize": [
+            1343,
+            1009
+          ],
+          "answerImageSize": [
+            1343,
+            1009
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What are the three additional steps required to convert a balanced acidic half-equation into a basic medium half-equation?",
+              "answer": "1. Add OH⁻ ions to both sides of the half-equation to neutralise all H⁺ ions.\n2. Combine H⁺ and OH⁻ on the same side to form H₂O.\n3. Re-balance the equation by eliminating any common terms, such as H₂O, from both sides."
+            }
+          ]
+        },
+        {
+          "id": "solving-by-oxidation-numbers-or-e",
+          "title": "Solving by oxidation numbers OR e-",
+          "questionImage": "Reference/board-01 solving-by-oxidation-numbers-or-e Solving by oxidation numbers OR e- [Q].png",
+          "answerImage": "Reference/board-01 solving-by-oxidation-numbers-or-e Solving by oxidation numbers OR e- [ans].png",
+          "transcriptFile": "Reference/board-01 solving-by-oxidation-numbers-or-e Solving by oxidation numbers OR e- [text].txt",
+          "extensionFile": "extension question/board-01 solving-by-oxidation-numbers-or-e Solving by oxidation numbers OR e-.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.5349368059761761,
+            0.5783264800233304,
+            0.451171875,
+            0.40552735476593343
+          ],
+          "answerBbox": [
+            0.5349368059761761,
+            0.5783264800233304,
+            0.451171875,
+            0.40552735476593343
+          ],
+          "questionImageSize": [
+            1155,
+            719
+          ],
+          "answerImageSize": [
+            1155,
+            719
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What must always be considered when calculating the total increase or decrease in oxidation number?",
+              "answer": "The number of atoms."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

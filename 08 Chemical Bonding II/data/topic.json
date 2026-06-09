@@ -1,0 +1,240 @@
+{
+  "code": "08",
+  "title": "Chemical Bonding (II)",
+  "folderName": "08 Chemical Bonding II",
+  "boards": [
+    {
+      "id": "board-01",
+      "title": "Board 1",
+      "sourceLabel": "08 Chemical Bonding II.pptx: slides 1 / 2",
+      "width": 2560,
+      "height": 1773,
+      "questionSlide": "Reference/board-01 [Q].png",
+      "answerSlide": "Reference/board-01 [ans].png",
+      "cards": [
+        {
+          "id": "effect-of-hybridisation-on-bond-strength-bond-length",
+          "title": "Effect of hybridisation on bond strength & bond length",
+          "questionImage": "Reference/board-01 effect-of-hybridisation-on-bond-strength-bond-length Effect of hybridisation on bond strength & bond length [Q].png",
+          "answerImage": "Reference/board-01 effect-of-hybridisation-on-bond-strength-bond-length Effect of hybridisation on bond strength & bond length [ans].png",
+          "transcriptFile": "Reference/board-01 effect-of-hybridisation-on-bond-strength-bond-length Effect of hybridisation on bond strength & bond length [text].txt",
+          "extensionFile": "extension question/board-01 effect-of-hybridisation-on-bond-strength-bond-length Effect of hybridisation on bond strength & bond length.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.5371490006056935,
+            0.012966754155730533,
+            0.45859375,
+            0.3733784545967287
+          ],
+          "answerBbox": [
+            0.5371490006056935,
+            0.012966754155730533,
+            0.45234375,
+            0.3795826283135928
+          ],
+          "questionImageSize": [
+            1174,
+            662
+          ],
+          "answerImageSize": [
+            1158,
+            673
+          ],
+          "extensionQuestions": [
+            {
+              "question": "State the orbital overlap involved in the C-H bond of ethene",
+              "answer": "sp² - s overlap"
+            }
+          ]
+        },
+        {
+          "id": "hybridisation-orbitals",
+          "title": "Hybridisation & orbitals",
+          "questionImage": "Reference/board-01 hybridisation-orbitals Hybridisation & orbitals [Q].png",
+          "answerImage": "Reference/board-01 hybridisation-orbitals Hybridisation & orbitals [ans].png",
+          "transcriptFile": "Reference/board-01 hybridisation-orbitals Hybridisation & orbitals [text].txt",
+          "extensionFile": "extension question/board-01 hybridisation-orbitals Hybridisation & orbitals.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.009175550171613164,
+            0.05929994167395742,
+            0.525,
+            0.9255499153976311
+          ],
+          "answerBbox": [
+            0.009175550171613164,
+            0.05929994167395742,
+            0.525,
+            0.9255499153976311
+          ],
+          "questionImageSize": [
+            1344,
+            1641
+          ],
+          "answerImageSize": [
+            1344,
+            1641
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Describe the types of orbital overlap that form the carbon-carbon double bond in ethene?",
+              "answer": "The double bond consists of a σ bond formed by the head-on overlap of sp² hybridised orbitals, and a π bond formed by the side-on overlap of unhybridised p orbitals."
+            },
+            {
+              "question": "How many unhybridised p orbitals remain on each carbon atom in ethyne, and what type of bonds do they form?",
+              "answer": "Two unhybridised p orbitals remain on each carbon atom, and they form two π bonds via side-on overlap."
+            }
+          ]
+        },
+        {
+          "id": "delocalisation-of-electrons-2",
+          "title": "Delocalisation of π electrons",
+          "questionImage": "Reference/board-01 delocalisation-of-electrons-2 Delocalisation of π electrons [Q].png",
+          "answerImage": "Reference/board-01 delocalisation-of-electrons-2 Delocalisation of π electrons [ans].png",
+          "transcriptFile": "Reference/board-01 delocalisation-of-electrons-2 Delocalisation of π electrons [text].txt",
+          "extensionFile": "extension question/board-01 delocalisation-of-electrons-2 Delocalisation of π electrons.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.534375,
+            0.3795826283135928,
+            0.562890625,
+            0.6271855611957134
+          ],
+          "answerBbox": [
+            0.534375,
+            0.3795826283135928,
+            0.562890625,
+            0.6271855611957134
+          ],
+          "questionImageSize": [
+            1441,
+            1112
+          ],
+          "answerImageSize": [
+            1441,
+            1112
+          ],
+          "extensionQuestions": [
+            {
+              "question": "What does the delocalisation of π electrons refer to in terms of orbital overlap?",
+              "answer": "It refers to π electrons that are free to move across multiple atoms due to the continuous side-on overlap of adjacent p-orbitals."
+            }
+          ]
+        },
+        {
+          "id": "circle-the-atoms-where-electrons-can-be-delocalised",
+          "title": "Circle the atoms where electrons can be delocalised",
+          "questionImage": "Reference/board-01 circle-the-atoms-where-electrons-can-be-delocalised Circle the atoms where electrons can be delocalised [Q].png",
+          "answerImage": "Reference/board-01 circle-the-atoms-where-electrons-can-be-delocalised Circle the atoms where electrons can be delocalised [ans].png",
+          "transcriptFile": "Reference/board-01 circle-the-atoms-where-electrons-can-be-delocalised Circle the atoms where electrons can be delocalised [text].txt",
+          "extensionFile": "extension question/board-01 circle-the-atoms-where-electrons-can-be-delocalised Circle the atoms where electrons can be delocalised.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.544921875,
+            0.4433164128595601,
+            0.433203125,
+            0.2521150592216582
+          ],
+          "answerBbox": [
+            0.544921875,
+            0.4433164128595601,
+            0.434765625,
+            0.25380710659898476
+          ],
+          "questionImageSize": [
+            1109,
+            447
+          ],
+          "answerImageSize": [
+            1113,
+            450
+          ],
+          "extensionQuestions": [
+            {
+              "question": "State the condition required for the delocalisation of π electrons to occur across a system of atoms",
+              "answer": "There must be continuous side-on overlap of p-orbitals over at least 3 adjacent atoms."
+            },
+            {
+              "question": "What structural features should you look for to identify if an atom has a p-orbital available for delocalisation?",
+              "answer": "Look for the presence of a π bond, a lone pair of electrons, or an incomplete octet on the atom."
+            }
+          ]
+        },
+        {
+          "id": "ability-to-delocalise",
+          "title": "ability to delocalise",
+          "questionImage": "Reference/board-01 ability-to-delocalise ability to delocalise [Q].png",
+          "answerImage": "Reference/board-01 ability-to-delocalise ability to delocalise [ans].png",
+          "transcriptFile": "Reference/board-01 ability-to-delocalise ability to delocalise [text].txt",
+          "extensionFile": "extension question/board-01 ability-to-delocalise ability to delocalise.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.81015625,
+            0.7050197405527355,
+            0.234375,
+            0.2915961646926114
+          ],
+          "answerBbox": [
+            0.81015625,
+            0.7050197405527355,
+            0.234375,
+            0.2915961646926114
+          ],
+          "questionImageSize": [
+            600,
+            517
+          ],
+          "answerImageSize": [
+            600,
+            517
+          ],
+          "extensionQuestions": [
+            {
+              "question": "In the molecule CH₂=CH-CH=NH, in which orbital does the lone pair of electrons on the nitrogen atom reside?",
+              "answer": "The lone pair of electrons on the nitrogen atom resides in an sp² hybridised orbital."
+            },
+            {
+              "question": "Explain why the lone pair of electrons on the nitrogen atom in CH₂=CH-CH=NH is unable to delocalise into the adjacent π system?",
+              "answer": "The lone pair is in an sp² orbital, which does not overlap continuously with the p-orbitals of the adjacent carbon atoms because it lies in a different plane (perpendicular to the π system)."
+            }
+          ]
+        },
+        {
+          "id": "draw-delocalisation",
+          "title": "draw delocalisation",
+          "questionImage": "Reference/board-01 draw-delocalisation draw delocalisation [Q].png",
+          "answerImage": "Reference/board-01 draw-delocalisation draw delocalisation [ans].png",
+          "transcriptFile": "Reference/board-01 draw-delocalisation draw delocalisation [text].txt",
+          "extensionFile": "extension question/board-01 draw-delocalisation draw delocalisation.md",
+          "audioFile": "",
+          "questionBbox": [
+            0.544921875,
+            0.7050197405527355,
+            0.2046875,
+            0.28313592780597857
+          ],
+          "answerBbox": [
+            0.544921875,
+            0.7050197405527355,
+            0.20625,
+            0.2820078962210942
+          ],
+          "questionImageSize": [
+            524,
+            502
+          ],
+          "answerImageSize": [
+            528,
+            500
+          ],
+          "extensionQuestions": [
+            {
+              "question": "Describe the orbital overlap that allows delocalisation to occur in the formate ion, HCOO⁻",
+              "answer": "The p-orbitals of the carbon atom and both oxygen atoms overlap continuously side-on."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
