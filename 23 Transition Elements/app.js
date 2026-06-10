@@ -161,10 +161,9 @@ function drawPdfWatermark(context, canvas, watermarkImage) {
   }
   const watermarkWidth = Math.max(76, Math.min(150, canvas.width * 0.07));
   const watermarkHeight = watermarkWidth * (sourceHeight / sourceWidth);
-  const margin = Math.max(18, canvas.width * 0.012);
   context.save();
-  context.globalAlpha = 0.18;
-  context.drawImage(watermarkImage, margin, margin, watermarkWidth, watermarkHeight);
+  context.globalAlpha = 0.32;
+  context.drawImage(watermarkImage, 0, 0, watermarkWidth, watermarkHeight);
   context.restore();
 }
 
