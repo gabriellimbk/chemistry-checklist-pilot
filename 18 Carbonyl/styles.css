@@ -861,8 +861,7 @@ h1 {
 }
 
 #modalTitle {
-  margin: 8px 0 8px;
-  font-size: 1.8rem;
+  display: none;
 }
 
 .modal-counter {
@@ -939,11 +938,6 @@ h1 {
     right: 10px;
     width: 34px;
     height: 34px;
-  }
-
-  #modalTitle {
-    padding-right: 36px;
-    font-size: 1.25rem;
   }
 
   .modal-counter {
