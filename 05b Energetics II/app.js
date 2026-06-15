@@ -28,7 +28,7 @@ const audioState = {};
 const masteryState = new Set();
 const highlightState = new Map();
 const boardDisplayLayouts = new WeakMap();
-const assetVersion = "20260607r-static-board-scroll-zoom";
+const assetVersion = "20260615r-energetics2-ppt-layout";
 const progressStoragePrefix = "summary-map-progress:";
 const boardZoomStoragePrefix = "summary-map-board-zoom:";
 const boardZoomLevels = [0.12, 0.18, 0.25, 0.35, 0.5, 0.75, 1];
@@ -767,11 +767,10 @@ function getManualBoardDisplayLayout(board, metrics, railWidth, rowGap, minColum
     const feasibility = getMetricById(metrics, "feasibility");
     if (spontaneity && entropy && feasibility) {
       const verticalGap = 17;
-      const leftMargin = Math.max(0, Math.min(...metrics.map((metric) => metric.x)));
       const cardBounds = new Map();
-      const rightX = leftMargin + spontaneity.w + railWidth + minColumnGap;
       const topY = Math.min(spontaneity.y, entropy.y);
-      cardBounds.set(spontaneity.card.id, { x: leftMargin, y: topY, w: spontaneity.w, h: spontaneity.h });
+      const rightX = entropy.x;
+      cardBounds.set(spontaneity.card.id, { x: spontaneity.x, y: topY, w: spontaneity.w, h: spontaneity.h });
       cardBounds.set(entropy.card.id, { x: rightX, y: topY, w: entropy.w, h: entropy.h });
       cardBounds.set(feasibility.card.id, {
         x: rightX,
