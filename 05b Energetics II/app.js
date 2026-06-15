@@ -761,6 +761,30 @@ function getMetricById(metrics, id) {
 function getManualBoardDisplayLayout(board, metrics, railWidth, rowGap, minColumnGap) {
   const topicCode = topicData && topicData.code;
 
+  if (topicCode === "05b" && board.id === "board-01") {
+    const spontaneity = getMetricById(metrics, "spontaneity-g");
+    const entropy = getMetricById(metrics, "entropy-s-2");
+    const feasibility = getMetricById(metrics, "feasibility");
+    if (spontaneity && entropy && feasibility) {
+      const verticalGap = 17;
+      const leftMargin = Math.max(0, Math.min(...metrics.map((metric) => metric.x)));
+      const cardBounds = new Map();
+      const rightX = leftMargin + spontaneity.w + railWidth + minColumnGap;
+      const topY = Math.min(spontaneity.y, entropy.y);
+      cardBounds.set(spontaneity.card.id, { x: leftMargin, y: topY, w: spontaneity.w, h: spontaneity.h });
+      cardBounds.set(entropy.card.id, { x: rightX, y: topY, w: entropy.w, h: entropy.h });
+      cardBounds.set(feasibility.card.id, {
+        x: rightX,
+        y: topY + entropy.h + verticalGap,
+        w: feasibility.w,
+        h: feasibility.h
+      });
+      const maxRight = Math.max(...Array.from(cardBounds.values()).map((bounds) => bounds.x + bounds.w + railWidth));
+      const maxBottom = Math.max(...Array.from(cardBounds.values()).map((bounds) => bounds.y + bounds.h));
+      return { expandedWidth: maxRight, expandedHeight: maxBottom, cardBounds };
+    }
+  }
+
   if (topicCode === "15" && board.id === "board-02") {
     const staticTop = getMetricById(metrics, "titration-curves-static-top");
     const orderedIds = [
