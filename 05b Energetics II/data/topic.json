@@ -124,16 +124,12 @@
           ],
           "extensionQuestions": [
             {
-              "question": "What does feasible mean in terms of ΔG?",
-              "answer": "Feasible means ΔG < 0."
+              "question": "What does thermodynamically feasible mean?",
+              "answer": "ΔG < 0"
             },
             {
-              "question": "What does favourable mean in terms of ΔH?",
-              "answer": "Favourable means ΔH < 0."
-            },
-            {
-              "question": "Why is a reaction with ΔH < 0 and ΔS > 0 feasible at all temperatures?",
-              "answer": "In ΔG = ΔH - TΔS, ΔH is negative and -TΔS is also negative, so ΔG remains negative."
+              "question": "What is the limitation in using ΔG to predict whether a reaction will occur?",
+              "answer": "ΔG does not give information about the activation energy. If the activation energy is too high, then the reaction does not proceed at an appreciable rate."
             }
           ]
         }

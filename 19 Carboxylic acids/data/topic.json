@@ -43,11 +43,11 @@
           "extensionQuestions": [
             {
               "question": "What is the reagent and condition to convert carboxylic acid to acyl chloride?",
-              "answer": "Anhydrous PCl5."
+              "answer": "Anhydrous PCl₅."
             },
             {
               "question": "What product is formed when a carboxylic acid is reacted with LiAlH₄?",
-              "answer": "A primary alcohol forms."
+              "answer": "A primary alcohol"
             }
           ]
         },
