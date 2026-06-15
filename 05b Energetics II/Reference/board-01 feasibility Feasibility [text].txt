@@ -1,0 +1,1 @@
+Feasibility is decided by ΔG. Feasible means ΔG is less than zero. Favourable enthalpy change means ΔH is less than zero. The signs of ΔH and ΔS determine whether ΔG is negative at different temperatures.

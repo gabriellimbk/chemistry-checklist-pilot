@@ -1,0 +1,1 @@
+Spontaneity is determined using Gibbs free energy. The relationship is ΔG = ΔH - TΔS. A reaction is spontaneous when ΔG is negative, and not spontaneous when ΔG is positive.
