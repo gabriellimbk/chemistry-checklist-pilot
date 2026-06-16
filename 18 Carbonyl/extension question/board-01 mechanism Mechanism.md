@@ -1,6 +1,6 @@
 # Mechanism
 
-1. What is the name the mechanism to convert carbonyl compounds to cyanohydrins?
+1. What is the name of the mechanism to convert carbonyl compounds to cyanohydrins?
 Answer: Nucleophilic addition.
 
 2. Why can a racemic mixture form in nucleophilic addition of a carbonyl compound with HCN?

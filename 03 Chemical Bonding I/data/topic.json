@@ -127,7 +127,7 @@
           ],
           "extensionQuestions": [
             {
-              "question": "State the fundamental principle of VSEPR theory regarding the spatial arrangement of electron pairs around a central atom?",
+              "question": "State the fundamental principle of VSEPR theory regarding the spatial arrangement of electron pairs around a central atom.",
               "answer": "Electron pairs (both bond pairs and lone pairs) around the central atom arrange themselves as far apart as possible in space to minimize mutual repulsion."
             },
             {
@@ -170,7 +170,7 @@
               "answer": "Fluorine is more electronegative than hydrogen, so it attracts the bonding electron pairs closer to itself in NF₃, whereas the bond pairs remain closer to the nitrogen atom in NH₃."
             },
             {
-              "question": "Explain why the repulsion between bond pairs is greater in NH₃ than in NF₃, and state its effect on the bond angle?",
+              "question": "Explain why the repulsion between bond pairs is greater in NH₃ than in NF₃, and state its effect on the bond angle.",
               "answer": "Because the bond pairs of electrons are closer together around the central nitrogen atom in NH₃, there is greater repulsion between these bond pairs, which makes the bond angle in NH₃ greater than in NF₃."
             }
           ]
@@ -804,7 +804,7 @@
           ],
           "extensionQuestions": [
             {
-              "question": "State the type of interaction formed between Na⁺ and H₂O?",
+              "question": "State the type of interaction formed between Na⁺ and H₂O.",
               "answer": "ion-dipole interactions"
             }
           ]

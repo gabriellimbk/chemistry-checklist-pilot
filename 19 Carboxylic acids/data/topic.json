@@ -42,7 +42,7 @@
           ],
           "extensionQuestions": [
             {
-              "question": "What is the reagent and condition to convert carboxylic acid to acyl chloride?",
+              "question": "State the reagent and condition needed to convert a carboxylic acid to an acyl chloride.",
               "answer": "Anhydrous PCl₅."
             },
             {
@@ -163,7 +163,7 @@
           ],
           "extensionQuestions": [
             {
-              "question": "What is the reagent and condition for alkaline hydrolysis of esters?",
+              "question": "State the reagent and condition for alkaline hydrolysis of esters.",
               "answer": "NaOH(aq), heat."
             }
           ]

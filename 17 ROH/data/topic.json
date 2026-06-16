@@ -42,15 +42,15 @@
           ],
           "extensionQuestions": [
             {
-              "question": "What is the reagent and condition to convert an alcohol to an alkene?",
+              "question": "State the reagent and condition needed to convert an alcohol to an alkene.",
               "answer": "concentrated H₃PO₄, heat"
             },
             {
-              "question": "What is the reagent and conditon to convert phenol to 2,4,6-tribromophenol?",
+              "question": "State the reagent and condition needed to convert phenol to 2,4,6-tribromophenol.",
               "answer": "Br₂(aq)."
             },
             {
-              "question": "What is the reagent and condition to convert phenol to phenyl ethanoate?",
+              "question": "State the reagent and condition needed to convert phenol to phenyl ethanoate.",
               "answer": "CH₃COCl under anhydrous conditions."
             }
           ]

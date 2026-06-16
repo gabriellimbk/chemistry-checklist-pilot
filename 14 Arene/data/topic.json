@@ -116,11 +116,11 @@
           ],
           "extensionQuestions": [
             {
-              "question": "What is the reagents and conditions to convert benzene to nitrobenzene?",
+              "question": "State the reagents and conditions needed to convert benzene to nitrobenzene.",
               "answer": "Concentrated HNO₃ and concentrated H₂SO₄ at 50 °C."
             },
             {
-              "question": "What is the reagents and conditions to convert benzene to chlorobenzene?",
+              "question": "State the reagents and conditions needed to convert benzene to chlorobenzene.",
               "answer": "Cl₂ with anhydrous AlCl₃. AlCl₃ acts as a Lewis acid catalyst to generate the Cl⁺ electrophile."
             },
             {

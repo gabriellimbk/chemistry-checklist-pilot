@@ -1,6 +1,6 @@
 # reactions
 
-1. What is the reagent and condition to convert aldehyde to cyanohydrin?
+1. State the reagent and condition needed to convert an aldehyde to a cyanohydrin.
 Answer: HCN with KCN catalyst
 
 2. What products are formed when aldehydes and ketones are reduced?

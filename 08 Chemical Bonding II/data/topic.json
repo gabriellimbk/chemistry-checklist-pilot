@@ -42,7 +42,7 @@
           ],
           "extensionQuestions": [
             {
-              "question": "State the orbital overlap involved in the C-H bond of ethene",
+              "question": "State the orbital overlap involved in the C-H bond of ethene.",
               "answer": "sp² - s overlap"
             }
           ]
@@ -77,7 +77,7 @@
           ],
           "extensionQuestions": [
             {
-              "question": "Describe the types of orbital overlap that form the carbon-carbon double bond in ethene?",
+              "question": "Describe the types of orbital overlap that form the carbon-carbon double bond in ethene.",
               "answer": "The double bond consists of a σ bond formed by the head-on overlap of sp² hybridised orbitals, and a π bond formed by the side-on overlap of unhybridised p orbitals."
             },
             {
@@ -151,7 +151,7 @@
           ],
           "extensionQuestions": [
             {
-              "question": "State the condition required for the delocalisation of π electrons to occur across a system of atoms",
+              "question": "State the condition required for the delocalisation of π electrons to occur across a system of atoms.",
               "answer": "There must be continuous side-on overlap of p-orbitals over at least 3 adjacent atoms."
             },
             {
@@ -194,7 +194,7 @@
               "answer": "The lone pair of electrons on the nitrogen atom resides in an sp² hybridised orbital."
             },
             {
-              "question": "Explain why the lone pair of electrons on the nitrogen atom in CH₂=CH-CH=NH is unable to delocalise into the adjacent π system?",
+              "question": "Explain why the lone pair of electrons on the nitrogen atom in CH₂=CH-CH=NH is unable to delocalise into the adjacent π system.",
               "answer": "The lone pair is in an sp² orbital, which does not overlap continuously with the p-orbitals of the adjacent carbon atoms because it lies in a different plane (perpendicular to the π system)."
             }
           ]
@@ -229,7 +229,7 @@
           ],
           "extensionQuestions": [
             {
-              "question": "Describe the orbital overlap that allows delocalisation to occur in the formate ion, HCOO⁻",
+              "question": "Describe the orbital overlap that allows delocalisation to occur in the formate ion, HCOO⁻.",
               "answer": "The p-orbitals of the carbon atom and both oxygen atoms overlap continuously side-on."
             }
           ]

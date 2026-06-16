@@ -46,7 +46,7 @@
               "answer": "Zn(NO₃)₂ increases [Zn²⁺], so the equilibrium shifts left and the solubility of ZnCO₃ decreases."
             },
             {
-              "question": "What is the effect of complex-ion formation affect the solubility of a salt?",
+              "question": "What is the effect of complex-ion formation on the solubility of a salt?",
               "answer": "It results in increased solubility."
             }
           ]
@@ -209,7 +209,7 @@
           ],
           "extensionQuestions": [
             {
-              "question": "What is the criteria for a salt to precipitate out of a solution?",
+              "question": "What criterion determines whether a salt precipitates out of a solution?",
               "answer": "A salt precipitates when IP > Ksp."
             }
           ]

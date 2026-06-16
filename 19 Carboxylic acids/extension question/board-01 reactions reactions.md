@@ -1,6 +1,6 @@
 # reactions
 
-1. What is the reagent and condition to convert carboxylic acid to acyl chloride?
+1. State the reagent and condition needed to convert a carboxylic acid to an acyl chloride.
 Answer: Anhydrous PCl₅.
 
 2. What product is formed when a carboxylic acid is reacted with LiAlH₄?

@@ -42,15 +42,15 @@
           ],
           "extensionQuestions": [
             {
-              "question": "Deduce the oxidation number of nitrogen in the nitrite ion, NO₂⁻",
+              "question": "Deduce the oxidation number of nitrogen in the nitrite ion, NO₂⁻.",
               "answer": "Let the oxidation number of N be x.\nx + 2(-2) = -1\nx = +3"
             },
             {
-              "question": "Deduce the oxidation number of oxygen in sodium peroxide, Na₂O₂",
+              "question": "Deduce the oxidation number of oxygen in sodium peroxide, Na₂O₂.",
               "answer": "Let the oxidation number of O be x.\n2(+1) + 2(x) = 0\nx = -1"
             },
             {
-              "question": "Deduce the oxidation number of sulfur in the thiosulfate ion, S₂O₃²⁻",
+              "question": "Deduce the oxidation number of sulfur in the thiosulfate ion, S₂O₃²⁻.",
               "answer": "Let the average oxidation number of S be x.\n2(x) + 3(-2) = -2\nx = +2"
             }
           ]

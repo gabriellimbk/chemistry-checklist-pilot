@@ -42,11 +42,11 @@
           ],
           "extensionQuestions": [
             {
-              "question": "What is the reagent and condition to convert a halogenoalkane to a primary amine?",
+              "question": "State the reagent and condition needed to convert a halogenoalkane to a primary amine.",
               "answer": "Excess concentrated NH₃ in ethanol, heated under pressure."
             },
             {
-              "question": "What is the reagent and condition to reduces a nitrile to a primary amine?",
+              "question": "State the reagent and condition needed to reduce a nitrile to a primary amine.",
               "answer": "H₂/Ni catalyst or LiAlH₄."
             }
           ]

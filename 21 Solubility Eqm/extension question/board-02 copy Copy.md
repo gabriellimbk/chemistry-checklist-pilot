@@ -1,4 +1,4 @@
 # Copy
 
-1. What is the criteria for a salt to precipitate out of a solution?
+1. What criterion determines whether a salt precipitates out of a solution?
 Answer: A salt precipitates when IP > Ksp.

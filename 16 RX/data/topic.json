@@ -42,15 +42,15 @@
           ],
           "extensionQuestions": [
             {
-              "question": "What is the reagents and conditions to convert chloroethane to ethene?",
+              "question": "State the reagents and conditions needed to convert chloroethane to ethene.",
               "answer": "NaOH in ethanol, heat."
             },
             {
-              "question": "What is the reagents and conditions to convert chloroethane to ethanol?",
+              "question": "State the reagents and conditions needed to convert chloroethane to ethanol.",
               "answer": "NaOH(aq), heat."
             },
             {
-              "question": "What is the reagents and conditions to convert chloroethane to propanenitrile?",
+              "question": "State the reagents and conditions needed to convert chloroethane to propanenitrile.",
               "answer": "KCN in ethanol, heat."
             }
           ]

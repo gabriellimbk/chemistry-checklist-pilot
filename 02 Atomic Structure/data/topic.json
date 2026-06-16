@@ -42,7 +42,7 @@
           ],
           "extensionQuestions": [
             {
-              "question": "State the mathematical relationship between the angle of deflection of a particle in an electric field, its charge (q), and its mass (m)?",
+              "question": "State the mathematical relationship between the angle of deflection of a particle in an electric field, its charge (q), and its mass (m).",
               "answer": "angle of deflection ∝ |q/m|"
             }
           ]
@@ -77,7 +77,7 @@
           ],
           "extensionQuestions": [
             {
-              "question": "State the relative mass and relative charge of an electron?",
+              "question": "State the relative mass and relative charge of an electron.",
               "answer": "The relative mass of an electron is 1/1840, or approximately 0, and its relative charge is -1."
             }
           ]
@@ -112,7 +112,7 @@
           ],
           "extensionQuestions": [
             {
-              "question": "Explain why the first ionisation energy of an element with an ns² np¹ configuration is lower than that of an element with an ns² configuration?",
+              "question": "Explain why the first ionisation energy of an element with an ns² np¹ configuration is lower than that of an element with an ns² configuration.",
               "answer": "The p orbital is higher in energy level compared to the s orbital, hence less energy is required to remove the electron in the p orbital."
             },
             {
@@ -155,7 +155,7 @@
           ],
           "extensionQuestions": [
             {
-              "question": "State the shapes and directional properties of s and p orbitals?",
+              "question": "State the shapes and directional properties of s and p orbitals.",
               "answer": "s orbitals are spherical and non-directional, while p orbitals are dumb-bell shaped and directional."
             }
           ]

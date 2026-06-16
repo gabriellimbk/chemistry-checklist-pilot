@@ -1,6 +1,6 @@
 # Reactivity
 
-1. What are the two factors which affects the reactivity of carbonyl compounds towards nucleophilic addition?
+1. What are the two factors that affect the reactivity of carbonyl compounds towards nucleophilic addition?
 Answer: electronic factor and steric factor
 
 2. How does steric hindrance affect carbonyl reactivity towards nucleophilic addition?
