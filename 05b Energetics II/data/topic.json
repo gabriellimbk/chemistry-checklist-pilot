@@ -60,15 +60,15 @@
           "extensionFile": "extension question/board-01 entropy-s-2 Entropy DS.md",
           "audioFile": "",
           "questionBbox": [
-            0.496,
+            0.528,
             0.0639044911052785,
-            0.4732441954371088,
+            0.454,
             0.646339457567804
           ],
           "answerBbox": [
-            0.496,
+            0.528,
             0.0639044911052785,
-            0.4732441954371088,
+            0.454,
             0.646339457567804
           ],
           "questionImageSize": [
@@ -103,15 +103,15 @@
           "extensionFile": "extension question/board-01 feasibility Feasibility.md",
           "audioFile": "",
           "questionBbox": [
-            0.496,
+            0.528,
             0.7160040828229804,
-            0.4732441954371088,
+            0.454,
             0.2677289297171187
           ],
           "answerBbox": [
-            0.496,
+            0.528,
             0.7160040828229804,
-            0.4732441954371088,
+            0.454,
             0.2677289297171187
           ],
           "questionImageSize": [
