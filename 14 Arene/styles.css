@@ -984,6 +984,13 @@ h1 {
   }
 }
 
+
+@media (min-width: 768px) and (max-width: 1366px) and (pointer: coarse) {
+  .app-shell {
+    padding-top: max(86px, calc(env(safe-area-inset-top, 0px) + 72px));
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .flip-trigger,
   .progress-fill {
