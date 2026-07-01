@@ -1,6 +1,6 @@
-# Summary Map Pilot
+# Chemistry Checklist Pilot
 
-Static pilot build of the chemistry summary map app.
+Static pilot build of the chemistry checklist app.
 
 ## How to preview locally
 

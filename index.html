@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chemistry Summary Maps</title>
+  <title>Chemistry Checklist</title>
   <style>
     :root {
       --paper: #f5f1ea;
@@ -303,7 +303,7 @@
   <aside class="sidebar" id="sidebar" aria-label="Topic menu">
     <div class="sidebar-header">
       <div>
-        <p class="eyebrow">Summary Maps</p>
+        <p class="eyebrow">Chemistry Checklist</p>
         <h1>Select Topic</h1>
       </div>
       <button class="close-button" type="button" id="closeButton" aria-label="Close topic menu">&times;</button>
@@ -311,7 +311,7 @@
     <nav class="topic-list" id="topicList" aria-label="Topics"></nav>
   </aside>
 
-  <iframe class="topic-frame" id="topicFrame" title="Selected summary map"></iframe>
+  <iframe class="topic-frame" id="topicFrame" title="Selected chemistry checklist"></iframe>
   <div class="fallback" id="fallback"></div>
 
   <script>
@@ -345,7 +345,7 @@
     ];
 
     const progressStoragePrefix = "summary-map-progress:";
-    const topicPageVersion = "20260701r-ipad-top-inset";
+    const topicPageVersion = "20260702r-checklist-labels";
 
     const menuButton = document.getElementById("menuButton");
     const closeButton = document.getElementById("closeButton");
@@ -416,7 +416,7 @@
 
       activeFolder = topic.folder;
       topicFrame.src = topicUrl(topic);
-      document.title = `${topic.name} | Chemistry Summary Maps`;
+      document.title = `${topic.name} | Chemistry Checklist`;
       fallback.textContent = `Loaded ${topic.name}`;
 
       [...topicList.querySelectorAll(".topic-button")].forEach((button) => {

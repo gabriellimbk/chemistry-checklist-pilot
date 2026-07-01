@@ -28,7 +28,7 @@ const audioState = {};
 const masteryState = new Set();
 const highlightState = new Map();
 const boardDisplayLayouts = new WeakMap();
-const assetVersion = "20260620r-energetics2-gutter";
+const assetVersion = "20260702r-checklist-labels";
 const progressStoragePrefix = "summary-map-progress:";
 const boardZoomStoragePrefix = "summary-map-board-zoom:";
 const boardZoomLevels = [0.12, 0.18, 0.25, 0.35, 0.5, 0.75, 1];
@@ -2430,7 +2430,7 @@ if (window.visualViewport) {
 
 async function init() {
   topicData = await loadTopicData();
-  document.title = `${topicData.title} Summary Map`;
+  document.title = `${topicData.title} Chemistry Checklist`;
   document.getElementById("topicTitle").textContent = topicData.title;
   loadStoredProgress();
   loadStoredBoardZoom();
