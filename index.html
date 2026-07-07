@@ -273,6 +273,65 @@
       white-space: nowrap;
     }
 
+    .intro-modal {
+      position: fixed;
+      z-index: 60;
+      inset: 0;
+      display: none;
+      place-items: center;
+      padding: 24px;
+      background: rgba(16, 16, 16, 0.42);
+    }
+
+    .intro-modal.is-visible {
+      display: grid;
+    }
+
+    .intro-dialog {
+      width: min(560px, 100%);
+      padding: 28px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(16, 16, 16, 0.12);
+    }
+
+    .intro-dialog h2 {
+      margin: 0 0 14px;
+      font-size: 1.35rem;
+      line-height: 1.2;
+    }
+
+    .intro-dialog p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .intro-dialog p:last-of-type {
+      margin-bottom: 22px;
+    }
+
+    .intro-actions {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .intro-button {
+      min-width: 88px;
+      border: 0;
+      border-radius: 10px;
+      padding: 10px 18px;
+      background: #101010;
+      color: #fff;
+      font-weight: 750;
+      cursor: pointer;
+    }
+
+    .intro-button:hover {
+      background: #2b2b2b;
+    }
+
     .fallback {
       position: fixed;
       right: 18px;
@@ -313,6 +372,18 @@
 
   <iframe class="topic-frame" id="topicFrame" title="Selected chemistry checklist"></iframe>
   <div class="fallback" id="fallback"></div>
+  <section class="intro-modal" id="introModal" role="dialog" aria-modal="true" aria-labelledby="introTitle" aria-describedby="introMessage">
+    <div class="intro-dialog">
+      <h2 id="introTitle">Before You Start</h2>
+      <div id="introMessage">
+        <p>The RI Chemistry Checklist App aims to help you keep track of the basic content and skills in each topic. It does not replace your Lecture notes nor your Revision materials.</p>
+        <p>Use the RI Chemistry Checklist App to verify that you know the fundamentals. Apply your understanding to Revision practices to maximise your learning!</p>
+      </div>
+      <div class="intro-actions">
+        <button class="intro-button" type="button" id="introCloseButton">OK</button>
+      </div>
+    </div>
+  </section>
 
   <script>
     const topics = [
@@ -346,6 +417,7 @@
 
     const progressStoragePrefix = "summary-map-progress:";
     const topicPageVersion = "20260702r-checklist-labels";
+    const introSeenStorageKey = "chemistry-checklist-pilot.introSeen";
 
     const menuButton = document.getElementById("menuButton");
     const closeButton = document.getElementById("closeButton");
@@ -353,6 +425,8 @@
     const topicList = document.getElementById("topicList");
     const topicFrame = document.getElementById("topicFrame");
     const fallback = document.getElementById("fallback");
+    const introModal = document.getElementById("introModal");
+    const introCloseButton = document.getElementById("introCloseButton");
 
     let activeFolder = "";
 
@@ -406,6 +480,34 @@
     function closeSidebar() {
       document.body.classList.remove("sidebar-open");
       menuButton.setAttribute("aria-expanded", "false");
+    }
+
+    function hasSeenIntro() {
+      try {
+        return sessionStorage.getItem(introSeenStorageKey) === "true";
+      } catch (error) {
+        return false;
+      }
+    }
+
+    function markIntroSeen() {
+      try {
+        sessionStorage.setItem(introSeenStorageKey, "true");
+      } catch (error) {}
+    }
+
+    function showIntroModal() {
+      if (hasSeenIntro()) {
+        return;
+      }
+      introModal.classList.add("is-visible");
+      introCloseButton.focus();
+    }
+
+    function closeIntroModal() {
+      markIntroSeen();
+      introModal.classList.remove("is-visible");
+      menuButton.focus();
     }
 
     function setActiveTopic(topic, updateHash = true) {
@@ -466,10 +568,14 @@
 
     menuButton.addEventListener("click", openSidebar);
     closeButton.addEventListener("click", closeSidebar);
+    introCloseButton.addEventListener("click", closeIntroModal);
     scrim.addEventListener("click", closeSidebar);
 
     window.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
+        if (introModal.classList.contains("is-visible")) {
+          closeIntroModal();
+        }
         closeSidebar();
       }
     });
@@ -501,6 +607,7 @@
 
     renderTopicList();
     setActiveTopic(topicFromHash() || topics[0], false);
+    showIntroModal();
     if (new URLSearchParams(window.location.search).get("menu") === "1") {
       openSidebar();
     }
